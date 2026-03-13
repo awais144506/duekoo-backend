@@ -14,86 +14,104 @@ enum Intake {
   WINTER
 }
 
+enum VisaType {
+  STUDENT
+  FAMILY
+  VISIT
+}
+
 enum ProgressStatus {
   LOCKED
   UNLOCKED
   COMPLETED
 }
-
 // --- 1. Identity & Profile ---
 
 model User {
   id            String               @id @default(cuid())
   email         String               @unique
-  firstName     String?
-  lastName      String?
+  name          String?
   imageUrl      String?
   profile       UserProfile?
   currentPos    UserCurrentPosition?
   levelProgress LevelProgress[]
+  sectionStatus SectionStatus[]
   moduleStatus  ModuleStatus[]
+  partStatus    PartStatus[]
   certificates  Certificate[]
   createdAt     DateTime             @default(now())
   updatedAt     DateTime             @updatedAt
 }
 
 model UserProfile {
-  id             String  @id @default(cuid())
-  userId         String  @unique
-  user           User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id             String    @id @default(cuid())
+  userId         String    @unique
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   dob            DateTime?
-  passportNum    String?
-  program        String?
+  passportNum    String?   @unique
+  visaType       VisaType  @default(STUDENT)
+  program        String?   
   universityName String?
   country        String?
-  phoneNo        String?
+  phoneNo        String?   @unique
   intake         Intake?
-  hasSeenWelcome Boolean @default(false)
-  createdAt      DateTime @default(now())
-  updatedAt      DateTime @updatedAt
+  hasSeenWelcome Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
 }
 
 // --- 2. Course Structure (The Skeleton) ---
 
 model Level {
-  id          String          @id @default(cuid())
-  slug        String          @unique // "A1", "A2"
-  title       String
-  order       Int
-  sections    Section[]
-  progress    LevelProgress[]
+  id           String                @id @default(cuid())
+  slug         String                @unique 
+  title        String
+  deTitle      String?              
+  order        Int
+  sections     Section[]
+  progress     LevelProgress[]
   certificates Certificate[]
-  currentPos  UserCurrentPosition[]
+  currentPos   UserCurrentPosition[]
 }
 
 model Section {
-  id         String   @id @default(cuid())
-  levelId    String
-  level      Level    @relation(fields: [levelId], references: [id])
-  title      String
-  order      Int
-  modules    Module[]
-  currentPos UserCurrentPosition[]
+  id             String                @id @default(cuid())
+  levelId        String
+  level          Level                 @relation(fields: [levelId], references: [id])
+  title          String
+  deTitle        String?
+  visaType       String?               // Filter: "STUDENT", "WORK", etc.
+  specialization String?               // Filter: "CS", "BUSINESS" (for Students)
+  order          Int
+  modules        Module[]
+  status         SectionStatus[]
+  currentPos     UserCurrentPosition[]
 }
 
 model Module {
-  id         String         @id @default(cuid())
-  sectionId  String
-  section    Section        @relation(fields: [sectionId], references: [id])
-  title      String
-  order      Int
-  parts      Part[]
-  statuses   ModuleStatus[]
-  currentPos UserCurrentPosition[]
+  id             String                @id @default(cuid())
+  sectionId      String
+  section        Section               @relation(fields: [sectionId], references: [id])
+  title          String
+  deTitle        String?
+  visaType       String?              
+  specialization String?              
+  order          Int
+  parts          Part[]
+  statuses       ModuleStatus[]
+  currentPos     UserCurrentPosition[]
 }
 
 model Part {
-  id         String   @id @default(cuid())
+  id         String                @id @default(cuid())
   moduleId   String
-  module     Module   @relation(fields: [moduleId], references: [id])
+  module     Module                @relation(fields: [moduleId], references: [id])
   title      String
-  contentId  String   // Frontend JSON Key
+  deTitle    String?
+  content    Json?                 // <--- Stores vocabulary, grammar, and quiz data
+  contentId  String                // A unique slug (e.g., "a2-cs-cv-vocab")
   order      Int
+  status     PartStatus[]
   currentPos UserCurrentPosition[]
 }
 
@@ -124,19 +142,43 @@ model LevelProgress {
   status             ProgressStatus @default(LOCKED)
   updatedAt          DateTime       @updatedAt
 
-  @@unique([userId, levelId]) // Prevent double entries for same level
+  @@unique([userId, levelId])
+}
+
+model SectionStatus {
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sectionId String
+  section   Section        @relation(fields: [sectionId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
+
+  @@unique([userId, sectionId])
 }
 
 model ModuleStatus {
-  id          String   @id @default(cuid())
-  userId      String
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  moduleId    String
-  module      Module   @relation(fields: [moduleId], references: [id])
-  isCompleted Boolean  @default(false)
-  updatedAt   DateTime @updatedAt
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  moduleId  String
+  module    Module         @relation(fields: [moduleId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
 
   @@unique([userId, moduleId])
+}
+
+model PartStatus {
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  partId    String
+  part      Part           @relation(fields: [partId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
+
+  @@unique([userId, partId])
 }
 
 // --- 4. The Certificate & Verification System ---
@@ -147,10 +189,10 @@ model Certificate {
   user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   levelId           String
   level             Level    @relation(fields: [levelId], references: [id])
-  certificateNo     String   @unique // e.g., "234406"
+  certificateNo     String   @unique
   issueDate         DateTime @default(now())
-  fileUrl           String   // S3/Cloudinary Link
-  verificationToken String   @unique @default(uuid()) // For QR code link
+  fileUrl           String
+  verificationToken String   @unique @default(uuid())
   isRevoked         Boolean  @default(false)
   createdAt         DateTime @default(now())
 }

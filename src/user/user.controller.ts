@@ -1,9 +1,26 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import { UserService } from './user.service';
 import { Prisma } from '@generated/prisma';
 @Controller('user')
 export class UserController {
+  constructor(private readonly userService: UserService) {}
   @Get()
-  findAll() {
-    return ["Awaiss"];
+  async findAll() {
+    return this.userService.findAll();
+  }
+  @Get('profile')
+  async findAllProfiles() {
+    return this.userService.findAllProfiles();
+  }
+  @Post()
+  async create(@Body() createUserDto: Prisma.UserCreateInput) {
+    return this.userService.create(createUserDto);
+  }
+  @Post(':userId/profile')
+  async createUserProfile(
+    @Param('userId') userId: string,
+    @Body() createUserProfileDto: Prisma.UserProfileCreateInput,
+  ) {
+    return this.userService.createUserProfile(userId, createUserProfileDto);
   }
 }

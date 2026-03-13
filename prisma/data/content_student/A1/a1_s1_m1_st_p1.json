@@ -1,0 +1,14 @@
+{
+  "type": "VOCABULARY_LIST",
+  "metadata": {
+    "difficulty": "A2",
+    "topic": "CS CV"
+  },
+  "items": [
+    { "de": "die Softwareentwicklung", "en": "software development", "ur": "سافٹ ویئر ڈویلپمنٹ" },
+    { "de": "die Programmiersprache", "en": "programming language", "ur": "پروگرامنگ لینگویج" }
+  ],
+  "practice": [
+    { "question": "What is 'Software Development' in German?", "answer": "die Softwareentwicklung" }
+  ]
+}
