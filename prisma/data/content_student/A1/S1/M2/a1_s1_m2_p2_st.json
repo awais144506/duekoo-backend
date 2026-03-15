@@ -1,0 +1,78 @@
+{
+  "type": "COMPOSITE",
+  "title": "Grammar: Verbs & Articles",
+  "deTitle": "Grammatik: Verben und Artikel",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Verb Conjugation (Verbkonjunktion)",
+      "intro": "Most German verbs follow a fixed pattern. You take the 'root' of the verb and add an ending.",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["Pronoun", "Example", "Pronunciation"],
+      "rows": [
+        { "c1": "Ich", "c2": "Ich wohne", "c3": "Ish voh-neh" },
+        { "c1": "Du", "c2": "Du wohnst", "c3": "Doo vohnst" },
+        { "c1": "Er/Sie/Es", "c2": "Er wohnt", "c3": "Air vohnt" },
+        { "c1": "Wir", "c2": "Wir wohnen", "c3": "Veer voh-nen" },
+        { "c1": "Ihr", "c2": "Ihr wohnt", "c3": "Eer vohnt" },
+        { "c1": "Sie / sie", "c2": "Sie wohnen", "c3": "Zee voh-nen" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Strong Verbs",
+      "blocks": [
+        {
+          "heading": "Note on sprechen (To speak)",
+          "text": "This is a 'strong' verb. The 'e' changes to 'i' only for **Du** and **Er/Sie/Es** forms.",
+          "examples": [
+            { "exp1": "Ich spreche" },
+            { "exp2": "Du sprichst" },
+            { "exp3": "Er spricht" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "The Articles (Das Artikel)",
+      "intro": "Always learn the article as part of the word. It’s not 'Student', it’s 'Der Student'.",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["Gender", "Article", "Logic", "Example", "Meaning"],
+      "rows": [
+        { 
+          "c1": "Masculine", 
+          "c2": "Der", 
+          "c3": "Male persons / many jobs", 
+          "c4": "Der Student", 
+          "c5": "The student (m)" 
+        },
+        { 
+          "c1": "Feminine", 
+          "c2": "Die", 
+          "c3": "Female persons / ending in -in", 
+          "c4": "Die Studentin", 
+          "c5": "The student (f)" 
+        },
+        { 
+          "c1": "Neuter", 
+          "c2": "Das", 
+          "c3": "Neutral things / countries", 
+          "c4": "Das Land", 
+          "c5": "The country" 
+        },
+        { 
+          "c1": "Plural", 
+          "c2": "Die", 
+          "c3": "All plural nouns", 
+          "c4": "Die Sprachen", 
+          "c5": "The languages" 
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Fruit Shopping",
+  "deTitle": "Dialog 2: Obst einkaufen",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sarah is looking for fresh fruit to make a specific dish. She asks the staff for help and explains a bit about her culture.",
+      "characters": [
+        { "id": "sarah", "name": "Sarah", "icon": "👩" },
+        { "id": "staff", "name": "Staff", "icon": "🛒" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sarah", "de": "Entschuldigung, wo sind die Mangos?", "ph": "Ent-shool-dee-goong, voh zind dee Man-gos?", "en": "Excuse me, where are the mangoes?" },
+        { "speaker": "staff", "de": "Die sind dort drüben. Die sind heute sehr frisch.", "ph": "Dee zind dort drue-ben. Dee zind hoy-te zair frish.", "en": "They are over there. They are very fresh today." },
+        { "speaker": "sarah", "de": "Super! Ich brauche ein Kilo Mangos und ein Pfund Erdbeeren.", "ph": "Zoo-per! Ish brow-khe ine Kee-lo Man-gos oond ine Pfoont Airt-be-ren.", "en": "Super! I need a kilo of mangoes and a pound of strawberries." },
+        { "speaker": "staff", "de": "Gerne. Möchten Sie auch Bananen? Ein Bund kostet nur zwei Euro.", "ph": "Gair-neh. Merkh-ten Zee owkh Bah-nah-nen? Ine Boont kos-tet noor tsvy Oy-ro.", "en": "Certainly. Would you like bananas too? A bunch costs only two Euro." },
+        { "speaker": "sarah", "de": "Ja, ich nehme ein Bund. Ich mache heute einen Obst-Chaat.", "ph": "Yah, ish nay-me ine Boont. Ish mah-khe hoy-te eye-nen Opst-Chaat.", "en": "Yes, I take a bunch. I make/do a Fruit Chaat today." },
+        { "speaker": "staff", "de": "Oh, interessant! Was ist ein Obst-Chaat?", "ph": "Oh, in-te-res-sant! Vas ist ine Opst-Chaat?", "en": "Oh, interesting! What is a Fruit Chaat?" },
+        { "speaker": "sarah", "de": "Das ist ein würziger Obstsalat aus Pakistan.", "ph": "Dass ist ine vuer-tsee-ger Opst-zah-laht owss Pah-kee-stahn.", "en": "That is a spicy fruit salad from Pakistan." },
+        { "speaker": "staff", "de": "Das klingt toll. Viel Spaß beim Essen!", "ph": "Dass kling-t toll. Feel shpahss bime es-sen!", "en": "That sounds great. Have fun eating!" }
+      ]
+    }
+  ]
+}

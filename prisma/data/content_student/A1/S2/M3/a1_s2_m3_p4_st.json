@@ -1,0 +1,81 @@
+{
+  "type": "COMPOSITE",
+  "title": "Separable Verbs",
+  "deTitle": "Trennbare Verben",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "The Sandwich Rule",
+      "blocks": [
+        {
+          "heading": "The Concept",
+          "text": "Think of separable verbs like a Sandwich: the main verb is the bread in the middle, and the prefix is the extra bread that gets moved to the very end of the sentence."
+        },
+        {
+          "heading": "Trick 1: The 'Hammer' Rule",
+          "text": "How do you 'hear' if a verb is separable? Listen for the Hammer. If you shout the word and the first syllable is the loudest, it is Separable.",
+          "examples": [
+            { "exp1": "AN-rufen (Separable) You hit the 'AN' like a hammer." },
+            { "exp1": "Ver-STEH-en (Inseparable) The hammer hits the middle." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Trick 2: The 'Reserved Keywords'",
+      "config": { "speechSequence": ["c1"] },
+      "headers": ["Prefix", "Action", "Example"],
+      "rows": [
+        { "c1": "Ab-", "c2": "Off / Away", "c3": "Abfahren" },
+        { "c1": "An-", "c2": "At / On", "c3": "Anrufen" },
+        { "c1": "Auf-", "c2": "Up / Open", "c3": "Aufmachen" },
+        { "c1": "Aus-", "c2": "Out / Fill", "c3": "Ausfüllen" },
+        { "c1": "Ein-", "c2": "In / Into", "c3": "Einnehmen" },
+        { "c1": "Mit-", "c2": "With / Along", "c3": "Mitbringen" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Trick 3: The 'Glue' List (Inseparable)",
+      "blocks": [
+        {
+          "text": "These prefixes are like Super Glue. They never, ever leave the verb. If you see these, do not move them to the end:",
+          "examples": [
+            { "exp1": "Be-Bezahlen (Pay)" },
+            { "exp1": "Ver-Verstehen (Understand)" },
+            { "exp1": "Er-Erkälten (Catch a cold)" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Separable Verbs in Action",
+      "config": { "speechSequence": ["c2", "c4"] },
+      "headers": ["English", "German", "Phonetic", "Example", "SentencePhonetic", "Translation"],
+      "rows": [
+        { "c1": "Open", "c2": "Aufmachen", "c3": "Owf-ma-khen", "c4": "Machen Sie den Mund auf.", "c5": "Ma-khen zee dain Moont owf", "c6": "Open your mouth." },
+        { "c1": "Look / Appear", "c2": "Aussehen", "c3": "Owss-zay-en", "c4": "Sie sehen krank aus.", "c5": "Zee zay-en krank owss", "c6": "You look sick." },
+        { "c1": "Fill out", "c2": "Ausfüllen", "c3": "Owss-fuel-len", "c4": "Füllen Sie das Formular aus.", "c5": "Fuel-len zee dass For-moo-lar owss", "c6": "Fill out the form." },
+        { "c1": "Call", "c2": "Anrufen", "c3": "An-roo-fen", "c4": "Ich rufe den Arzt an.", "c5": "Ish roo-feh dain Artst an", "c6": "I call the doctor." },
+        { "c1": "Take (Medicine)", "c2": "Einnehmen", "c3": "Ine-nay-men", "c4": "Nehmen Sie die Medizin ein.", "c5": "Nay-men zee dee Me-dee-tseen ine", "c6": "Take the medicine." },
+        { "c1": "Bring along", "c2": "Mitbringen", "c3": "Mit-bring-en", "c4": "Bringen Sie die Karte mit.", "c5": "Bring-en zee dee Kar-teh mit", "c6": "Bring the card along." }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Health Drill",
+      "config": { "speechSequence": ["c2"] },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I have a headache.", "c2": "Ich habe Kopfschmerzen.", "c3": "Ish ha-beh Kofp-shmairts-en" },
+        { "c1": "I have a fever.", "c2": "Ich habe Fieber.", "c3": "Ish ha-beh Fee-ber" },
+        { "c1": "I have a cold.", "c2": "Ich habe eine Erkältung.", "c3": "Ish ha-beh eye-neh Air-kel-toong" },
+        { "c1": "My back hurts.", "c2": "Mein Rücken tut weh.", "c3": "Mine Rueck-ken toot vay" },
+        { "c1": "My leg hurts.", "c2": "Mein Bein tut weh.", "c3": "Mine Bine toot vay" },
+        { "c1": "My hand hurts.", "c2": "Meine Hand tut weh.", "c3": "My-neh Hant toot vay" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m4-q1",
+          "question": "Which of these is the German term for the 'Main Train Station'?",
+          "options": ["Das Taxi", "Der Hauptbahnhof", "Der Zug", "Die S-Bahn"],
+          "correct": "Der Hauptbahnhof",
+          "explanation": "Haupt means 'Main' and Bahnhof means 'Station'. You’ll see this abbreviated as Hbf on almost every German map."
+        },
+        {
+          "id": "m4-q2",
+          "question": "You are looking for your train's platform. Which word are you looking for on the signs?",
+          "options": ["Die Fahrkarte", "Die Richtung", "Das Gleis", "Der Fahrplan"],
+          "correct": "Das Gleis",
+          "explanation": "Das Gleis refers to the specific track or platform number where your train arrives."
+        },
+        {
+          "id": "m4-q3",
+          "question": "How do you correctly say 'I am going to the exit' using a native-sounding contraction?",
+          "options": [
+            "Ich gehe zu dem Ausgang.",
+            "Ich gehe am Ausgang.",
+            "Ich gehe zum Ausgang.",
+            "Ich gehe im Ausgang."
+          ],
+          "correct": "Ich gehe zum Ausgang.",
+          "explanation": "While 'zu dem' is grammatically okay, Germans almost always contract it to zum."
+        },
+        {
+          "id": "m4-q4",
+          "question": "You want to tell a driver to 'Turn right.' What is the correct command?",
+          "options": [
+            "Abbiegen Sie rechts.",
+            "Biegen Sie rechts ab.",
+            "Gehen Sie rechts.",
+            "Fahren Sie rechts abbiegen."
+          ],
+          "correct": "Biegen Sie rechts ab.",
+          "explanation": "The verb is abbiegen. In a command, the 'prefix' (ab) gets kicked to the very end of the sentence."
+        },
+        {
+          "id": "m4-q5",
+          "question": "What is the correct way to say 'I am in the terminal'?",
+          "options": [
+            "Ich bin zum Terminal.",
+            "Ich bin am Terminal.",
+            "Ich bin im Terminal.",
+            "Ich bin nach Terminal."
+          ],
+          "correct": "Ich bin im Terminal.",
+          "explanation": "Im is the contraction of 'in + dem'. It describes being physically inside the building."
+        },
+        {
+          "id": "m4-q6",
+          "question": "Which word correctly completes this sentence: 'Ich nehme ein taxi, ____ ich viel Gepäck habe'?",
+          "options": ["und", "aber", "oder", "weil"],
+          "correct": "weil",
+          "explanation": "Weil means 'because'. Note that in German, the verb (habe) moves to the end of the clause when you use weil."
+        },
+        {
+          "id": "m4-q7",
+          "question": "In the dialogue, the driver mentions the traffic is bad. How long does he say the trip will take?",
+          "options": ["5 minutes", "10 minutes", "Approximately 20 minutes", "1 hour"],
+          "correct": "Approximately 20 minutes",
+          "explanation": "He uses the word ungefähr (approximately) followed by zwanzig (20) minutes."
+        },
+        {
+          "id": "m4-q8",
+          "question": "You accidentally bumped into someone with your suitcase. Which interjection fits best?",
+          "options": ["Wahnsinn!", "Hoppla! Entschuldigung.", "Super!", "Mist!"],
+          "correct": "Hoppla! Entschuldigung.",
+          "explanation": "Hoppla is the German equivalent of 'Oops'. It's friendly and perfect for small accidents."
+        },
+        {
+          "id": "m4-q9",
+          "question": "What does 'Geradeaus' mean?",
+          "options": ["Turn around", "To the right", "To the left", "Straight ahead"],
+          "correct": "Straight ahead",
+          "explanation": "'Geradeaus' means to keep going without turning."
+        },
+        {
+          "id": "m4-q10",
+          "question": "What is a 'Fahrkarte'?",
+          "options": ["A car map", "A ticket", "A passport", "A suitcase"],
+          "correct": "A ticket",
+          "explanation": "'Fahr' (travel) + 'Karte' (card/ticket)."
+        }
+      ]
+    }
+  ]
+}

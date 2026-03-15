@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 1: Registration",
+  "deTitle": "Dialog 1: Anmeldung",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sarah is a new student visiting the International Office to complete her university registration.",
+      "characters": [
+        { "id": "sarah", "name": "Sarah", "icon": "👩" },
+        { "id": "official", "name": "Official", "icon": "🏢" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sarah", "de": "Guten Tag. Ich bin neu hier und möchte mich anmelden.", "ph": "Goo-ten Tahk. Ish bin noy heer oond mukh-teh mikh an-mel-den.", "en": "Good day. I am new here and would like to register." },
+        { "speaker": "official", "de": "Guten Tag! Willkommen. Haben Sie Ihre Dokumente dabei?", "ph": "Goo-ten Tahk! Vil-kom-men. Hah-ben zee eer-eh Dok-oo-men-teh dah-by?", "en": "Good day! Welcome. Do you have your documents with you?" },
+        { "speaker": "sarah", "de": "Ja, hier sind mein Reisepass und mein Zulassungsbescheid.", "ph": "Yah, heer zind mine Ry-ze-pass oond mine Tsoo-las-soongs-be-shite.", "en": "Yes, here are my passport and my admission letter." },
+        { "speaker": "official", "de": "Sehr gut. Bitte füllen Sie dieses Formular aus und unterschreiben Sie hier.", "ph": "Zair goot. Bit-teh fuel-len zee dee-zes For-moo-lar ows oond oon-ter-shry-ben zee heer.", "en": "Very good. Please fill out this form and sign here." },
+        { "speaker": "sarah", "de": "Gerne. Wann bekomme ich meinen Studierendenausweis?", "ph": "Gair-neh. Vann be-kom-me ish mine-en Stoo-dee-ren-den-ows-vice?", "en": "Of course. When do I get my student ID card?" },
+        { "speaker": "official", "de": "Den Ausweis bekommen Sie nächste Woche am Montag.", "ph": "Dain Ows-vice be-kom-men zee naykh-steh Vokh-eh am Mohn-tahk.", "en": "You will get the ID card next week on Monday." },
+        { "speaker": "sarah", "de": "Oh, erst nächste Woche? Muss ich heute etwas bezahlen?", "ph": "Oh, airst naykh-steh Vokh-eh? Mooss ish hoy-teh et-vas be-tsah-len?", "en": "Oh, not until next week? Do I have to pay anything today?" },
+        { "speaker": "official", "de": "Nein, Sie haben den Semesterbeitrag schon bezahlt. Alles ist fertig!", "ph": "Nine, zee ha-ben dain Ze-mes-ter-by-trahk shohn be-tsahlt. Al-les ist fair-tikh!", "en": "No, you have already paid the semester fee. Everything is ready!" },
+        { "speaker": "sarah", "de": "Gott sei Dank! Vielen Dank für Ihre Hilfe. Auf Wiedersehen.", "ph": "Got zy dank! Fee-len dank feer eer-eh hil-feh. Owf Vee-der-zay-en.", "en": "Thank God! Thank you very much for your help. Goodbye." }
+      ]
+    }
+  ]
+}

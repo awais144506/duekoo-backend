@@ -1,0 +1,33 @@
+{
+  "type": "COMPOSITE",
+  "title": "Banking & Communication",
+  "deTitle": "Bank & Kommunikation",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Money and Phone",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Bank Account", "c2": "Das Bankkonto", "c3": "Dass Bank-kon-toh" },
+        { "c1": "Current Account", "c2": "Das Girokonto", "c3": "Dass Gee-ro-kon-toh" },
+        { "c1": "Debit Card", "c2": "Die Girokarte", "c3": "Dee Gee-ro-kar-teh" },
+        { "c1": "Credit Card", "c2": "Die Kreditkarte", "c3": "Dee Kre-deet-kar-teh" },
+        { "c1": "IBAN", "c2": "Die IBAN", "c3": "Dee Ee-bahn" },
+        { "c1": "The PIN", "c2": "Die Geheimzahl", "c3": "Dee Ge-hime-tsahl" },
+        { "c1": "Bank Statement", "c2": "Der Kontoauszug", "c3": "Dair Kon-toh-ows-tsoog" },
+        { "c1": "Fee", "c2": "Die Gebühr", "c3": "Dee Ge-buer" },
+        { "c1": "Withdraw", "c2": "Abheben", "c3": "Ab-hay-ben" },
+        { "c1": "Transfer", "c2": "Überweisen", "c3": "Ue-ber-vy-zen" },
+        { "c1": "SIM Card", "c2": "Die SIM-Karte", "c3": "Dee Sim-kar-teh" },
+        { "c1": "Contract", "c2": "Der Vertrag", "c3": "Dair Fair-trahk" },
+        { "c1": "Prepaid", "c2": "Prepaid", "c3": "Pree-payd" },
+        { "c1": "Credit (Phone)", "c2": "Das Guthaben", "c3": "Dass Goot-hah-ben" },
+        { "c1": "Data Volume", "c2": "Das Datenvolumen", "c3": "Dass Dah-ten-vo-loo-men" },
+        { "c1": "Provider", "c2": "Der Anbieter", "c3": "Dair An-bee-ter" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "type": "COMPOSITE",
+  "title": "Conjunctions & Interjections",
+  "deTitle": "Konjunktionen & Interjektionen",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Conjunctions (Konjunktionen)",
+      "config": {
+        "speechSequence": [
+          "c1",
+          "c3"
+        ]
+      },
+      "headers": [
+        "German",
+        "English",
+        "Example Sentence",
+        "German Phonetics",
+        "English Translation"
+      ],
+      "rows": [
+        {
+          "c1": "Und",
+          "c2": "And",
+          "c3": "Ich habe den Pass und das Visum.",
+          "c4": "Ikh ha-buh deyn Pass oont das Vee-zoom",
+          "c5": "I have the passport and the visa."
+        },
+        {
+          "c1": "Aber",
+          "c2": "But",
+          "c3": "Der Koffer ist groß, aber nicht schwer.",
+          "c4": "Deyr Koff-er ist grohs, ah-ber nikht shveyr",
+          "c5": "The suitcase is big, but not heavy."
+        },
+        {
+          "c1": "Oder",
+          "c2": "Or",
+          "c3": "Nehmen wir das Taxi oder den Bus?",
+          "c4": "Nay-men veer das Tak-see oh-der deyn Boos?",
+          "c5": "Are we taking the taxi or the bus?"
+        },
+        {
+          "c1": "Weil",
+          "c2": "Because",
+          "c3": "Ich warte, weil der Flug spät ist.",
+          "c4": "Ikh var-tuh, vile deyr Floog shpayt ist",
+          "c5": "I am waiting because the flight is late."
+        },
+        {
+          "c1": "Denn",
+          "c2": "Because / For",
+          "c3": "Ich warte, denn ich habe Zeit.",
+          "c4": "Ikh var-tuh, dehn ikh ha-buh Tsyte",
+          "c5": "I am waiting, for I have time."
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Interjections (Interjektionen)",
+      "config": {
+        "speechSequence": [
+          "c1",
+          "c3"
+        ]
+      },
+      "headers": [
+        "German",
+        "English",
+        "Example",
+        "Phonetics",
+        "English"
+      ],
+      "rows": [
+        {
+          "c1": "Oh!",
+          "c2": "Oh!",
+          "c3": "Oh! Mein Visum ist hier!",
+          "c4": "Oh! Mine Vee-zoom ist heer",
+          "c5": "Oh! My visa is here!"
+        },
+        {
+          "c1": "Wow!",
+          "c2": "Wow!",
+          "c3": "Wow! Das Terminal ist groß!",
+          "c4": "Wow! Das Ter-mi-nal ist grohs",
+          "c5": "Wow! The terminal is big!"
+        },
+        {
+          "c1": "Na?",
+          "c2": "Hey / So?",
+          "c3": "Na? Wie geht's?",
+          "c4": "Nah? Vee gayts",
+          "c5": "Hey? How's it going?"
+        },
+        {
+          "c1": "Wahnsinn!",
+          "c2": "Incredible!",
+          "c3": "Wahnsinn! Der Flug kostet nur 20 Euro!",
+          "c4": "Vahn-zin! Deyr Floog kos-tet noor tsvan-tsikh Oy-roh",
+          "c5": "Incredible! The flight only costs 20 Euro!"
+        },
+        {
+          "c1": "Naja...",
+          "c2": "Well...",
+          "c3": "Naja... der Koffer ist okay.",
+          "c4": "Nah-ya... deyr Koff-er ist oh-kay",
+          "c5": "Well... the suitcase is okay."
+        },
+        {
+          "c1": "Ach!",
+          "c2": "Oh! / Ah!",
+          "c3": "Ach! Ich habe mein Ticket vergessen!",
+          "c4": "Akh! Ikh ha-buh mine Tik-et fer-geh-sen",
+          "c5": "Ah! I forgot my ticket!"
+        },
+        {
+          "c1": "Super!",
+          "c2": "Great!",
+          "c3": "Super! Das Taxi ist da!",
+          "c4": "Zoo-per! Das Tak-see ist dah",
+          "c5": "Great! The taxi is here!"
+        },
+        {
+          "c1": "Mist!",
+          "c2": "Crap!",
+          "c3": "Mist! Ich bin zu spät!",
+          "c4": "Mist! Ikh bin tsoo shpayt",
+          "c5": "Crap! I am too late!"
+        },
+        {
+          "c1": "Gott sei Dank!",
+          "c2": "Thank God!",
+          "c3": "Gott sei Dank! Mein Koffer ist da.",
+          "c4": "Got zy dank! Mine Koff-er ist dah",
+          "c5": "Thank God! My suitcase is there."
+        },
+        {
+          "c1": "Wirklich?",
+          "c2": "Really?",
+          "c3": "Wirklich? Der Bus kommt?",
+          "c4": "Veerk-likh? Deyr Boos komt",
+          "c5": "Really? The bus is coming?"
+        },
+        {
+          "c1": "Hoppla",
+          "c2": "Oops",
+          "c3": "Hoppla! Entschuldigung",
+          "c4": "Hop-la! Ent-shool-dee-goong",
+          "c5": "Oops! Excuse me."
+        }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": [
+          "c2"
+        ]
+      },
+      "headers": [
+        "English",
+        "German",
+        "Phonetic"
+      ],
+      "rows": [
+        {
+          "c1": "I am going to the counter because I need help.",
+          "c2": "Ich gehe zum Schalter, weil ich Hilfe brauche.",
+          "c3": "Ish gay-eh tsoom Shal-ter, vile ish hil-feh brow-khe"
+        },
+        {
+          "c1": "Do you have my passport and my visa?",
+          "c2": "Haben Sie meinen Pass und mein Visum?",
+          "c3": "Ha-ben zee mine-en Pass oond mine Vee-zoom?"
+        },
+        {
+          "c1": "Watch out! My suitcase is very big.",
+          "c2": "Vorsicht! Mein Koffer ist sehr groß",
+          "c3": "For-zikht! Mine Koff-er ist zair grohs"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "COMPOSITE",
+  "title": "Greetings",
+  "deTitle": "Begrüßungen",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Essential Greetings",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Hello", "c2": "Hallo", "c3": "Hah-loh" },
+        { "c1": "Good Morning", "c2": "Guten Morgen", "c3": "Goo-ten Mor-gen" },
+        { "c1": "Good Day (Most common)", "c2": "Guten Tag", "c3": "Goo-ten Tahk" },
+        { "c1": "Good Evening", "c2": "Guten Abend", "c3": "Goo-ten Ah-bent" },
+        { "c1": "Good Night", "c2": "Gute Nacht", "c3": "Goo-teh Nakht" },
+        { "c1": "Goodbye (Informal)", "c2": "Tschüss", "c3": "Chuess" },
+        { "c1": "Goodbye (Formal)", "c2": "Auf Wiedersehen", "c3": "Owf Vee-der-zay-en" },
+        { "c1": "See you later", "c2": "Bis später", "c3": "Biss shpay-ter" },
+        { "c1": "Please / You’re welcome", "c2": "Bitte", "c3": "Bit-teh" },
+        { "c1": "Thanks", "c2": "Danke", "c3": "Dan-keh" },
+        { "c1": "Thank you very much", "c2": "Vielen Dank", "c3": "Fee-len Dank" },
+        { "c1": "How are you? (Informal)", "c2": "Wie geht’s?", "c3": "Vee gayts?" },
+        { "c1": "How are you? (Formal)", "c2": "Wie geht es Ihnen?", "c3": "Vee gayt ess Ee-nen?" },
+        { "c1": "I am fine", "c2": "Mir geht es gut", "c3": "Meer gayt ess goot" },
+        { "c1": "Excuse me", "c2": "Entschuldigung", "c3": "Ent-shool-dee-goong" },
+        { "c1": "I am sorry", "c2": "Es tut mir leid", "c3": "Ess toot mirr laid" }
+      ]
+    }
+  ]
+}

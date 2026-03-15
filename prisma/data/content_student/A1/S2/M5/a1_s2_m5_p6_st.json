@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: In the Kitchen",
+  "deTitle": "Dialog: In der Küche",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ishan meets his new roommate Max in the kitchen and asks about some household items.",
+      "characters": [
+        { "id": "ishan", "name": "Ishan", "icon": "🧔" },
+        { "id": "max", "name": "Max", "icon": "🧑‍🍳" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "ishan", "de": "Hallo Max! Was kochst du?", "ph": "Hal-lo Max! Vas kokhst doo?", "en": "Hello Max! What are you cooking?" },
+        { "speaker": "max", "de": "Ich koche Nudeln. Möchtest du auch essen?", "ph": "Ish ko-khe Noo-deln. Merkh-tes doo owkh es-sen?", "en": "I am cooking pasta. Would you like to eat too?" },
+        { "speaker": "ishan", "de": "Nein danke. Ist der Herd frei?", "ph": "Nine dan-ke. Ist dair Hairt fry?", "en": "No thanks. Is the stove free?" },
+        { "speaker": "max", "de": "Ja, ich bin fertig.", "ph": "Yah, ish bin fair-tikh.", "en": "Yes, I am finished." },
+        { "speaker": "ishan", "de": "Wo ist die Pfanne?", "ph": "Voh ist dee Pfan-ne?", "en": "Where is the pan?" },
+        { "speaker": "max", "de": "Die Pfanne ist im Schrank.", "ph": "Dee Pfan-ne ist im Shrank.", "en": "The pan is in the cupboard." },
+        { "speaker": "ishan", "de": "Und wo ist das Besteck?", "ph": "Oond voh ist dass Be-shtek?", "en": "And where is the cutlery?" },
+        { "speaker": "max", "de": "Das Besteck ist in der Spülmaschine.", "ph": "Dass Be-shtek ist in dair Shpuel-ma-shee-ne.", "en": "The cutlery is in the dishwasher." },
+        { "speaker": "ishan", "de": "Danke. Der Kühlschrank ist leer.", "ph": "Dan-ke. Dair Kuehl-shrank ist lair.", "en": "Thanks. The fridge is empty." },
+        { "speaker": "max", "de": "Ja, wir müssen einkaufen gehen.", "ph": "Yah, veer mues-sen ine-kow-fen gay-en.", "en": "Yes, we have to go shopping." }
+      ]
+    }
+  ]
+}

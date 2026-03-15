@@ -1,0 +1,27 @@
+{
+  "type": "COMPOSITE",
+  "title": "Time & Frequency",
+  "deTitle": "Zeit & Häufigkeit",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Time Words",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetics"],
+      "rows": [
+        { "c1": "Yesterday", "c2": "Gestern", "c3": "Gehs-tern" },
+        { "c1": "Today", "c2": "Heute", "c3": "Hoy-teh" },
+        { "c1": "Tomorrow", "c2": "Morgen", "c3": "Mor-gen" },
+        { "c1": "Day after tomorrow", "c2": "Übermorgen", "c3": "Ue-ber-mor-gen" },
+        { "c1": "Every day", "c2": "Jeden Tag", "c3": "Yay-den Tahk" },
+        { "c1": "The Weekend", "c2": "Das Wochenende", "c3": "Dass Vokh-en-en-deh" },
+        { "c1": "This week", "c2": "Diese Woche", "c3": "Dee-zeh Vokh-eh" },
+        { "c1": "Next week", "c2": "Nächste Woche", "c3": "Naykh-steh Vokh-eh" },
+        { "c1": "Next month", "c2": "Nächster Monat", "c3": "Naykh-ster Mo-naht" },
+        { "c1": "Next year", "c2": "Nächstes Jahr", "c3": "Naykh-stes Yar" }
+      ]
+    }
+  ]
+}

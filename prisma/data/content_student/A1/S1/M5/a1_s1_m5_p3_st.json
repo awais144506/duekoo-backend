@@ -1,0 +1,61 @@
+{
+  "type": "COMPOSITE",
+  "title": "Calendar",
+  "deTitle": "Kalender",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Days of the Week",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetics"],
+      "rows": [
+        { "c1": "Monday", "c2": "Montag", "c3": "Mohn-tahk" },
+        { "c1": "Tuesday", "c2": "Dienstag", "c3": "Deens-tahk" },
+        { "c1": "Wednesday", "c2": "Mittwoch", "c3": "Mit-vokh" },
+        { "c1": "Thursday", "c2": "Donnerstag", "c3": "Don-ners-tahk" },
+        { "c1": "Friday", "c2": "Freitag", "c3": "Fry-tahk" },
+        { "c1": "Saturday", "c2": "Samstag", "c3": "Zams-tahk" },
+        { "c1": "Sunday", "c2": "Sonntag", "c3": "Zon-tahk" },
+        { "c1": "The Weekend", "c2": "Das Wochenende", "c3": "Dass Vokh-en-en-deh" }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Months",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetics"],
+      "rows": [
+        { "c1": "January", "c2": "Januar", "c3": "Yan-oo-ar" },
+        { "c1": "February", "c2": "Februar", "c3": "Feb-roo-ar" },
+        { "c1": "March", "c2": "März", "c3": "Mehrts" },
+        { "c1": "April", "c2": "April", "c3": "Ah-pril" },
+        { "c1": "May", "c2": "Mai", "c3": "My" },
+        { "c1": "June", "c2": "Juni", "c3": "Yoo-nee" },
+        { "c1": "July", "c2": "Juli", "c3": "Yoo-lee" },
+        { "c1": "August", "c2": "August", "c3": "Ow-goost" },
+        { "c1": "September", "c2": "September", "c3": "Sep-tem-ber" },
+        { "c1": "October", "c2": "Oktober", "c3": "Ok-toh-ber" },
+        { "c1": "November", "c2": "November", "c3": "No-vem-ber" },
+        { "c1": "December", "c2": "Dezember", "c3": "De-tsem-ber" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Time Prepositions",
+      "blocks": [
+        {
+          "heading": "Am vs. Im",
+          "text": "When talking about specific times on the calendar, German uses different prepositions than English.",
+          "examples": [
+            { "exp1": "Am (For days): Am Montag. (On Monday)." },
+            { "exp2": "Im (For months): Im März. (In March)." }
+          ]
+        }
+      ]
+    }
+  ]
+}

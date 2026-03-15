@@ -1,0 +1,45 @@
+{
+  "type": "COMPOSITE",
+  "title": "Cultural Tips: Finance & Safety",
+  "deTitle": "Kulturtipps",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Formal Etiquette & Communication",
+      "blocks": [
+        {
+          "heading": "The Rules of Respect",
+          "text": "In professional and government settings, the way you address people determines how you are perceived. Never call a banker, shop assistant, or police officer by their first name. Instead, use 'Herr [Last Name]' for men and 'Frau [Last Name]' for women. This formality extends to grammar; always use the formal 'Sie' (You) in these offices. You should only switch to 'Du' with friends or fellow students after they explicitly suggest it."
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Administrative Survival",
+      "blocks": [
+        {
+          "heading": "The Physical Folder",
+          "text": "Despite its tech reputation, Germany still runs heavily on physical paper documentation. You should buy a physical folder (Ordner) immediately upon arrival to save hard copies of every contract, bank statement, and police receipt. Always read a document thoroughly before signing, as a signature in Germany is a serious legal commitment that is very difficult to reverse later."
+        },
+        {
+          "heading": "Police & Lost Items",
+          "text": "Handling lost property or theft requires specific administrative steps to ensure your insurance and documents are valid. For non-emergencies like a lost passport, you can often file an 'Anzeige' online via an 'Online-Wache' to save time. However, to get a replacement passport from your embassy, you will usually still need the physical paper confirmation stamped at a local police station."
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Banking & Connectivity",
+      "blocks": [
+        {
+          "heading": "Choosing a Bank",
+          "text": "There is a significant trade-off between traditional service and modern flexibility in German banking. Traditional banks like Sparkasse have physical branches but often charge monthly fees. Neo-banks like N26 are usually free and English-friendly but offer no physical support desks. Regardless of your bank, always keep €20–€50 in cash because many small shops or government kiosks still do not accept cards."
+        },
+        {
+          "heading": "Mobile Phones & Contracts",
+          "text": "Connectivity in Germany comes with strict legal requirements and long-term financial risks. By law, every SIM card must be registered with your Passport, a process usually handled at the shop counter. You should be wary of the '24-Month Trap' where contracts are hard to cancel if you leave the country early. It is better to start with 'Prepaid' or 'Monatlich kündbar' (cancelable monthly) plans to stay flexible."
+        }
+      ]
+    }
+  ]
+}

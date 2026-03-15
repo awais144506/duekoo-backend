@@ -1,0 +1,98 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m3-q1",
+          "question": "What is the German word for 'The Passport'?",
+          "options": ["Der Ausweis", "Der Reisepass", "Die Bordkarte"],
+          "correct": "Der Reisepass",
+          "explanation": "'Der Reisepass' is the specific word for a passport. 'Der Ausweis' is a general ID card, and 'Die Bordkarte' is a boarding pass."
+        },
+        {
+          "id": "m3-q2",
+          "question": "Which form of 'können' (can) is correct for 'Ich' (I)?",
+          "options": ["kann", "kannst", "können"],
+          "correct": "kann",
+          "explanation": "Modal verbs usually change their vowel in the singular. For 'können', the 'ö' changes to 'a', and the 1st person (Ich) and 3rd person (Er/Sie/Es) are identical: 'Ich kann'."
+        },
+        {
+          "id": "m3-q3",
+          "question": "How do you say the number '74' in German?",
+          "options": ["Siebenundvierzig", "Vierundsiebzig", "Siebzigvier"],
+          "correct": "Vierundsiebzig",
+          "explanation": "Following the 'ones + und + tens' rule: 4 (vier) + und + 70 (siebzig) = Vierundsiebzig. Choice A is 47."
+        },
+        {
+          "id": "m3-q4",
+          "question": "Which word means 'My' when used with a feminine noun like 'Die Tasche' (The bag)?",
+          "options": ["Mein", "Meinen", "Meine"],
+          "correct": "Meine",
+          "explanation": "Possession words take an '-e' ending when the noun they belong to is feminine or plural (e.g., Meine Tasche, Meine Dokumente)."
+        },
+        {
+          "id": "m3-q5",
+          "question": "In a sentence with a modal verb, where does the main action verb (the infinitive) go?",
+          "options": [
+            "Position 2",
+            "Directly after the modal verb",
+            "At the very end of the sentence"
+          ],
+          "correct": "At the very end of the sentence",
+          "explanation": "The modal verb takes the 2nd position (conjugated), and the main verb is 'pushed' to the very end of the sentence (e.g., Ich muss zum Zoll gehen)."
+        },
+        {
+          "id": "m3-q6",
+          "question": "What does the German phrase 'Ich will' actually mean?",
+          "options": [
+            "I will (Future tense)",
+            "I want (Intention)",
+            "I shall (Obligation)"
+          ],
+          "correct": "I want",
+          "explanation": "This is a common 'false friend'. 'Wollen' means to want. To say 'I will' in the future tense, Germans use the verb 'werden'."
+        },
+        {
+          "id": "m3-q7",
+          "question": "How do you say 'Our luggage' (Das Gepäck)?",
+          "options": ["Unser Gepäck", "Unsere Gepäck", "Euer Gepäck"],
+          "correct": "Unser Gepäck",
+          "explanation": "For neutral nouns (Das), the base form 'Unser' is used. 'Unsere' would be for feminine or plural nouns."
+        },
+        {
+          "id": "m3-q8",
+          "question": "How do you say '89' in German?",
+          "options": ["Achtundneunzig", "Neunundachtzig", "Neunundsiebzig"],
+          "correct": "Neunundachtzig",
+          "explanation": "9 (neun) + und + 80 (achtzig) = Neunundachtzig. Choice A is 98."
+        },
+        {
+          "id": "m3-q9",
+          "question": "Which modal verb do you use to ask for permission (e.g., 'May I...?')?",
+          "options": ["Müssen", "Wollen", "Dürfen"],
+          "correct": "Dürfen",
+          "explanation": "'Dürfen' is used for permission or being 'allowed' to do something (e.g., Darf ich hier parken?)."
+        },
+        {
+          "id": "m3-q10",
+          "question": "If an officer asks 'Warum kommen Sie nach Deutschland?', what is the most logical answer for a student?",
+          "options": [
+            "Ich möchte Informatik studieren.",
+            "Ich bin ein Koffer.",
+            "Mein Name ist Rahul."
+          ],
+          "correct": "Ich möchte Informatik studieren.",
+          "explanation": "The question asks 'Why are you coming to Germany?' A logical response is 'I would like to study Computer Science'."
+        }
+      ]
+    }
+  ]
+}

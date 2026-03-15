@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Luggage Claim",
+  "deTitle": "Dialog 2: Gepäckausgabe",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Rahul must find his luggage at the airport claim area.",
+      "characters": [
+        { "id": "rahul", "name": "Rahul", "icon": "🧓" },
+        { "id": "staff", "name": "Staff", "icon": "👩‍💼" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "rahul", "de": "Entschuldigung! Mein Koffer ist nicht hier.", "ph": "Ent-shool-dee-goong! Mine Koff-er ist nikht heer.", "en": "Excuse me! My suitcase is not here." },
+        { "speaker": "staff", "de": "Oh, das ist schade. Wie sieht Ihr Koffer aus?", "ph": "Oh, dass ist shah-deh. Vee zeet eer Koff-er ows?", "en": "Oh, that’s too bad. What does your suitcase look like?" },
+        { "speaker": "rahul", "de": "Er ist blau, sehr groß und wiegt dreißig Kilo.", "ph": "Air ist blow, zair grohs oond veegt dry-sig kee-lo.", "en": "It is blue, very large, and weighs 30 kilos." },
+        { "speaker": "staff", "de": "Ist das hier Ihre Tasche?", "ph": "Ist dass heer eer-eh Tah-sheh?", "en": "Is this bag here yours?" },
+        { "speaker": "rahul", "de": "Nein, das ist keine Tasche. Das ist ein Koffer.", "ph": "Nine, dass ist kine-eh Tah-sheh. Dass ist ine Koff-er.", "en": "No, that is not a bag. That is a suitcase." },
+        { "speaker": "staff", "de": "Moment... Ist er dort an Band vierundfünfzig?", "ph": "Mo-ment... Ist air dort an Bant fear-oond-fewnf-tsig?", "en": "One moment... Is it there at belt 54?" },
+        { "speaker": "rahul", "de": "Ach so! Ja! Gott sei Dank, das ist mein Gepäck!", "ph": "Akh zo! Yah! Got zy dank, dass ist mine Geh-peck!", "en": "I see! Yes! Thank God, that is my luggage!" },
+        { "speaker": "staff", "de": "Super. Haben Sie einen schönen Tag!", "ph": "Zoo-per. Ha-ben zee eye-nen shew-nen tahk!", "en": "Super. Have a nice day!" },
+        { "speaker": "rahul", "de": "Danke, gleichfalls! Tschüss.", "ph": "Dan-keh, glykh-fals! Chuess.", "en": "Thanks, likewise! Bye." }
+      ]
+    }
+  ]
+}

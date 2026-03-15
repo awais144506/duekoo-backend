@@ -1,0 +1,24 @@
+{
+  "type": "COMPOSITE",
+  "title": "Measurements & Quantities",
+  "deTitle": "Mengenangaben",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Weights and Containers",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetic", "Example", "Translation"],
+      "rows": [
+        { "c1": "A Kilo", "c2": "Ein Kilo", "c3": "Ine Kee-lo", "c4": "Ein Kilo Kartoffeln", "c5": "A kilo of potatoes" },
+        { "c1": "Gram", "c2": "Gramm", "c3": "Gram", "c4": "500 Gramm Rindfleisch", "c5": "500 grams of beef" },
+        { "c1": "Liter", "c2": "Liter", "c3": "Lee-ter", "c4": "Ein Liter Milch", "c5": "A liter of milk" },
+        { "c1": "A Piece", "c2": "Ein Stück", "c3": "Ine Shtueck", "c4": "Ein Stück Käse", "c5": "A piece of cheese" },
+        { "c1": "A Pack", "c2": "Eine Packung", "c3": "Eye-neh Pak-koong", "c4": "Eine Packung Reis", "c5": "A pack of rice" },
+        { "c1": "A Bottle", "c2": "Eine Flasche", "c3": "Eye-neh Flash-eh", "c4": "Eine Flasche Wasser", "c5": "A bottle of water" },
+        { "c1": "A Can", "c2": "Eine Dose", "c3": "Eye-neh Doh-zeh", "c4": "Eine Dose Tomaten", "c5": "A can of tomatoes" }
+      ]
+    }
+  ]
+}

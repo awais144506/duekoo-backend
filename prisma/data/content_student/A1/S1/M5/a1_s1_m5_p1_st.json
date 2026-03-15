@@ -1,0 +1,37 @@
+{
+  "type": "COMPOSITE",
+  "title": "University Vocabulary",
+  "deTitle": "Vokabeln: Universität",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Enrollment & Campus Life",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetics"],
+      "rows": [
+        { "c1": "International Office", "c2": "Das International Office", "c3": "Dass In-ter-nash-o-nal Of-fis" },
+        { "c1": "Student ID Card", "c2": "Der Studierendenausweis", "c3": "Dair Stoo-dee-ren-den-ows-vice" },
+        { "c1": "Enrollment", "c2": "Die Immatrikulation", "c3": "Dee Im-ma-tri-koo-lah-tsyon" },
+        { "c1": "The Course", "c2": "Der Kurs", "c3": "Dair Koors" },
+        { "c1": "The Professor", "c2": "Der Professor / Die Professorin", "c3": "Dair Pro-fes-sor" },
+        { "c1": "The Lecture", "c2": "Die Vorlesung", "c3": "Dee For-lay-zoong" },
+        { "c1": "Lecture Hall", "c2": "Der Hörsaal", "c3": "Dair Her-zahl" },
+        { "c1": "The Building", "c2": "Das Gebäude", "c3": "Dass Geh-boy-deh" },
+        { "c1": "The Room Number", "c2": "Die Raumnummer", "c3": "Dee Rowm-noom-mer" },
+        { "c1": "The Library", "c2": "Die Bibliothek", "c3": "Dee Beeb-lee-o-take" },
+        { "c1": "The Cafeteria", "c2": "Die Mensa", "c3": "Dee Men-za" },
+        { "c1": "Office Hours", "c2": "Die Sprechstunde", "c3": "Shprekh-shtoon-deh" },
+        { "c1": "To Register", "c2": "Sich anmelden", "c3": "Zikh an-mel-den" },
+        { "c1": "Document", "c2": "Das Dokument", "c3": "Dass Dok-oo-ment" },
+        { "c1": "Form / Paper", "c2": "Das Formular", "c3": "Dass For-moo-lar" },
+        { "c1": "Certificate", "c2": "Das Zertifikat", "c3": "Dass Tsair-tee-fee-kaht" },
+        { "c1": "Semester Fee", "c2": "Der Semesterbeitrag", "c3": "Dair Ze-mes-ter-by-trahk" },
+        { "c1": "The Map (Campus)", "c2": "Der Lageplan", "c3": "Dair Lah-geh-plahn" },
+        { "c1": "Waiting List", "c2": "Die Warteliste", "c3": "Dee Var-teh-lis-teh" },
+        { "c1": "Signature", "c2": "Die Unterschrift", "c3": "Dee Oon-ter-shrift" }
+      ]
+    }
+  ]
+}

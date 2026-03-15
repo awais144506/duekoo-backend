@@ -1,72 +1,52 @@
 import 'dotenv/config';
 import { Pool } from 'pg';
 import { PrismaPg } from '@prisma/adapter-pg';
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 import { levels } from './data/levels';
 import { sections } from './data/sections';
 import { modules } from './data/modules';
-
+import { parts } from './data/parts';
 const connectionString = `${process.env.DATABASE_URL}`;
 const pool = new Pool({ connectionString });
 const adapter = new PrismaPg(pool);
 const prisma = new PrismaClient({ adapter });
 async function main() {
-  console.log('🌱 Starting Duekoo Master Seed Engine...');
+  console.log('🌱 Starting Seed Engine...');
 
-  // 1. SEED LEVELS (Using Hardcoded IDs)
-  for (const levelData of levels) {
+  // 1. SEED LEVELS
+  for (const level of levels) {
     await prisma.level.upsert({
-      where: { id: levelData.id },
-      update: {
-        slug: levelData.slug,
-        title: levelData.title,
-        order: levelData.order,
-      },
-      create: {
-        id: levelData.id,
-        slug: levelData.slug,
-        title: levelData.title,
-        order: levelData.order,
-      },
+      where: { id: level.id },
+      update: { slug: level.slug, title: level.title, order: level.order },
+      create: level,
     });
   }
-  console.log('✅ Levels processed (Hardcoded IDs synced).');
+  console.log('✅ Levels synced.');
 
-  // 2. SEED SECTIONS
-  for (const sectionData of sections) {
-    const parentLevel = await prisma.level.findUnique({
-      where: { slug: sectionData.levelSlug },
-    });
-
-    if (!parentLevel) {
-      console.error(
-        `❌ Level ${sectionData.levelSlug} not found for section ${sectionData.id}`,
-      );
-      continue;
-    }
-
+  // 2. SEED SECTIONS (No more searching for Level ID!)
+  for (const s of sections) {
     await prisma.section.upsert({
-      where: { id: sectionData.id },
+      where: { id: s.id },
       update: {
-        title: sectionData.title,
-        deTitle: sectionData.deTitle,
-        order: sectionData.order,
-        visaType: sectionData.visaType,
-        specialization: sectionData.specialization,
-        levelId: parentLevel.id,
+        title: s.title,
+        deTitle: s.deTitle,
+        order: s.order,
+        visaType: s.visaType,
+        specialization: s.specialization,
+        levelId: s.levelId, // Using the direct link
       },
       create: {
-        id: sectionData.id,
-        title: sectionData.title,
-        deTitle: sectionData.deTitle,
-        order: sectionData.order,
-        visaType: sectionData.visaType,
-        specialization: sectionData.specialization,
-        levelId: parentLevel.id,
+        id: s.id,
+        title: s.title,
+        deTitle: s.deTitle,
+        order: s.order,
+        visaType: s.visaType,
+        specialization: s.specialization,
+        levelId: s.levelId,
       },
     });
   }
-  console.log('✅ All Sections processed.');
+  console.log('✅ Sections synced.');
 
   // 3. SEED MODULES
   for (const m of modules) {
@@ -78,6 +58,7 @@ async function main() {
         order: m.order,
         visaType: m.visaType,
         specialization: m.specialization,
+        sectionId: m.sectionId,
       },
       create: {
         id: m.id,
@@ -91,7 +72,33 @@ async function main() {
     });
   }
   console.log('✅ All Modules processed.');
-  console.log('🏁 Seeding completed successfully!');
+
+  // 4. SEED PARTS
+  for (const p of parts) {
+    await prisma.part.upsert({
+      where: { id: p.id },
+      update: {
+        title: p.title,
+        deTitle: p.deTitle,
+        order: p.order,
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        content: p.content,
+      },
+      create: {
+        id: p.id,
+        moduleId: p.moduleId,
+        title: p.title,
+        deTitle: p.deTitle,
+        order: p.order,
+        contentId: p.contentId,
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        content: p.content,
+      },
+    });
+  }
+  console.log('✅ All Parts Processed.');
+
+  console.log('🏁 Seeding Completed Successfully!');
 }
 main()
   .then(async () => {

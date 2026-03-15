@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Adjectives",
+  "deTitle": "Adjektive",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Describing Things & Places",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetic", "Example", "Translation"],
+      "rows": [
+        { "c1": "Big / Large", "c2": "Groß", "c3": "Grohs", "c4": "Der Bahnhof ist groß.", "c5": "The station is big." },
+        { "c1": "Small", "c2": "Klein", "c3": "Kline", "c4": "Das Taxi ist klein.", "c5": "The taxi is small." },
+        { "c1": "Long", "c2": "Lang", "c3": "Lang", "c4": "Der Weg ist lang.", "c5": "The way is long." },
+        { "c1": "Short", "c2": "Kurz", "c3": "Koorts", "c4": "Die Zeit ist kurz.", "c5": "The time is short." },
+        { "c1": "High / Tall", "c2": "Hoch", "c3": "Hokh", "c4": "Das Gebäude ist hoch.", "c5": "The building is tall" },
+        { "c1": "New", "c2": "Neu", "c3": "Noy", "c4": "Der Zug ist neu.", "c5": "The train is new." },
+        { "c1": "Old", "c2": "Alt", "c3": "Alt", "c4": "Der Bus ist alt.", "c5": "The bus is old." },
+        { "c1": "Difficult", "c2": "Schwer", "c3": "Shvair", "c4": "Das ist schwer.", "c5": "That is difficult/heavy." },
+        { "c1": "Easy / Simple", "c2": "Einfach", "c3": "Ine-fakh", "c4": "Der Weg ist einfach.", "c5": "The way is simple." },
+        { "c1": "Beautiful", "c2": "Schön", "c3": "Shern", "c4": "Berlin ist schön.", "c5": "Berlin is beautiful." },
+        { "c1": "Good", "c2": "Gut", "c3": "Goot", "c4": "Das ist gut.", "c5": "That is good." },
+        { "c1": "Bad", "c2": "Schlecht", "c3": "Shlekht", "c4": "Das Wetter ist schlecht.", "c5": "The weather is bad." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m2-q1",
+          "question": "You are finished with your meal and want to pay. What do you ask the waiter for?",
+          "options": ["Die Speisekarte", "Die Rechnung", "Das Hauptgericht", "Das Glas"],
+          "correct": "Die Rechnung",
+          "explanation": "Die Rechnung is the bill or receipt. 'Die Speisekarte' is the menu you look at before eating."
+        },
+        {
+          "id": "m2-q2",
+          "question": "Which of these items would you wear on your legs?",
+          "options": ["Das Hemd", "Die Jacke", "Die Hose", "Der Pullover"],
+          "correct": "Die Hose",
+          "explanation": "Die Hose means pants or trousers. 'Hemd' is a shirt, and 'Jacke' is a jacket."
+        },
+        {
+          "id": "m2-q3",
+          "question": "Complete the sentence correctly using the Accusative Case: 'Ich trinke ______ Apfelsaft.' (I drink an apple juice).",
+          "options": ["ein", "eine", "einen", "dain"],
+          "correct": "einen",
+          "explanation": "Since 'Apfelsaft' is Masculine (Der) and it is the direct object (the thing being drunk), the article changes from ein to einen."
+        },
+        {
+          "id": "m2-q4",
+          "question": "In the sentence 'Ich kaufe die Jacke,' why does 'die' not change to 'den'?",
+          "options": [
+            "Because it is plural.",
+            "Because the Accusative Case only changes Masculine (Der) nouns.",
+            "Because the jacket is cheap.",
+            "Because it is the subject of the sentence."
+          ],
+          "correct": "Because the Accusative Case only changes Masculine (Der) nouns.",
+          "explanation": "The Accusative rule is simple: Only Masculine (Der) changes to Den/Einen. Feminine (Die) and Neuter (Das) stay exactly the same."
+        },
+        {
+          "id": "m2-q5",
+          "question": "If your soup has too much chili in it, which adjective would you use to describe it?",
+          "options": ["Lecker", "Süß", "Scharf", "Frisch"],
+          "correct": "Scharf",
+          "explanation": "Scharf means spicy. 'Lecker' means delicious and 'Süß' means sweet."
+        },
+        {
+          "id": "m2-q6",
+          "question": "You are in a clothing store and the jeans fit perfectly and feel good. You describe them as:",
+          "options": ["Eng", "Bequem", "Teuer", "Dunkel"],
+          "correct": "Bequem",
+          "explanation": "Bequem means comfortable. 'Eng' means tight, which is usually the opposite of what you want for comfort!"
+        },
+        {
+          "id": "m2-q7",
+          "question": "Which item from the 'Winter Survival List' is essential for keeping your neck warm?",
+          "options": ["Die Mütze", "Die Handschuhe", "Der Schal", "Das Kissen"],
+          "correct": "Der Schal",
+          "explanation": "Der Schal is a scarf. 'Mütze' is for your head and 'Handschuhe' are for your hands."
+        },
+        {
+          "id": "m2-q8",
+          "question": "In the restaurant dialogue, Arjun says 'Machen Sie zwanzig Euro' when the bill is 18.50. What is he doing?",
+          "options": [
+            "Complaining about the price.",
+            "Asking for a discount.",
+            "Giving a tip (Keeping the change).",
+            "Paying with the wrong currency."
+          ],
+          "correct": "Giving a tip (Keeping the change).",
+          "explanation": "In Germany, saying 'Stimmt so' or rounding up the bill is the standard way to tip your waiter."
+        },
+        {
+          "id": "m2-q9",
+          "question": "According to the dialogue, what size (Größe) does Arjun wear?",
+          "options": ["Größe S", "Größe M", "Größe L", "Größe XL"],
+          "correct": "Größe M",
+          "explanation": "Arjun explicitly tells the staff member, 'Ich habe Größe M.'"
+        },
+        {
+          "id": "m2-q10",
+          "question": "What is the 'Umkleidekabine' used for?",
+          "options": ["Paying for clothes.", "Eating lunch.", "Trying on clothes.", "Hanging up your coat."],
+          "correct": "Trying on clothes.",
+          "explanation": "The Umkleidekabine is the fitting room or changing room in a clothing store."
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ export const modules: ModuleData[] = [
   // --- A1-S1 Modules: Student -----
   // A1 - S1 - M1
   {
-    id: 'a1-s1-st-m1',
+    id: 'a1-s1-m1-st',
     sectionId: 'a1-s1-st',
     title: 'German Foundation',
     deTitle: 'Deutsche Stiftung',
@@ -23,7 +23,7 @@ export const modules: ModuleData[] = [
 
   // A1 - S1 - M2
   {
-    id: 'a1-s1-st-m2',
+    id: 'a1-s1-m2-st',
     sectionId: 'a1-s1-st',
     title: 'Introduce Yourself',
     deTitle: 'Stell Dich Vor',
@@ -33,7 +33,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M3
   {
-    id: 'a1-s1-st-m3',
+    id: 'a1-s1-m3-st',
     sectionId: 'a1-s1-st',
     title: 'At Berlin Airport',
     deTitle: 'Am Berliner Flughafen',
@@ -43,7 +43,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M4
   {
-    id: 'a1-s1-st-m4',
+    id: 'a1-s1-m4-st',
     sectionId: 'a1-s1-st',
     title: 'To University',
     deTitle: 'Zur Universität',
@@ -53,7 +53,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M5
   {
-    id: 'a1-s1-st-m5',
+    id: 'a1-s1-m5-st',
     sectionId: 'a1-s1-st',
     title: 'Arrived At University',
     deTitle: 'An der Universität angekommen',
@@ -64,7 +64,7 @@ export const modules: ModuleData[] = [
   // --- A1-S2 Modules: Student -----
   // A1 - S2 - M1
   {
-    id: 'a1-s2-st-m1',
+    id: 'a1-s2-m1-st',
     sectionId: 'a1-s2-st',
     title: 'Grocery',
     deTitle: 'Lebensmittelgeschäft',
@@ -74,7 +74,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S2 - M2
   {
-    id: 'a1-s2-st-m2',
+    id: 'a1-s2-m2-st',
     sectionId: 'a1-s2-st',
     title: 'Restaurants & Winter Shopping',
     deTitle: 'Restaurants & Wintereinkäufe',
@@ -84,7 +84,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S2 - M3
   {
-    id: 'a1-s2-st-m3',
+    id: 'a1-s2-m3-st',
     sectionId: 'a1-s2-st',
     title: 'Health Insurance',
     deTitle: 'Gesundheit & Versicherung',
@@ -94,7 +94,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S2 - M4
   {
-    id: 'a1-s2-st-m4',
+    id: 'a1-s2-m4-st',
     sectionId: 'a1-s2-st',
     title: 'Banking & Administration',
     deTitle: 'Bankwesen & Verwaltung',
@@ -104,7 +104,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S2 - M5
   {
-    id: 'a1-s2-st-m5',
+    id: 'a1-s2-m5-st',
     sectionId: 'a1-s2-st',
     title: 'Renting a Room',
     deTitle: 'Ein Zimmer Mieten',
@@ -115,7 +115,7 @@ export const modules: ModuleData[] = [
   // --- A2-S1 Modules: Student -----
   // A2 - S1 - M1
   {
-    id: 'a2-s1-st-m1',
+    id: 'a2-s1-m1-st',
     sectionId: 'a2-s1-st',
     title: 'Hobbies & Family',
     deTitle: 'Hobbys & Familie',
@@ -125,7 +125,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S1 - M2
   {
-    id: 'a2-s1-st-m2',
+    id: 'a2-s1-m2-st',
     sectionId: 'a2-s1-st',
     title: 'Classroom & Presentation',
     deTitle: 'Klassenzimmer & Präsentation',
@@ -135,7 +135,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S1 - M3
   {
-    id: 'a2-s1-st-m3',
+    id: 'a2-s1-m3-st',
     sectionId: 'a2-s1-st',
     title: 'Project & Seminars',
     deTitle: 'Projekt & Seminare',
@@ -145,7 +145,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S1 - M4
   {
-    id: 'a2-s1-st-m4',
+    id: 'a2-s1-m4-st',
     sectionId: 'a2-s1-st',
     title: 'Emails & Student Job',
     deTitle: 'E-Mails & Studentenjob',
@@ -155,7 +155,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S1 - M5
   {
-    id: 'a2-s1-st-m5',
+    id: 'a2-s1-m5-st',
     sectionId: 'a2-s1-st',
     title: 'Socializing',
     deTitle: 'Sozialisieren',
@@ -168,7 +168,7 @@ export const modules: ModuleData[] = [
   // --- COMPUTER SCIENCE
   // A2 - S2 - M1
   {
-    id: 'a2-s2-st-m1-cs',
+    id: 'a2-s2-m1-st-cs',
     sectionId: 'a2-s2-st',
     title: 'CV & Profile',
     deTitle: 'Lebenslauf & Profil',
@@ -178,7 +178,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M2
   {
-    id: 'a2-s2-st-m2-cs',
+    id: 'a2-s2-m2-st-cs',
     sectionId: 'a2-s2-st',
     title: 'Interview',
     deTitle: 'Interview',
@@ -188,7 +188,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M3
   {
-    id: 'a2-s2-st-m3-cs',
+    id: 'a2-s2-m3-st-cs',
     sectionId: 'a2-s2-st',
     title: 'Meeting & Email',
     deTitle: 'Besprechung & E-Mail',
@@ -198,7 +198,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M4
   {
-    id: 'a2-s2-st-m4-cs',
+    id: 'a2-s2-m4-st-cs',
     sectionId: 'a2-s2-st',
     title: 'Colleagues & Networking',
     deTitle: 'Kollegen & Netzwerken',
@@ -208,7 +208,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M5
   {
-    id: 'a2-s2-st-m5-cs',
+    id: 'a2-s2-m5-st-cs',
     sectionId: 'a2-s2-st',
     title: 'Agile Workflows & Team Collaboration',
     deTitle: 'Agile Arbeitsabläufe & Teamzusammenarbeit',
@@ -221,7 +221,7 @@ export const modules: ModuleData[] = [
   // --- COMPUTER SCIENCE
   // A2 - S3 - M1
   {
-    id: 'a2-s3-st-m1-cs',
+    id: 'a2-s3-m1-st-cs',
     sectionId: 'a2-s3-st',
     title: 'Troubleshooting & Feedback',
     deTitle: 'Fehlerbehebung & Feedback',
@@ -231,7 +231,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M2
   {
-    id: 'a2-s3-st-m2-cs',
+    id: 'a2-s3-m2-st-cs',
     sectionId: 'a2-s3-st',
     title: 'Technical Systems & Requirements',
     deTitle: 'Technische Systeme & Anforderungen',
@@ -241,7 +241,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M3
   {
-    id: 'a2-s3-st-m3-cs',
+    id: 'a2-s3-m3-st-cs',
     sectionId: 'a2-s3-st',
     title: 'Documentation & Data Management',
     deTitle: 'Dokumentation & Datenmanagement',
@@ -251,7 +251,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M4
   {
-    id: 'a2-s3-st-m4-cs',
+    id: 'a2-s3-m4-st-cs',
     sectionId: 'a2-s3-st',
     title: 'Employment & Insurance',
     deTitle: 'Beschäftigung & Versicherung',
@@ -261,7 +261,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M5
   {
-    id: 'a2-s3-st-m5-cs',
+    id: 'a2-s3-m5-st-cs',
     sectionId: 'a2-s3-st',
     title: 'Future Vision & Career Growth',
     deTitle: 'Zukunftsvision & Karriereentwicklung',
@@ -273,7 +273,7 @@ export const modules: ModuleData[] = [
   // --- Business Management
   // A2 - S2 - M1
   {
-    id: 'a2-s2-st-m1-biz',
+    id: 'a2-s2-m1-st-biz',
     sectionId: 'a2-s2-st',
     title: 'CV & Profile',
     deTitle: 'Lebenslauf & Profil',
@@ -283,7 +283,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M2
   {
-    id: 'a2-s2-st-m2-biz',
+    id: 'a2-s2-m2-st-biz',
     sectionId: 'a2-s2-st',
     title: 'Interview',
     deTitle: 'Interview',
@@ -293,7 +293,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M3
   {
-    id: 'a2-s2-st-m3-biz',
+    id: 'a2-s2-m3-st-biz',
     sectionId: 'a2-s2-st',
     title: 'Meeting & Email',
     deTitle: 'Besprechung & E-Mail',
@@ -303,7 +303,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M4
   {
-    id: 'a2-s2-st-m4-biz',
+    id: 'a2-s2-m4-st-biz',
     sectionId: 'a2-s2-st',
     title: 'Colleagues & Networking',
     deTitle: 'Kollegen & Netzwerken',
@@ -313,7 +313,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S2 - M5
   {
-    id: 'a2-s2-st-m5-biz',
+    id: 'a2-s2-m5-st-biz',
     sectionId: 'a2-s2-st',
     title: 'Agile Workflows & Team Collaboration',
     deTitle: 'Agile Arbeitsabläufe & Teamzusammenarbeit',
@@ -326,7 +326,7 @@ export const modules: ModuleData[] = [
   // --- Business
   // A2 - S3 - M1
   {
-    id: 'a2-s3-st-m1-biz',
+    id: 'a2-s3-m1-st-biz',
     sectionId: 'a2-s3-st',
     title: 'Process Optimization & Feedback',
     deTitle: 'Prozessoptimierung & Feedback',
@@ -336,7 +336,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M2
   {
-    id: 'a2-s3-st-m2-biz',
+    id: 'a2-s3-m2-st-biz',
     sectionId: 'a2-s3-st',
     title: 'Business Systems & Key Metrics KPIs',
     deTitle: 'Geschäftssysteme & Kennzahlen',
@@ -346,7 +346,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M3
   {
-    id: 'a2-s3-st-m3-biz',
+    id: 'a2-s3-m3-st-biz',
     sectionId: 'a2-s3-st',
     title: 'Reporting & Compliance',
     deTitle: 'Berichterstattung & Compliance',
@@ -356,7 +356,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M4
   {
-    id: 'a2-s3-st-m4-biz',
+    id: 'a2-s3-m4-st-biz',
     sectionId: 'a2-s3-st',
     title: 'Employment & Social Security',
     deTitle: 'Beschäftigung & Soziale Sicherheit',
@@ -366,7 +366,7 @@ export const modules: ModuleData[] = [
   },
   // A2 - S3 - M5
   {
-    id: 'a2-s3-st-m5-biz',
+    id: 'a2-s3-m5-st-biz',
     sectionId: 'a2-s3-st',
     title: 'Future Vision & Leadership',
     deTitle: 'Zukunftsvision & Führung',
@@ -379,7 +379,7 @@ export const modules: ModuleData[] = [
   //----------------------------------
   // A1 - S1 - M1
   {
-    id: 'a1-s1-fm-m1',
+    id: 'a1-s1-m1-fm',
     sectionId: 'a1-s1-fm',
     title: 'German Foundation',
     deTitle: 'Deutsche Stiftung',
@@ -389,7 +389,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M2
   {
-    id: 'a1-s1-fm-m2',
+    id: 'a1-s1-m2-fm',
     sectionId: 'a1-s1-fm',
     title: 'Introduce Yourself',
     deTitle: 'Stell Dich Vor',
@@ -399,7 +399,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M3
   {
-    id: 'a1-s1-fm-m3',
+    id: 'a1-s1-m3-fm',
     sectionId: 'a1-s1-fm',
     title: 'At Berlin Airport',
     deTitle: 'Am Berliner Flughafen',
@@ -409,7 +409,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M4
   {
-    id: 'a1-s1-fm-m4',
+    id: 'a1-s1-m4-fm',
     sectionId: 'a1-s1-fm',
     title: 'To Home',
     deTitle: 'Zur Heim',
@@ -419,7 +419,7 @@ export const modules: ModuleData[] = [
   },
   // A1 - S1 - M5
   {
-    id: 'a1-s1-fm-m5',
+    id: 'a1-s1-m5-fm',
     sectionId: 'a1-s1-fm',
     title: 'Residential Registration',
     deTitle: 'Anmeldung',

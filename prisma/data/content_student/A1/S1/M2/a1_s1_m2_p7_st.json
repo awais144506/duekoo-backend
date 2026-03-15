@@ -1,0 +1,94 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m2-q1",
+          "question": "Which German word translates to 'the profession' or 'the job'?",
+          "options": ["Der Name", "Das Alter", "Der Beruf"],
+          "correct": "Der Beruf",
+          "explanation": "'Der Beruf' is the masculine noun used to describe one's profession. 'Der Name' is name and 'Das Alter' is age."
+        },
+        {
+          "id": "m2-q2",
+          "question": "What is the correct conjugation of the verb 'wohnen' (to live) for the pronoun 'Du'?",
+          "options": ["wohne", "wohnt", "wohnst"],
+          "correct": "wohnst",
+          "explanation": "Regular verbs in German take the '-st' ending when conjugated for the informal second-person singular 'Du' (You)."
+        },
+        {
+          "id": "m2-q3",
+          "question": "How does the verb 'sprechen' (to speak) change for 'Er/Sie/Es' (He/She/It)?",
+          "options": ["spreche", "spricht", "sprecht"],
+          "correct": "spricht",
+          "explanation": "'Sprechen' is a strong verb where the 'e' changes to 'i' for the 'Du' and 'Er/Sie/Es' forms (e.g., Er spricht)."
+        },
+        {
+          "id": "m2-q4",
+          "question": "Which definite article is used for the word 'Land' (country)?",
+          "options": ["Der", "Die", "Das"],
+          "correct": "Das",
+          "explanation": "'Land' is a neuter noun, so it requires the article 'Das'. Most countries are neuter in German."
+        },
+        {
+          "id": "m2-q5",
+          "question": "Which word is used as a standalone 'No' to answer the question: 'Bist du Student?'",
+          "options": ["Nicht", "Kein", "Nein"],
+          "correct": "Nein",
+          "explanation": "'Nein' is the standalone response to a question. 'Nicht' and 'Kein' are used within sentences to negate verbs or nouns."
+        },
+        {
+          "id": "m2-q6",
+          "question": "How do you correctly say 'I speak no language' (negating the feminine noun 'Sprache')?",
+          "options": [
+            "Ich spreche nicht Sprache.",
+            "Ich spreche keine Sprache.",
+            "Ich spreche kein Sprache."
+          ],
+          "correct": "Ich spreche keine Sprache.",
+          "explanation": "'Kein/Keine' acts as a negative article for nouns. Since 'Sprache' is feminine (Die), we use 'keine'."
+        },
+        {
+          "id": "m2-q7",
+          "question": "What is the German number for '32'?",
+          "options": ["Zweiunddreißig", "Dreißigundzwei", "Dreiundzwanzig"],
+          "correct": "Zweiunddreißig",
+          "explanation": "German numbers follow the 'ones + und + tens' pattern. So 2 (zwei) + und + 30 (dreißig) = Zweiunddreißig."
+        },
+        {
+          "id": "m2-q8",
+          "question": "How do you say '45' in German?",
+          "options": ["Vierundfünfzig", "Fünfundvierzig", "Fünfzigvier"],
+          "correct": "Fünfundvierzig",
+          "explanation": "45 is built as 'Fünf' (5) + 'und' (and) + 'vierzig' (40). 'Vierundfünfzig' is 54."
+        },
+        {
+          "id": "m2-q9",
+          "question": "Which phrase correctly translates to 'I live in Berlin'?",
+          "options": [
+            "Ich komme aus Berlin.",
+            "Ich wohne in Berlin.",
+            "Ich bin Berlin."
+          ],
+          "correct": "Ich wohne in Berlin.",
+          "explanation": "The verb 'wohnen' is used for your current residence. 'Kommen aus' refers to your origin."
+        },
+        {
+          "id": "m2-q10",
+          "question": "How do you ask someone 'Where are you from?' informally?",
+          "options": ["Wo wohnst du?", "Woher kommst du?", "Wie heißt du?"],
+          "correct": "Woher kommst du?",
+          "explanation": "'Woher' (from where) combined with 'kommst du' is the standard way to ask about origin."
+        }
+      ]
+    }
+  ]
+}

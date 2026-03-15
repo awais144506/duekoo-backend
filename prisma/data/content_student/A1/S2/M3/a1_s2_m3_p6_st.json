@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: At the Pharmacy",
+  "deTitle": "Dialog 2: In der Apotheke",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ali goes to the pharmacy to get the medication the doctor prescribed. He asks for instructions on how to take the medicine.",
+      "characters": [
+        { "id": "ali", "name": "Ali", "icon": "👨" },
+        { "id": "apotheker", "name": "Pharmacist", "icon": "💊" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "ali", "de": "Hallo. Ich möchte dieses Rezept einlösen.", "ph": "Hal-lo. Ish mukh-teh dee-zes Re-tsept ine-ler-zen.", "en": "Hello. I would like to redeem this prescription." },
+        { "speaker": "apotheker", "de": "Guten Tag. Einen Moment... Ja, wir haben das Medikament da.", "ph": "Goo-ten Tahk. Eye-nen Mo-ment... Yah, veer ha-ben dass Me-dee-ka-ment dah.", "en": "Good day. One moment... Yes, we have the medication here." },
+        { "speaker": "ali", "de": "Wie muss ich die Tabletten einnehmen?", "ph": "Vee mooss ish dee Tab-let-ten ine-nay-men?", "en": "How must I take the tablets?" },
+        { "speaker": "apotheker", "de": "Nehmen Sie eine Tablette nach dem Essen ein.", "ph": "Nay-men zee eye-ne Tab-let-te nah dain Es-sen ine.", "en": "Take one tablet after eating." },
+        { "speaker": "ali", "de": "Brauche ich auch einen Hustensaft?", "ph": "Brow-khe ish owkh eye-nen Hooss-ten-zaft?", "en": "Do I also need a cough syrup?" },
+        { "speaker": "apotheker", "de": "Ja, hier ist ein guter Saft. Er hilft gegen den Husten.", "ph": "Yah, heer ist ine goo-ter Zaft. Air hilft gay-gen dain Hooss-ten.", "en": "Yes, here is a good syrup. It helps against the cough." },
+        { "speaker": "ali", "de": "Danke. Was kostet das?", "ph": "Dan-ke. Vas kos-tet dass?", "en": "Thanks. How much does that cost?" },
+        { "speaker": "apotheker", "de": "Das macht zusammen fünf Euro.", "ph": "Dass makht tsoo-zam-men fuenf Oy-ro.", "en": "That makes five euros altogether." },
+        { "speaker": "ali", "de": "Hier sind fünf Euro. Auf Wiedersehen!", "ph": "Heer zind fuenf Oy-ro. Owf Vee-der-zay-en!", "en": "Here are five euros. Goodbye!" }
+      ]
+    }
+  ]
+}

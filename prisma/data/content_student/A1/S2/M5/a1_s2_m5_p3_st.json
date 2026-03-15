@@ -1,0 +1,33 @@
+{
+  "type": "COMPOSITE",
+  "title": "Kitchen & Home Items",
+  "deTitle": "Küche & Haushalt",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Kitchen Supplies",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The Stove", "c2": "Der Herd", "c3": "Dair Hairt" },
+        { "c1": "The Oven", "c2": "Der Ofen", "c3": "Dair Oh-fen" },
+        { "c1": "The Microwave", "c2": "Die Mikrowelle", "c3": "Dee Mee-kro-vel-leh" },
+        { "c1": "The Dishwasher", "c2": "Die Spülmaschine", "c3": "Dee Shpuel-ma-shee-neh" },
+        { "c1": "The Sink", "c2": "Das Spülbecken", "c3": "Dass Shpuel-bek-ken" },
+        { "c1": "The Pot", "c2": "Der Topf", "c3": "Dair Topf" },
+        { "c1": "The Pan", "c2": "Die Pfanne", "c3": "Dee Pfan-neh" },
+        { "c1": "The Plate", "c2": "Der Teller", "c3": "Dair Tel-ler" },
+        { "c1": "The Cup / Mug", "c2": "Die Tasse", "c3": "Dee Tas-seh" },
+        { "c1": "The Cutlery", "c2": "Das Besteck", "c3": "Dass Be-shtek" },
+        { "c1": "The Blanket", "c2": "Die Decke", "c3": "Dee Dek-keh" },
+        { "c1": "The Pillow", "c2": "Das Kissen", "c3": "Dass Kis-sen" },
+        { "c1": "The Curtains", "c2": "Die Vorhänge", "c3": "Dee For-heng-eh" },
+        { "c1": "The Radiator / Heater", "c2": "Die Heizung", "c3": "Dee Hy-tsoong" },
+        { "c1": "The Carpet", "c2": "Der Teppich", "c3": "Dair Tep-pikh" },
+        { "c1": "The Trash Can", "c2": "Der Mülleimer", "c3": "Dair Muel-eye-mer" }
+      ]
+    }
+  ]
+}

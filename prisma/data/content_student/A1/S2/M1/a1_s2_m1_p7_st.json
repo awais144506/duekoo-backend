@@ -1,0 +1,96 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m1-q1",
+          "question": "How do you say 'Eggs' in German?",
+          "options": ["Die Milch", "Das Brot", "Die Eier", "Der Käse"],
+          "correct": "Die Eier",
+          "explanation": "'Die Eier' means eggs. 'Milch' is milk, 'Brot' is bread, and 'Käse' is cheese."
+        },
+        {
+          "id": "m1-q2",
+          "question": "What is the correct German adjective for 'Small'?",
+          "options": ["Groß", "Lang", "Kurz", "Klein"],
+          "correct": "Klein",
+          "explanation": "'Klein' is small. 'Groß' is big, 'Lang' is long, and 'Kurz' is short."
+        },
+        {
+          "id": "m1-q3",
+          "question": "Which item would you usually buy in a 'Liter'?",
+          "options": ["Das Mehl", "Die Milch", "Der Reis", "Das Salz"],
+          "correct": "Die Milch",
+          "explanation": "Liquids like 'Milch' (milk) are measured in liters. Dry goods like flour or rice are measured in grams or kilograms."
+        },
+        {
+          "id": "m1-q4",
+          "question": "What is 'Knoblauch' in English?",
+          "options": ["Onion", "Salt", "Garlic", "Sugar"],
+          "correct": "Garlic",
+          "explanation": "'Knoblauch' is Garlic. 'Zwiebel' is the word for Onion."
+        },
+        {
+          "id": "m1-q5",
+          "question": "How do you say 'The weather is bad'?",
+          "options": [
+            "Das Wetter ist gut.",
+            "Das Wetter ist schön.",
+            "Das Wetter ist schlecht.",
+            "Das Wetter ist neu."
+          ],
+          "correct": "Das Wetter ist schlecht.",
+          "explanation": "'Schlecht' means bad. Use it for weather, traffic, or quality."
+        },
+        {
+          "id": "m1-q6",
+          "question": "In the dialogue, Sarah asks for a specific amount of chicken. How much does she want?",
+          "options": ["Ein Kilo", "Fünfhundert Gramm", "Ein Stück", "Eine Dose"],
+          "correct": "Fünfhundert Gramm",
+          "explanation": "Sarah asks for 'fünfhundert Gramm Hähnchen' (500 grams of chicken)."
+        },
+        {
+          "id": "m1-q7",
+          "question": "Which adverb means 'Already'?",
+          "options": ["Heute", "Vielleicht", "Schon", "Dort"],
+          "correct": "Schon",
+          "explanation": "'Schon' means already. For example: 'The bus is already there.'"
+        },
+        {
+          "id": "m1-q8",
+          "question": "What is Sarah making in the dialogue that is a 'spicy fruit salad from Pakistan'?",
+          "options": ["Biryani", "Pasta", "Obst-Chaat", "Joghurt"],
+          "correct": "Obst-Chaat",
+          "explanation": "She tells the staff she is making 'Obst-Chaat,' which she describes as a spicy fruit salad."
+        },
+        {
+          "id": "m1-q9",
+          "question": "How do you translate 'The taxi is too expensive'?",
+          "options": [
+            "Das Taxi ist sehr groß.",
+            "Das Taxi ist zu teuer.",
+            "Das Taxi ist schon hier.",
+            "Das Taxi ist schnell."
+          ],
+          "correct": "Das Taxi ist zu teuer.",
+          "explanation": "'Zu' means 'too' (excessive), and 'teuer' means expensive."
+        },
+        {
+          "id": "m1-q10",
+          "question": "In the first dialogue, where does the staff member say the rice is located?",
+          "options": ["In Gang drei", "An der Kasse", "Draußen", "Hier"],
+          "correct": "In Gang drei",
+          "explanation": "The staff member tells her 'Der Reis ist in Gang drei' (Aisle 3)."
+        }
+      ]
+    }
+  ]
+}

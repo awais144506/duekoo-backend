@@ -1,0 +1,27 @@
+{
+  "type": "COMPOSITE",
+  "title": "The Weather",
+  "deTitle": "Das Wetter",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Weather Vocabulary",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The Sun", "c2": "Die Sonne", "c3": "Dee Zon-ne" },
+        { "c1": "The Rain", "c2": "Der Regen", "c3": "Dair Ray-gen" },
+        { "c1": "The Snow", "c2": "Der Schnee", "c3": "Dair Shnay" },
+        { "c1": "The Wind", "c2": "Der Wind", "c3": "Dair Vint" },
+        { "c1": "Cold", "c2": "Kalt", "c3": "Kalt" },
+        { "c1": "Warm", "c2": "Warm", "c3": "Varm" },
+        { "c1": "Beautiful", "c2": "Schön", "c3": "Shern" },
+        { "c1": "Bad", "c2": "Schlecht", "c3": "Shlekht" },
+        { "c1": "Cloudy", "c2": "Bewölkt", "c3": "Be-vuerlkt" },
+        { "c1": "The Degree", "c2": "Grad", "c3": "Grahd" }
+      ]
+    }
+  ]
+}

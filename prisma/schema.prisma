@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
+  output = "../generated"
 }
 
 datasource db {
@@ -108,8 +108,8 @@ model Part {
   module     Module                @relation(fields: [moduleId], references: [id])
   title      String
   deTitle    String?
-  content    Json?                 // <--- Stores vocabulary, grammar, and quiz data
-  contentId  String                // A unique slug (e.g., "a2-cs-cv-vocab")
+  content    Json?               
+  contentId  String                
   order      Int
   status     PartStatus[]
   currentPos UserCurrentPosition[]

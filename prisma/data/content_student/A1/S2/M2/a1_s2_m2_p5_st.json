@@ -1,0 +1,31 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 1: At the Restaurant",
+  "deTitle": "Dialog 1: Im Restaurant",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Arjun is looking for a place to eat. He finds a table, orders a drink and a meal, and then pays the bill with a tip.",
+      "characters": [
+        { "id": "arjun", "name": "Arjun", "icon": "🧔" },
+        { "id": "waiter", "name": "Waiter", "icon": "🤵" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "arjun", "de": "Hallo! Ist dieser Tisch noch frei?", "ph": "Hal-lo! Ist dee-zer tish nokh fry?", "en": "Hello! Is this table still free?" },
+        { "speaker": "waiter", "de": "Ja, natürlich. Bitte nehmen Sie Platz.", "ph": "Yah, nah-tuer-likh. Bit-te nay-men zee plats.", "en": "Yes, of course. Please take a seat." },
+        { "speaker": "arjun", "de": "Danke. Kann ich die Speisekarte haben?", "ph": "Dan-ke. Kan ish dee shpy-ze-kar-te ha-ben?", "en": "Thanks. Can I have the menu?" },
+        { "speaker": "waiter", "de": "Was möchten Sie trinken?", "ph": "Vas merkh-ten zee trin-ken?", "en": "What would you like to drink?" },
+        { "speaker": "arjun", "de": "Ich nehme einen Apfelsaft, bitte.", "ph": "Ish nay-me eye-nen Ap-fel-zaft, bit-te.", "en": "I'll take an apple juice, please." },
+        { "speaker": "waiter", "de": "Und zum Essen?", "ph": "Oond tsoom es-sen?", "en": "And to eat?" },
+        { "speaker": "arjun", "de": "Ich möchte einen Salat mit Hähnchen.", "ph": "Ish merkh-te eye-nen Zah-laht mit hayn-khen.", "en": "I would like a salad with chicken." },
+        { "speaker": "arjun", "de": "Entschuldigung! Ich möchte zahlen.", "ph": "Ent-shool-dee-goong! Ish merkh-te tsah-len.", "en": "Excuse me! I would like to pay." },
+        { "speaker": "waiter", "de": "Das macht achtzehn Euro fünfzig.", "ph": "Dass makht akht-tsayn oy-ro fuenf-tsikh.", "en": "That makes 18.50 Euro." },
+        { "speaker": "arjun", "de": "Machen Sie zwanzig Euro. (Stimmt so)", "ph": "Ma-khen zee tsvan-tsikh oy-ro.", "en": "Make it 20 Euro. (Keep the change)." },
+        { "speaker": "waiter", "de": "Vielen Dank! Schönen Tag noch.", "ph": "Fee-len dank! Sher-nen tahk nokh.", "en": "Many thanks! Have a nice day." }
+      ]
+    }
+  ]
+}

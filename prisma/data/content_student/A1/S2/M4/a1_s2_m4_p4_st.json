@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Buying a SIM Card",
+  "deTitle": "Dialog 2: SIM-Karte kaufen",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sunita visits a mobile provider shop to get a local German phone number and data plan.",
+      "characters": [
+        { "id": "sunita", "name": "Sunita", "icon": "👩" },
+        { "id": "staff", "name": "Staff", "icon": "📱" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sunita", "de": "Hallo, ich brauche eine SIM-Karte für mein Handy.", "ph": "Hal-lo, ish brow-khe eye-ne Sim-kar-te feer mine Hen-dee.", "en": "Hello, I need a SIM card for my phone." },
+        { "speaker": "staff", "de": "Möchten Sie einen Vertrag oder Prepaid?", "ph": "Merkh-ten zee eye-nen Fair-trahk o-der Pree-payd?", "en": "Would you like a contract or prepaid?" },
+        { "speaker": "sunita", "de": "Ich möchte Prepaid. Wie viel Datenvolumen habe ich?", "ph": "Ish merkh-te Pree-payd. Vee feel Dah-ten-vo-loo-men ha-be ish?", "en": "I would like prepaid. How much data volume do I have?" },
+        { "speaker": "staff", "de": "Sie haben zehn Gigabyte für fünfzehn Euro.", "ph": "Zee ha-ben tsayn Gee-ga-byte feer fuenf-tsayn Oy-ro.", "en": "You have ten gigabytes for fifteen euros." },
+        { "speaker": "sunita", "de": "Das ist gut. Kann ich meine Nummer behalten?", "ph": "Dass ist goot. Kan ish my-ne Noom-mer be-hal-ten?", "en": "That is good. Can I keep my number?" },
+        { "speaker": "staff", "de": "Ja, das ist möglich. Ich brauche Ihren Reisepass.", "ph": "Yah, dass ist muerg-likh. Ish brow-khe eer-en Ry-ze-pass.", "en": "Yes, that is possible. I need your passport." },
+        { "speaker": "sunita", "de": "Hier ist mein Pass. Muss ich die Karte registrieren?", "ph": "Heer ist mine Pass. Mooss ish dee Kar-te re-gis-tree-ren?", "en": "Here is my pass. Do I have to register the card?" },
+        { "speaker": "staff", "de": "Ja, wir machen das hier im Shop.", "ph": "Yah, veer ma-khen dass heer im Shop.", "en": "Yes, we do that here in the shop." },
+        { "speaker": "sunita", "de": "Danke. Wie kann ich mein Guthaben aufladen?", "ph": "Dan-ke. Vee kan ish mine Goot-hah-ben owf-lah-den?", "en": "Thanks. How can I top up my credit?" },
+        { "speaker": "staff", "de": "Sie können online oder mit einer Karte aufladen.", "ph": "Zee koen-nen on-line o-der mit eye-ner Kar-te owf-lah-den.", "en": "You can top up online or with a card." }
+      ]
+    }
+  ]
+}

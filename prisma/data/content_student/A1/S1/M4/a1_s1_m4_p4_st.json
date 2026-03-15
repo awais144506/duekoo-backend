@@ -1,0 +1,64 @@
+{
+  "type": "COMPOSITE",
+  "title": "Directions & Imperatives",
+  "deTitle": "Richtungen & Imperativ",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Polite Commands",
+      "blocks": [
+        {
+          "heading": "The Imperative Formula",
+          "text": "To give a polite order or direction, the formula is very simple: Action Verb + Sie + Direction.",
+          "examples": [
+            { "exp1": "Gehen (To go) + Sie = Gehen Sie... (Go...)" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Basic Imperative Verbs",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Pronunciation", "Meaning"],
+      "rows": [
+        { "c1": "Go", "c2": "Gehen Sie...", "c3": "Gay-en zee", "c4": "Go..." },
+        { "c1": "Drive / Travel", "c2": "Fahren Sie...", "c3": "Fah-ren zee", "c4": "Drive / Travel..." },
+        { "c1": "Take", "c2": "Nehmen Sie...", "c3": "Nay-men zee", "c4": "Take..." },
+        { "c1": "Wait", "c2": "Warten Sie...", "c3": "Var-ten zee", "c4": "Wait..." },
+        { "c1": "Turn", "c2": "Biegen Sie... ab", "c3": "Bee-gen zee... ab", "c4": "Turn..." }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Directions Vocabulary",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetics", "Example", "English"],
+      "rows": [
+        { "c1": "Left", "c2": "Links", "c3": "Links", "c4": "Gehen Sie links.", "c5": "Go left." },
+        { "c1": "Right", "c2": "Rechts", "c3": "Rekhts", "c4": "Biegen Sie rechts ab.", "c5": "Turn right." },
+        { "c1": "Straight ahead", "c2": "Geradeaus", "c3": "Geh-rah-deh-ows", "c4": "Fahren Sie geradeaus.", "c5": "Drive straight." },
+        { "c1": "Back", "c2": "Zurück", "c3": "Tsoo-ruek", "c4": "Gehen Sie zurück.", "c5": "Go back." },
+        { "c1": "There", "c2": "Dort", "c3": "Dort", "c4": "Der Bus ist dort.", "c5": "The bus is there." }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "The “Tail” Rule",
+      "blocks": [
+        {
+          "heading": "Separable Verbs in Commands",
+          "text": "In German, the word for 'To Turn' is 'Abbiegen'. When used in a command, the 'Ab' (the tail) gets kicked to the very end of the sentence.",
+          "examples": [
+            { "exp1": "Turn left. → Biegen Sie links ab." },
+            { "exp2": "Turn right. → Biegen Sie rechts ab." }
+          ]
+        }
+      ]
+    }
+  ]
+}

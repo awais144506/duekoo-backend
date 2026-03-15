@@ -1,0 +1,94 @@
+{
+  "type": "COMPOSITE",
+  "title": "Pronouns, Interrogatives & Umlauts",
+  "deTitle": "Pronomen, Fragewörter & Umlaute",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Pronouns (Pronomen)",
+      "intro": "Personal pronouns are the building blocks of sentences. Learn how to say 'I', 'You', 'He', and 'She'.",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I", "c2": "Ich", "c3": "Ish" },
+        { "c1": "You", "c2": "Du", "c3": "Doo" },
+        { "c1": "He", "c2": "Er", "c3": "Air" },
+        { "c1": "She", "c2": "Sie", "c3": "Zee" },
+        { "c1": "It", "c2": "Es", "c3": "Ess" },
+        { "c1": "We", "c2": "Wir", "c3": "Ve-ar" },
+        { "c1": "You (Plural)", "c2": "Ihr", "c3": "Ear" },
+        { "c1": "You (Formal)", "c2": "Sie", "c3": "Zee" },
+        { "c1": "They", "c2": "Sie", "c3": "Zee" }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Interrogatives (Fragewörter)",
+      "intro": "These are the 'W' words used to ask questions. Note that most start with 'W' but sound like 'V'.",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "What", "c2": "Was", "c3": "Vass" },
+        { "c1": "Who", "c2": "Wer", "c3": "Vear" },
+        { "c1": "How", "c2": "Wie", "c3": "Vee" },
+        { "c1": "Why", "c2": "Warum", "c3": "Va-Rum" },
+        { "c1": "Where", "c2": "Wo", "c3": "Voo" },
+        { "c1": "Which", "c2": "Welche", "c3": "Velsha" },
+        { "c1": "Whom", "c2": "Dem", "c3": "Deem" },
+        { "c1": "When", "c2": "Wann", "c3": "Vann" },
+        { "c1": "Whose", "c2": "Wessen", "c3": "Vy-sen" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Umlauts & Rules",
+      "blocks": [
+        {
+          "heading": "Rule 1: Plural",
+          "text": "In German, many words change their base vowel to an umlaut when they become plural.",
+          "examples": [
+            { "exp1": "Apfel (Apple) → Äpfel/Aepfel (Apples)." },
+            { "exp2": "Buch (Book) → Bücher/Buecher." }
+          ]
+        },
+        {
+          "heading": "Rule 2: Comparison",
+          "text": "When describing things as 'more' or 'most', the vowel often jumps to an umlaut.",
+          "examples": [
+            { "exp1": "Alt (Old) → Älter (Older)." },
+            { "exp2": "Groß (Big) → Größer (Bigger)." }
+          ]
+        },
+        {
+          "heading": "Rule 3: Action Words (Verbs)",
+          "text": "Some verbs change their vowel in the 'he/she/it' form.",
+          "examples": [
+            { "exp1": "Ich fahre → Er fährt/faehrt (He drives)." },
+            { "exp2": "Ich schlafe → Sie schläft/schlaeft (She sleeps)." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "intro": "Speak these words to practice your pronunciation.",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Apples", "c2": "Äpfel", "c3": "Ep-fel" },
+        { "c1": "Books", "c2": "Bücher", "c3": "Bue-cher" },
+        { "c1": "Older", "c2": "Älter", "c3": "El-ter" },
+        { "c1": "Bigger", "c2": "Größer", "c3": "Grer-ser" },
+        { "c1": "He drives", "c2": "Er fährt", "c3": "Air fairt" },
+        { "c1": "She sleeps", "c2": "Sie schläft", "c3": "Zee shlaift" }
+      ]
+    }
+  ]
+}

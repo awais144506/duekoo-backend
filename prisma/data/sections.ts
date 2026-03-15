@@ -1,6 +1,6 @@
 export interface SectionData {
   id: string;
-  levelSlug: string;
+  levelId: 'L1' | 'L2' | 'L3';
   title: string;
   deTitle: string;
   order: number;
@@ -16,7 +16,7 @@ export const sections: SectionData[] = [
   // A1-S1
   {
     id: 'a1-s1-st',
-    levelSlug: 'A1',
+    levelId: 'L1',
     title: 'Airport to University',
     deTitle: 'Flughafen zur Universität',
     order: 1,
@@ -26,7 +26,7 @@ export const sections: SectionData[] = [
   // A1-S2
   {
     id: 'a1-s2-st',
-    levelSlug: 'A1',
+    levelId: 'L1',
     title: 'Shopping & Registration',
     deTitle: 'Einkaufen & Registrierung',
     order: 2,
@@ -37,7 +37,7 @@ export const sections: SectionData[] = [
   // A2-S1
   {
     id: 'a2-s1-st',
-    levelSlug: 'A2',
+    levelId: 'L2',
     title: 'University Life',
     deTitle: 'Universitätsleben',
     order: 1,
@@ -47,7 +47,7 @@ export const sections: SectionData[] = [
   // A2-S2
   {
     id: 'a2-s2-st',
-    levelSlug: 'A2',
+    levelId: 'L2',
     title: 'Job/Workplace',
     deTitle: 'Job/Arbeitsplatz',
     order: 2,
@@ -57,7 +57,7 @@ export const sections: SectionData[] = [
   // A2-S3
   {
     id: 'a2-s3-st',
-    levelSlug: 'A2',
+    levelId: 'L2',
     title: 'Field Job',
     deTitle: 'Feldarbeit',
     order: 3,
@@ -72,7 +72,7 @@ export const sections: SectionData[] = [
   // A1-S1
   {
     id: 'a1-s1-fm',
-    levelSlug: 'A1',
+    levelId: 'L1',
     title: 'Airport to Home',
     deTitle: 'Flughafen zur Heim',
     order: 1,
@@ -82,7 +82,7 @@ export const sections: SectionData[] = [
   // A1-S2
   {
     id: 'a1-s2-fm',
-    levelSlug: 'A1',
+    levelId: 'L1',
     title: 'Shopping',
     deTitle: 'Einkaufen',
     order: 2,

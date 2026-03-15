@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: Renting a Room",
+  "deTitle": "Dialog: Ein Zimmer mieten",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ishan is visiting a potential room in a shared apartment (WG). He talks to Tim about the size, price, and move-in date.",
+      "characters": [
+        { "id": "ishan", "name": "Ishan", "icon": "🧔" },
+        { "id": "tim", "name": "Tim", "icon": "👱‍♂️" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "ishan", "de": "Hallo, ich suche ein Zimmer. Ist es noch frei?", "ph": "Hal-lo, ish zoo-khe ine Tsim-mer. Ist es nokh fry?", "en": "Hello, I am looking for a room. Is it still free?" },
+        { "speaker": "tim", "de": "Ja, das Zimmer ist frei. Komm bitte rein.", "ph": "Yah, dass Tsim-mer ist fry. Kom bit-teh rine.", "en": "Yes, the room is free. Please come in." },
+        { "speaker": "ishan", "de": "Wie groß ist das Zimmer?", "ph": "Vee grohs ist dass Tsim-mer?", "en": "How big is the room?" },
+        { "speaker": "tim", "de": "Es ist 15 Quadratmeter groß.", "ph": "Es ist fuenf-tsayn Kwa-draht-may-ter grohs.", "en": "It is 15 square meters big." },
+        { "speaker": "ishan", "de": "Wie viel kostet die Miete?", "ph": "Vee feel kos-tet dee Mee-teh?", "en": "How much does the rent cost?" },
+        { "speaker": "tim", "de": "Die Warmmiete ist 400 Euro.", "ph": "Dee Varm-mee-teh ist feer-hoon-dert Oy-ro.", "en": "The total rent (warm) is 400 euros." },
+        { "speaker": "ishan", "de": "Ist die Kaution hoch?", "ph": "Ist dee Kow-tsee-ohn hokh?", "en": "Is the deposit high?" },
+        { "speaker": "tim", "de": "Die Kaution ist 800 Euro.", "ph": "Dee Kow-tsee-ohn ist acht-hoon-dert Oy-ro.", "en": "The deposit is 800 euros." },
+        { "speaker": "ishan", "de": "Okay. Wann kann ich einziehen?", "ph": "O-kay. Vann kan ish ine-tsee-en?", "en": "Okay. When can I move in?" },
+        { "speaker": "tim", "de": "Du kannst ab Montag einziehen.", "ph": "Doo kanst ap Mon-tahk ine-tsee-en.", "en": "You can move in starting Monday." }
+      ]
+    }
+  ]
+}

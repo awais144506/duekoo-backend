@@ -1,0 +1,35 @@
+{
+  "type": "COMPOSITE",
+  "title": "Renting a Room",
+  "deTitle": "Ein Zimmer mieten",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Rent & Furniture",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The Rent", "c2": "Die Miete", "c3": "Dee Mee-teh" },
+        { "c1": "Cold Rent (Basic)", "c2": "Die Kaltmiete", "c3": "Dee Kahlt-mee-teh" },
+        { "c1": "Warm Rent (Total)", "c2": "Die Warmmiete", "c3": "Dee Varm-mee-teh" },
+        { "c1": "Utilities / Extras", "c2": "Die Nebenkosten", "c3": "Dee Nay-ben-kos-ten" },
+        { "c1": "Deposit", "c2": "Die Kaution", "c3": "Kow-tsee-ohn" },
+        { "c1": "Rental Contract", "c2": "Der Mietvertrag", "c3": "Dair Meet-fair-trahk" },
+        { "c1": "Shared Apartment", "c2": "Die WG", "c3": "Dee Vay-Gay" },
+        { "c1": "The Key", "c2": "Der Schlüssel", "c3": "Dair Shlues-sel" },
+        { "c1": "The Lock", "c2": "Das Schloss", "c3": "Dass Shloss" },
+        { "c1": "The Mailbox", "c2": "Der Briefkasten", "c3": "Dair Breef-kas-ten" },
+        { "c1": "The Bed", "c2": "Das Bett", "c3": "Dass Bet" },
+        { "c1": "The Table", "c2": "Der Tisch", "c3": "Dair Tish" },
+        { "c1": "The Chair", "c2": "Der Stuhl", "c3": "Dair Shtool" },
+        { "c1": "The Wardrobe", "c2": "Der Schrank", "c3": "Dair Shrank" },
+        { "c1": "The Desk", "c2": "Der Schreibtisch", "c3": "Dair Shryp-tish" },
+        { "c1": "The Fridge", "c2": "Der Kühlschrank", "c3": "Dair Kuehl-shrank" },
+        { "c1": "The Stove", "c2": "Der Herd", "c3": "Dair Hairt" },
+        { "c1": "The Oven", "c2": "Der Ofen", "c3": "Dair Oh-fen" }
+      ]
+    }
+  ]
+}

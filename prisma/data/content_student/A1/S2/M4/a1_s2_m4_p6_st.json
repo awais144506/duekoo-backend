@@ -1,0 +1,86 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m4-q1",
+          "question": "You want to open a standard account for daily transactions (salary, rent, etc.). What is this account called in German?",
+          "options": ["Das Sparbuch", "Das Girokonto", "Die Kreditkarte", "Das Guthaben"],
+          "correct": "Das Girokonto",
+          "explanation": "A Girokonto is a current/checking account. In Germany, this is the main account used for all your financial transactions."
+        },
+        {
+          "id": "m4-q2",
+          "question": "You want a mobile plan with no monthly contract or long-term commitment. What should you ask for?",
+          "options": ["Ein Vertrag", "Eine Anzeige", "Prepaid", "Datenvolumen"],
+          "correct": "Prepaid",
+          "explanation": "Prepaid means you pay in advance and have no contract (Vertrag). It’s the safest way to start before your residency is finalized."
+        },
+        {
+          "id": "m4-q3",
+          "question": "You lost your wallet on the train. How do you describe this to the police?",
+          "options": ["Es wurde gestohlen.", "Es ist verloren.", "Ich möchte bezahlen.", "Ich habe einen Termin."],
+          "correct": "Es ist verloren.",
+          "explanation": "Verloren means lost. Use 'Gestohlen' only if you are certain someone took it (theft)."
+        },
+        {
+          "id": "m4-q4",
+          "question": "You entered your PIN wrong three times and now your card won't work. What is the status of your card?",
+          "options": ["Aktiv", "Kostenlos", "Gesperrt", "Eröffnet"],
+          "correct": "Gesperrt",
+          "explanation": "Gesperrt means blocked or locked. You must ask the bank to 'entsperren' (unblock) it."
+        },
+        {
+          "id": "m4-q5",
+          "question": "Your phone has no money left for calls. What do you need to do to your 'Guthaben'?",
+          "options": ["Abheben", "Aufladen", "Überweisen", "Unterschreiben"],
+          "correct": "Aufladen",
+          "explanation": "Aufladen means to top up or charge. You are 'loading' credit back onto the card."
+        },
+        {
+          "id": "m4-q6",
+          "question": "To open an account, the banker asks for your 'Meldebescheinigung.' What is this document?",
+          "options": ["Passport", "University ID", "City Registration Certificate", "Proof of Funds"],
+          "correct": "City Registration Certificate",
+          "explanation": "This is the paper you get after your 'Anmeldung'. In Germany, you usually cannot open a bank account without registration."
+        },
+        {
+          "id": "m4-q7",
+          "question": "You are at the police station to file a formal report for a stolen passport. What is this report called?",
+          "options": ["Die Bestätigung", "Die Geheimzahl", "Die Anzeige", "Der Diebstahl"],
+          "correct": "Die Anzeige",
+          "explanation": "An 'Anzeige' is a formal police report. You’ll need the 'Bestätigung' (confirmation) of this report to get a new passport."
+        },
+        {
+          "id": "m4-q8",
+          "question": "You need to send money to your landlord for rent. Which verb describes this 'Transfer'?",
+          "options": ["Abheben", "Eröffnet", "Überweisen", "Behalten"],
+          "correct": "Überweisen",
+          "explanation": "Überweisen is the verb for a bank transfer. Abheben is used for withdrawing cash from an ATM."
+        },
+        {
+          "id": "m4-q9",
+          "question": "You are checking how much internet you can use. Which term should you look for?",
+          "options": ["Die Geheimzahl", "Das Datenvolumen", "Die Unterschrift", "Der Anbieter"],
+          "correct": "Das Datenvolumen",
+          "explanation": "Datenvolumen is your data allowance (e.g., 10GB). The 'Anbieter' is the service provider."
+        },
+        {
+          "id": "m4-q10",
+          "question": "What exactly is a 'Geheimzahl'?",
+          "options": ["Bank branch code", "Your secret PIN", "Account number", "The bank's phone number"],
+          "correct": "Your secret PIN",
+          "explanation": "Geheim (secret) + Zahl (number) = Your PIN. Keep it private!"
+        }
+      ]
+    }
+  ]
+}

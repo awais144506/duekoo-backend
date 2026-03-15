@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: Casual Meet",
+  "deTitle": "Dialog: Ein informelles Treffen",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ali meets Sarah at the University. They use informal German (Du) and cover basic introductions.",
+      "characters": [
+        { "id": "sarah", "name": "Sarah", "icon": "👩‍🦰" },
+        { "id": "ali", "name": "Ali", "icon": "👨" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sarah", "de": "Hallo! Ich bin Sarah. Wie heißt du?", "ph": "Hah-loh! Ish bin Sah-rah. Vee haist doo?", "en": "Hello! I am Sarah. What is your name?" },
+        { "speaker": "ali", "de": "Hallo Sarah! Ich heiße Ali.", "ph": "Hah-loh Sah-rah! Ish hai-suh Ah-lee.", "en": "Hello Sarah! My name is Ali." },
+        { "speaker": "sarah", "de": "Freut mich, Ali. Woher kommst du?", "ph": "Froit mish, Ah-lee. Vo-hair kohmst doo?", "en": "Pleased to meet you, Ali. Where are you from?" },
+        { "speaker": "ali", "de": "Ich komme aus Pakistan. Und du?", "ph": "Ish koh-muh ows Pah-kee-stahn. Oont doo?", "en": "I come from Pakistan. And you?" },
+        { "speaker": "sarah", "de": "Ich komme aus Berlin. Bist du Student?", "ph": "Ish koh-muh ows Bear-leen. Bist doo Shtoo-dent?", "en": "I come from Berlin. Are you a student?" },
+        { "speaker": "ali", "de": "Ja, ich bin Student. Ich bin einundzwanzig.", "ph": "Yah, ish bin Shtoo-dent. Ish bin ine-oont-tsvan-tsish.", "en": "Yes, I am a student. I am 21." },
+        { "speaker": "sarah", "de": "Oh, ich bin dreiundzwanzig. Wohnst du hier?", "ph": "Oh, ish bin dry-oont-tsvan-tsish. Vohnst doo hear?", "en": "Oh, I am 23. Do you live here?" },
+        { "speaker": "ali", "de": "Nein, ich wohne nicht in Berlin. Ich wohne in Potsdam.", "ph": "Nine, ish voh-nuh nisht in Bear-leen. Ish voh-nuh in Pots-dahm.", "en": "No, I don't live in Berlin. I live in Potsdam." },
+        { "speaker": "sarah", "de": "Alles klar! Bis später!", "ph": "Ah-less klahr! Biss shpay-ter!", "en": "All right! See you later!" },
+        { "speaker": "ali", "de": "Tschüss!", "ph": "Chuess!", "en": "Bye!" }
+      ]
+    }
+  ]
+}
