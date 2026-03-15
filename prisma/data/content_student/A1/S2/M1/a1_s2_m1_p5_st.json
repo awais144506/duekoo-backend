@@ -1,0 +1,28 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: At the Supermarket",
+  "deTitle": "Dialog: Im Supermarkt",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sarah is at a large supermarket. She needs to find ingredients for dinner. She talks to an employee to find items and then checks out at the till.",
+      "characters": [
+        { "id": "sarah", "name": "Sarah", "icon": "👩" },
+        { "id": "staff", "name": "Staff", "icon": "🛒" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sarah", "de": "Entschuldigung, wo ist der Reis und das Öl?", "ph": "Ent-shool-dee-goong, voh ist dair rice oond dass ehl?", "en": "Excuse me, where is the rice and the oil?" },
+        { "speaker": "staff", "de": "Der Reis ist in Gang drei. Das Öl ist dort hinten.", "ph": "Dair rice ist in gang dry. Dass ehl ist dort hin-ten.", "en": "The rice is in aisle three. The oil is back there." },
+        { "speaker": "sarah", "de": "Danke! Ich brauche auch fünfhundert Gramm Hähnchen.", "ph": "Dan-ke! Ish brow-khe owkh fuenf-hoon-dert gram hayn-khen.", "en": "Thanks! I also need 500 grams of chicken." },
+        { "speaker": "staff", "de": "Das ist an der Fleischtheke. Haben Sie alles?", "ph": "Dass ist an dair fly-sh-te-ke. Hah-ben zee al-les?", "en": "That is at the meat counter. Do you have everything?" },
+        { "speaker": "sarah", "de": "Ja. Ich habe heute auch Brot und Eier gekauft.", "ph": "Yah. Ish ha-be hoy-te owkh broht oond eye-er ge-kowft.", "en": "Yes. I have also bought bread and eggs today." },
+        { "speaker": "staff", "de": "Sehr gut! Was machen Sie heute Abend?", "ph": "Zair goot! Vas ma-khen zee hoy-te ah-bent?", "en": "Very good! What are you doing this evening?" },
+        { "speaker": "sarah", "de": "Ich werde heute Abend ein Biryani kochen.", "ph": "Ish vair-de hoy-te ah-bent ine Biryani ko-khen.", "en": "I will cook a Biryani tonight." },
+        { "speaker": "staff", "de": "Oh, lecker! Viel Spaß beim Kochen.", "ph": "Oh, lek-ker! Feel shpahss bime ko-khen.", "en": "Oh, delicious! Have fun cooking." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 1: Taxi Route",
+  "deTitle": "Dialog 1: Taxifahrt",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Rahul has his bags and approaches a taxi at the airport. He wants a direct, easy trip to the station.",
+      "characters": [
+        { "id": "rahul", "name": "Rahul", "icon": "🧓" },
+        { "id": "driver", "name": "Driver", "icon": "🚖" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "rahul", "de": "Guten Tag! Ich möchte zum Hauptbahnhof, bitte.", "ph": "Goo-ten Tahk! Ish mukh-teh tsoom Howpt-bahn-hohf, bit-teh.", "en": "Good day! I want to go to the main station, please." },
+        { "speaker": "driver", "de": "Gerne. Haben Sie viel Gepäck?", "ph": "Gair-neh. Hah-ben zee feel Geh-peck?", "en": "With pleasure. Do you have a lot of luggage?" },
+        { "speaker": "rahul", "de": "Ja, zwei Koffer. Ist der Weg weit?", "ph": "Yah, tsvy Koff-er. Ist dair vayk vite?", "en": "Yes, two suitcases. Is the way far?" },
+        { "speaker": "driver", "de": "Nein, es ist nah, aber der Verkehr ist heute schlecht.", "ph": "Nine, es ist nah, ah-ber dair fer-kair ist hoy-teh shlekht.", "en": "No, it is near, but the traffic is bad today." },
+        { "speaker": "rahul", "de": "Ach so. Wie lange dauert die Fahrt?", "ph": "Akh zo. Vee lang-eh dow-ert dee fahrt?", "en": "I see. How long does the trip take?" },
+        { "speaker": "driver", "de": "Ungefähr zwanzig Minuten.", "ph": "Oon-ge-fair tsvan-tsig mee-noo-ten.", "en": "Approximately twenty minutes." },
+        { "speaker": "rahul", "de": "Okay, fahren wir los!", "ph": "O-kay, fah-ren veer lohs!", "en": "OK, let's go!" }
+      ]
+    }
+  ]
+}

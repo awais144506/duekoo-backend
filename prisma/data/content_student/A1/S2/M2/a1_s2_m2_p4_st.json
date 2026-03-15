@@ -1,0 +1,41 @@
+{
+  "type": "COMPOSITE",
+  "title": "Adverbs",
+  "deTitle": "Adverbien",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Common Adverbs",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetic", "Example", "Translation"],
+      "rows": [
+        { "c1": "Very", "c2": "Sehr", "c3": "Zair", "c4": "Es ist sehr weit.", "c5": "It is very far" },
+        { "c1": "Too (excessive)", "c2": "Zu", "c3": "Tsoo", "c4": "Das ist zu teuer.", "c5": "That is too expensive" },
+        { "c1": "Quickly", "c2": "Schnell", "c3": "Shnell", "c4": "Fahren Sie schnell.", "c5": "Drive quickly" },
+        { "c1": "Slowly", "c2": "Langsam", "c3": "Lang-zahm", "c4": "Gehen Sie langsam.", "c5": "Walk slowly" },
+        { "c1": "Today", "c2": "Heute", "c3": "Hoy-teh", "c4": "Ich fahre heute.", "c5": "I am driving today" },
+        { "c1": "Tomorrow", "c2": "Morgen", "c3": "Mor-gen", "c4": "Nicht heute, morgen.", "c5": "Not today, tomorrow" },
+        { "c1": "Here", "c2": "Hier", "c3": "Heer", "c4": "Ich bin hier.", "c5": "I am here" },
+        { "c1": "There", "c2": "Dort", "c3": "Dort", "c4": "Der Bus ist dort.", "c5": "The bus is there" },
+        { "c1": "Maybe", "c2": "Vielleicht", "c3": "Fee-lykht", "c4": "Vielleicht heute?", "c5": "Maybe today?" },
+        { "c1": "Already", "c2": "Schon", "c3": "Shohn", "c4": "Ist der Zug schon da?", "c5": "Is the train already there?" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The taxi is too expensive.", "c2": "Das Taxi ist zu teuer.", "c3": "Dass Tah-ksee ist tsoo toy-er" },
+        { "c1": "The train station is very big.", "c2": "Der Bahnhof ist sehr groß.", "c3": "Dair Bahn-hohf ist zair grohs" },
+        { "c1": "Maybe the bus is already there.", "c2": "Vielleicht ist der Bus schon da.", "c3": "Fee-lykht ist dair Booss shohn dah" },
+        { "c1": "Please walk slowly.", "c2": "Gehen Sie bitte langsam.", "c3": "Gay-en zee bit-teh lang-zahm" }
+      ]
+    }
+  ]
+}

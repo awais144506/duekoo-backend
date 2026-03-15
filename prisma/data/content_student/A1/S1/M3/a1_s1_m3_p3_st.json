@@ -1,0 +1,81 @@
+{
+  "type": "COMPOSITE",
+  "title": "Counting 51-100",
+  "deTitle": "Zählen 51 bis 100",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Numbers 51 - 100",
+      "intro": "Use the formula: [Small Number] + und + [Big Number]. Note: 60 (Sechzig) and 70 (Siebzig) drop letters from their base numbers (Sechs/Sieben).",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["Digit", "German", "Phonetic"],
+      "rows": [
+        { "c1": "51", "c2": "Einundfünfzig", "c3": "Ine-oond-fewnf-tsig" },
+        { "c1": "52", "c2": "Zweiundfünfzig", "c3": "Tsvy-oond-fewnf-tsig" },
+        { "c1": "53", "c2": "Dreiundfünfzig", "c3": "Dry-oond-fewnf-tsig" },
+        { "c1": "54", "c2": "Vierundfünfzig", "c3": "Fear-oond-fewnf-tsig" },
+        { "c1": "55", "c2": "Fünfundfünfzig", "c3": "Fewnf-oond-fewnf-tsig" },
+        { "c1": "56", "c2": "Sechsundfünfzig", "c3": "Zex-oond-fewnf-tsig" },
+        { "c1": "57", "c2": "Siebenundfünfzig", "c3": "Zee-ben-oond-fewnf-tsig" },
+        { "c1": "58", "c2": "Achtundfünfzig", "c3": "Akht-oond-fewnf-tsig" },
+        { "c1": "59", "c2": "Neunundfünfzig", "c3": "Noyn-oond-fewnf-tsig" },
+        { "c1": "60", "c2": "Sechzig", "c3": "Zekh-tsig" },
+        { "c1": "61", "c2": "Einundsechzig", "c3": "Ine-oond-zekh-tsig" },
+        { "c1": "62", "c2": "Zweiundsechzig", "c3": "Tsvy-oond-zekh-tsig" },
+        { "c1": "63", "c2": "Dreiundsechzig", "c3": "Dry-oond-zekh-tsig" },
+        { "c1": "64", "c2": "Vierundsechzig", "c3": "Fear-oond-zekh-tsig" },
+        { "c1": "65", "c2": "Fünfundsechzig", "c3": "Fewnf-oond-zekh-tsig" },
+        { "c1": "66", "c2": "Sechsundsechzig", "c3": "Zex-oond-zekh-tsig" },
+        { "c1": "67", "c2": "Siebenundsechzig", "c3": "Zee-ben-oond-zekh-tsig" },
+        { "c1": "68", "c2": "Achtundsechzig", "c3": "Akht-oond-zekh-tsig" },
+        { "c1": "69", "c2": "Neunundsechzig", "c3": "Noyn-oond-zekh-tsig" },
+        { "c1": "70", "c2": "Siebzig", "c3": "Zeeb-tsig" },
+        { "c1": "71", "c2": "Einundsiebzig", "c3": "Ine-oond-zeeb-tsig" },
+        { "c1": "72", "c2": "Zweiundsiebzig", "c3": "Tsvy-oond-zeeb-tsig" },
+        { "c1": "73", "c2": "Dreiundsiebzig", "c3": "Dry-oond-zeeb-tsig" },
+        { "c1": "74", "c2": "Vierundsiebzig", "c3": "Fear-oond-zeeb-tsig" },
+        { "c1": "75", "c2": "Fünfundsiebzig", "c3": "Fewnf-oond-zeeb-tsig" },
+        { "c1": "76", "c2": "Sechsundsiebzig", "c3": "Zex-oond-zeeb-tsig" },
+        { "c1": "77", "c2": "Siebenundsiebzig", "c3": "Zee-ben-oond-zeeb-tsig" },
+        { "c1": "78", "c2": "Achtundsiebzig", "c3": "Akht-oond-zeeb-tsig" },
+        { "c1": "79", "c2": "Neunundsiebzig", "c3": "Noyn-oond-zeeb-tsig" },
+        { "c1": "80", "c2": "Achtzig", "c3": "Akht-tsig" },
+        { "c1": "81", "c2": "Einundachtzig", "c3": "Ine-oond-akht-tsig" },
+        { "c1": "82", "c2": "Zweiundachtzig", "c3": "Tsvy-oond-akht-tsig" },
+        { "c1": "83", "c2": "Dreiundachtzig", "c3": "Dry-oond-akht-tsig" },
+        { "c1": "84", "c2": "Vierundachtzig", "c3": "Fear-oond-akht-tsig" },
+        { "c1": "85", "c2": "Fünfundachtzig", "c3": "Fewnf-oond-akht-tsig" },
+        { "c1": "86", "c2": "Sechsundachtzig", "c3": "Zex-oond-akht-tsig" },
+        { "c1": "87", "c2": "Siebenundachtzig", "c3": "Zee-ben-oond-akht-tsig" },
+        { "c1": "88", "c2": "Achtundachtzig", "c3": "Akht-oond-akht-tsig" },
+        { "c1": "89", "c2": "Neunundachtzig", "c3": "Noyn-oond-akht-tsig" },
+        { "c1": "90", "c2": "Neunzig", "c3": "Noyn-tsig" },
+        { "c1": "91", "c2": "Einundneunzig", "c3": "Ine-oond-noyn-tsig" },
+        { "c1": "92", "c2": "Zweiundneunzig", "c3": "Tsvy-oond-noyn-tsig" },
+        { "c1": "93", "c2": "Dreiundneunzig", "c3": "Dry-oond-noyn-tsig" },
+        { "c1": "94", "c2": "Vierundneunzig", "c3": "Fear-oond-noyn-tsig" },
+        { "c1": "95", "c2": "Fünfundneunzig", "c3": "Fewnf-oond-noyn-tsig" },
+        { "c1": "96", "c2": "Sechsundneunzig", "c3": "Zex-oond-noyn-tsig" },
+        { "c1": "97", "c2": "Siebenundneunzig", "c3": "Zee-ben-oond-noyn-tsig" },
+        { "c1": "98", "c2": "Achtundneunzig", "c3": "Akht-oond-noyn-tsig" },
+        { "c1": "99", "c2": "Neunundneunzig", "c3": "Noyn-oond-noyn-tsig" },
+        { "c1": "100", "c2": "Hundert", "c3": "Hoon-dert" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "That is gate 77", "c2": "Das ist Gate siebenundsiebzig.", "c3": "Dass ist Gate zee-ben-oond-zeeb-tsig" },
+        { "c1": "My suitcase weighs 22 kilos.", "c2": "Mein Koffer wiegt zweiundzwanzig Kilo.", "c3": "Mine Koff-er veegt tsvy-oond-tsvan-tsig kee-lo" },
+        { "c1": "One hundred Euro, please!", "c2": "Einhundert Euro, bitte!", "c3": "Ine-hoon-dert oy-ro, bit-teh" }
+      ]
+    }
+  ]
+}

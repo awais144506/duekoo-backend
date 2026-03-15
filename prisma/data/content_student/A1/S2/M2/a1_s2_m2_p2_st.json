@@ -1,0 +1,64 @@
+{
+  "type": "COMPOSITE",
+  "title": "The Accusative Case",
+  "deTitle": "Der Akkusativ",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "The Direct Object",
+      "blocks": [
+        {
+          "heading": "What is the Accusative?",
+          "text": "In English, we say 'I eat the apple.' The apple is the direct object. In German, when a **Masculine (Der)** noun is the direct object, its article changes. Feminine, Neuter, and Plural remain exactly the same.",
+          "examples": [
+            { "exp1": "Subject (Nominative): The coffee is hot." },
+            { "exp2": "Object (Accusative): I drink the coffee." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Article Changes",
+      "config": {
+        "speechSequence": ["c2", "c3"]
+      },
+      "headers": ["Gender", "Nominative", "Accusative", "Rule"],
+      "rows": [
+        { "c1": "Masculine", "c2": "Der / Ein", "c3": "Den / Einen", "c4": "Changes to -en" },
+        { "c1": "Feminine", "c2": "Die / Eine", "c3": "Die / Eine", "c4": "Stays the same" },
+        { "c1": "Neuter", "c2": "Das / Ein", "c3": "Das / Ein", "c4": "Stays the same" },
+        { "c1": "Plural", "c2": "Die", "c3": "Die", "c4": "Stays the same" }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Nominative vs. Accusative",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["Gender", "Nominative", "English", "Accusative", "Translation", "Change"],
+      "rows": [
+        { "c1": "Masculine", "c2": "Der Kaffee ist gut.", "c3": "The coffee is good.", "c4": "Ich bestelle den Kaffee.", "c5": "I am ordering the coffee.", "c6": "Der → Den" },
+        { "c1": "Feminine", "c2": "Die Jacke ist teuer.", "c3": "The jacket is expensive.", "c4": "Ich kaufe die Jacke.", "c5": "I am buying the jacket.", "c6": "No change" },
+        { "c1": "Neuter", "c2": "Das Hemd ist blau.", "c3": "The shirt is blue.", "c4": "Ich trinke das Wasser.", "c5": "I am drinking the water.", "c6": "No change" },
+        { "c1": "Plural", "c2": "Die Schuhe sind neu.", "c3": "The shoes are new.", "c4": "Ich trage die Schuhe.", "c5": "I am wearing the shoes.", "c6": "No change" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I drink a coffee.", "c2": "Ich trinke einen Kaffee.", "c3": "Ish trin-keh eye-nen Kaf-fay" },
+        { "c1": "I buy a sweater.", "c2": "Ich kaufe einen Pullover.", "c3": "Ish kow-feh eye-nen Pool-lo-ver" },
+        { "c1": "I eat the salad.", "c2": "Ich esse den Salat.", "c3": "Ish es-seh dain Za-laht" },
+        { "c1": "I take the juice.", "c2": "Ich nehme den Saft.", "c3": "Ish nay-meh dain Zaft" },
+        { "c1": "I have a suitcase.", "c2": "Ich habe einen Koffer.", "c3": "Ish ha-beh eye-nen Kof-fer" }
+      ]
+    }
+  ]
+}

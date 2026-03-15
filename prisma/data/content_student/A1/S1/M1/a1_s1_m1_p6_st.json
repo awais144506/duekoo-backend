@@ -1,0 +1,31 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue",
+  "deTitle": "Dialog",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Daniel meets his taxi driver at the airport arrivals terminal in Germany.",
+      "characters": [
+        { "id": "daniel", "name": "Daniel", "icon": "👨‍🎓" },
+        { "id": "fahrer", "name": "Fahrer", "icon": "🚖" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "daniel", "de": "Hallo, guten Tag!", "ph": "Hah-loh, goo-ten Tahk!", "en": "Hello, good day!" },
+        { "speaker": "fahrer", "de": "Guten Tag! Wie geht es Ihnen?", "ph": "Goo-ten Tahk! Vee gayt ess Ee-nen?", "en": "Good day! How are you?" },
+        { "speaker": "daniel", "de": "Gut, danke.", "ph": "Goot, dan-keh.", "en": "Fine, thank you." },
+        { "speaker": "daniel", "de": "Wer sind Sie?", "ph": "Vair zind zee?", "en": "Who are you?" },
+        { "speaker": "fahrer", "de": "Ich bin der Fahrer.", "ph": "Ish bin dair Fah-rer.", "en": "I am the driver." },
+        { "speaker": "fahrer", "de": "Sind Sie Daniel?", "ph": "Zind zee Daniel?", "en": "Are you Daniel?" },
+        { "speaker": "daniel", "de": "Ja, das bin ich.", "ph": "Yah, dass bin ish.", "en": "Yes, that is me." },
+        { "speaker": "daniel", "de": "Wo ist das Taxi?", "ph": "Voh ist dass Tah-ksee?", "en": "Where is the taxi?" },
+        { "speaker": "fahrer", "de": "Das Taxi ist dort.", "ph": "Dass Tah-ksee ist dort.", "en": "The taxi is there." },
+        { "speaker": "daniel", "de": "Vielen Dank.", "ph": "Fee-len Dank.", "en": "Thank you very much." },
+        { "speaker": "fahrer", "de": "Bitte sehr. Auf Wiedersehen!", "ph": "Bit-teh zair. Owf Vee-der-zay-en!", "en": "You are welcome. Goodbye!" }
+      ]
+    }
+  ]
+}

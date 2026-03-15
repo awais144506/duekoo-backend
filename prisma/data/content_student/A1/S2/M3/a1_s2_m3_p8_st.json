@@ -1,0 +1,88 @@
+{
+  "type": "COMPOSITE",
+  "title": "Cultural Tips: Health & Medicine",
+  "deTitle": "Kulturtipps: Gesundheit",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Medical Etiquette & Systems",
+      "blocks": [
+        {
+          "heading": "Formal Respect",
+          "text": "In German medical settings, maintaining a professional distance is mandatory to show respect.",
+          "bullets": [
+            "Always address the doctor as 'Herr Doktor [Last Name]' or 'Frau Doktor [Last Name]'.",
+            "Address clinic staff as 'Herr [Last Name]' or 'Frau [Last Name]'.",
+            "Never use first names with medical professionals.",
+            "Always use the formal 'Sie' (you)."
+          ]
+        },
+        {
+          "heading": "The Hausarzt (GP) System",
+          "text": "The General Practitioner (GP) acts as the primary gateway to the German healthcare system.",
+          "bullets": [
+            "Do not go to a specialist first; you must see a Hausarzt (GP) for a referral (Überweisung).",
+            "Register with a Hausarzt as soon as you arrive in Germany.",
+            "Use the 'Doctolib' app to find doctors and book appointments online."
+          ]
+        },
+        {
+          "heading": "Medical Notes (Attest)",
+          "text": "Universities and employers require formal proof of illness if you miss mandatory sessions.",
+          "bullets": [
+            "If you miss a university exam, ask specifically for a 'Prüfungsunfähigkeitsbescheinigung'.",
+            "A standard work note (Krankenschein) may be rejected by the university for exams.",
+            "Always get your Attest on the same day you are sick; doctors rarely backdate them."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Pharmacies & Emergencies",
+      "blocks": [
+        {
+          "heading": "Apotheke vs. Drogerie",
+          "text": "Germany maintains a strict split between medical pharmacies and general drugstores.",
+          "bullets": [
+            "Go to an 'Apotheke' (Red 'A' sign) for prescription and over-the-counter medicine.",
+            "Go to a 'Drogerie' (DM, Rossmann) for hygiene products, vitamins, and toiletries.",
+            "Check the pharmacy window for the 'Notdienst' schedule to find a 24/7 pharmacy on Sundays."
+          ]
+        },
+        {
+          "heading": "Emergency Numbers",
+          "text": "Knowing which number to call can save lives and ensure you get the right level of care.",
+          "bullets": [
+            "Call 112: Only for life-threatening emergencies (accidents, heart attacks).",
+            "Call 116 117: For urgent medical issues after-hours or on weekends that are not life-threatening."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Prescriptions & Diet",
+      "blocks": [
+        {
+          "heading": "Understanding Prescriptions",
+          "text": "The color of the prescription paper determines how much you will pay at the pharmacy.",
+          "bullets": [
+            "Pink/Red: Public insurance covers most costs (you pay a €5–€10 co-pay).",
+            "Blue/Green: You must pay the full price for the medication."
+          ]
+        },
+        {
+          "heading": "Halal & Dietary Restrictions",
+          "text": "Many German medications use animal-based additives that may not be Halal or Vegan.",
+          "bullets": [
+            "Many capsules contain pork-based gelatin.",
+            "Ask: 'Ist dieses Medikament ohne Gelatine?' (Is this medicine without gelatin?).",
+            "Ask: 'Gibt es eine vegane Alternative?' (Is there a vegan alternative?).",
+            "Many medicines are available as liquid drops (Tropfen) instead of capsules."
+          ]
+        }
+      ]
+    }
+  ]
+}

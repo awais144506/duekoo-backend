@@ -1,0 +1,81 @@
+{
+  "type": "QUIZ",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "config": {
+    "totalQuestions": 10,
+    "passScore": 6
+  },
+  "questions": [
+    {
+      "id": "m5-q1",
+      "question": "You are calculating your monthly budget. What is the German term for the 'Total Rent' that includes utility costs?",
+      "options": ["Die Kaltmiete", "Die Warmmiete", "Die Kaution", "Die Nebenkosten"],
+      "correct": "Die Warmmiete",
+      "explanation": "Die Warmmiete is the total amount you pay, combining the basic rent (Kaltmiete) and the utility costs (Nebenkosten)."
+    },
+    {
+      "id": "m5-q2",
+      "question": "Before moving into a new room, you usually have to pay a security deposit. What is this called?",
+      "options": ["Der Mietvertrag", "Die Miete", "Die Kaution", "Der Schlüssel"],
+      "correct": "Die Kaution",
+      "explanation": "Die Kaution is the deposit you pay to the landlord, which is typically returned when you move out if the room is in good condition."
+    },
+    {
+      "id": "m5-q3",
+      "question": "You want to find the room where you will sleep. Which room are you looking for?",
+      "options": ["Das Wohnzimmer", "Das Badezimmer", "Das Schlafzimmer", "Die Küche"],
+      "correct": "Das Schlafzimmer",
+      "explanation": "Das Schlafzimmer is the bedroom (schlafen = to sleep, Zimmer = room)."
+    },
+    {
+      "id": "m5-q4",
+      "question": "You need to work on your laptop. Which piece of furniture is specifically a 'Desk'?",
+      "options": ["Der Tisch", "Der Schreibtisch", "Der Stuhl", "Der Schrank"],
+      "correct": "Der Schreibtisch",
+      "explanation": "While Tisch means table, Schreibtisch specifically refers to a writing table or desk (schreiben = to write)."
+    },
+    {
+      "id": "m5-q5",
+      "question": "You have just arrived at your new apartment building. What do you need to open the front door?",
+      "options": ["Der Briefkasten", "Die Klingel", "Der Schlüssel", "Das Fenster"],
+      "correct": "Der Schlüssel",
+      "explanation": "Der Schlüssel is the key. In Germany, keeping your keys safe is vital as replacing them can be expensive."
+    },
+    {
+      "id": "m5-q6",
+      "question": "You are looking for a place to pray. How do you ask for the 'Mosque' in German?",
+      "options": ["Wo ist die Kirche?", "Wo ist der Supermarkt?", "Wo ist die Moschee?", "Wo ist der Park?"],
+      "correct": "Wo ist die Moschee?",
+      "explanation": "Die Moschee is the German word for mosque."
+    },
+    {
+      "id": "m5-q7",
+      "question": "Someone is giving you directions to the train station and tells you to go 'straight ahead.' What is the German phrase for this?",
+      "options": ["Links", "Rechts", "Geradeaus", "Um die Ecke"],
+      "correct": "Geradeaus",
+      "explanation": "Geradeaus means straight ahead. Links is left, and Rechts is right."
+    },
+    {
+      "id": "m5-q8",
+      "question": "You are in the kitchen and want to fry an egg. Which item do you need?",
+      "options": ["Der Topf", "Die Pfanne", "Der Teller", "Die Tasse"],
+      "correct": "Die Pfanne",
+      "explanation": "Die Pfanne is a frying pan, whereas Der Topf is a pot used for boiling."
+    },
+    {
+      "id": "m5-q9",
+      "question": "Your roommate tells you the 'Kühlschrank' is empty. Where should you look?",
+      "options": ["The wardrobe", "The oven", "The fridge", "The dishwasher"],
+      "correct": "The fridge",
+      "explanation": "Der Kühlschrank is the refrigerator. It comes from kühl (cool) and Schrank (cupboard)."
+    },
+    {
+      "id": "m5-q10",
+      "question": "You want to move into a 'Shared Apartment' with other students. What is the common German abbreviation for this?",
+      "options": ["DB", "WG", "KFZ", "USA"],
+      "correct": "WG",
+      "explanation": "WG stands for Wohngemeinschaft, which is the standard term for a shared living arrangement or flatshare."
+    }
+  ]
+}

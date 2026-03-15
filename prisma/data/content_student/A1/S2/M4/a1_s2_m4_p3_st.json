@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 1: Opening a Bank Account",
+  "deTitle": "Dialog 1: Bankkonto eröffnen",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sunita visits a local bank to set up a student account. She discusses the requirements and process with a bank employee.",
+      "characters": [
+        { "id": "sunita", "name": "Sunita", "icon": "👩" },
+        { "id": "banker", "name": "Banker", "icon": "🏦" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sunita", "de": "Guten Tag. Ich möchte gerne ein Girokonto eröffnen.", "ph": "Goo-ten Tahk. Ish mukh-teh gair-neh ine Gee-ro-kon-toh air-erf-nen.", "en": "Good day. I would like to open a current account." },
+        { "speaker": "banker", "de": "Guten Tag. Haben Sie Ihren Reisepass und Ihre Meldebescheinigung dabei?", "ph": "Goo-ten Tahk. Hah-ben zee eer-en Ry-ze-pass oond eer-eh Mel-deh-be-shye-nee-goong dah-by?", "en": "Good day. Do you have your passport and registration certificate with you?" },
+        { "speaker": "sunita", "de": "Ja, hier sind die Dokumente. Ist das Konto kostenlos?", "ph": "Yah, heer zind dee Dok-oo-men-teh. Ist dass Kon-toh kos-ten-lohs?", "en": "Yes, here are the documents. Is the account free of charge?" },
+        { "speaker": "banker", "de": "Für Studenten ist es kostenlos. Wie ist Ihre E-Mail-Adresse?", "ph": "Feer stoo-den-ten ist es kos-ten-lohs. Vee ist eer-eh E-Mail-Ah-dres-seh?", "en": "For students, it is free. What is your email address?" },
+        { "speaker": "sunita", "de": "Meine E-Mail ist sunita@email.com. Wann bekomme ich meine Karte?", "ph": "My-neh E-Mail ist sunita@email.com. Vann be-kom-me ish my-neh Kar-teh?", "en": "My email is sunita@email.com. When will I get my card?" },
+        { "speaker": "banker", "de": "Die Karte und die Geheimzahl kommen in einer Woche per Post.", "ph": "Dee Kar-teh oond dee Ge-hime-tsahl kom-men in eye-ner Vokh-eh pair Post.", "en": "The card and the PIN will arrive in one week by mail." },
+        { "speaker": "sunita", "de": "Muss ich hier unterschreiben?", "ph": "Mooss ish heer oon-ter-shry-ben?", "en": "Do I have to sign here?" },
+        { "speaker": "banker", "de": "Ja, bitte hier und hier. Alles ist fertig!", "ph": "Yah, bit-teh heer oond heer. Al-les ist fair-tikh!", "en": "Yes, please here and here. Everything is finished!" },
+        { "speaker": "sunita", "de": "Vielen Dank. Auf Wiedersehen.", "ph": "Fee-len dank. Owf Vee-der-zay-en.", "en": "Many thanks. Goodbye." }
+      ]
+    }
+  ]
+}

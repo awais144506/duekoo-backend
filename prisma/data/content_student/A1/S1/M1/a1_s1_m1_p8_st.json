@@ -1,0 +1,35 @@
+{
+  "type": "COMPOSITE",
+  "title": "Cultural Tips",
+  "deTitle": "Kulturelle Tipps",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Living in Germany",
+      "blocks": [
+        {
+          "heading": "The 'Guten Tag' Rule",
+          "text": "In any shop, office, or when entering a taxi, always say **'Guten Tag'** first. It is considered rude in Germany to start a request without a greeting. For example: *'Guten Tag! Wo ist das Taxi?'*",
+          "bullets": []
+        },
+        {
+          "heading": "Formal vs. Informal",
+          "text": "Choosing the right level of politeness is critical in German society.",
+          "bullets": [
+            "**Formal (Bank/Airport):** Use 'Wie geht es Ihnen?' and 'Auf Wiedersehen'.",
+            "**Informal (University):** Use 'Wie geht’s?' and 'Tschüss' with fellow students."
+          ]
+        },
+        {
+          "heading": "The 'Bitte' Multi-tool",
+          "text": "**Bitte** is a powerful word. It changes meaning based on the context:",
+          "bullets": [
+            "**As 'Please':** Eine Quittung, bitte. (A receipt, please.)",
+            "**As 'You're welcome':** The standard response to 'Danke'.",
+            "**As 'Pardon?':** Use a rising tone ('Bitte?') if you didn't hear someone clearly."
+          ]
+        }
+      ]
+    }
+  ]
+}

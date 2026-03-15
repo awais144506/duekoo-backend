@@ -1,0 +1,42 @@
+{
+  "type": "COMPOSITE",
+  "title": "Police & Safety",
+  "deTitle": "Polizei & Sicherheit",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Emergency Vocabulary",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Police Station", "c2": "Die Polizeiwache", "c3": "Dee Po-lee-tsie-vakh-eh" },
+        { "c1": "Passport", "c2": "Der Reisepass", "c3": "Dair Ry-ze-pass" },
+        { "c1": "ID Card", "c2": "Der Personalausweis", "c3": "Dair Pair-zo-nahl-ows-vice" },
+        { "c1": "Emergency", "c2": "Der Notfall", "c3": "Dair Noht-fahl" },
+        { "c1": "Theft", "c2": "Der Diebstahl", "c3": "Dair Deep-shtahl" },
+        { "c1": "Report (Crime)", "c2": "Eine Anzeige machen", "c3": "Eye-neh An-tsy-geh ma-khen" },
+        { "c1": "Stolen", "c2": "Gestohlen", "c3": "Ge-shtoh-len" },
+        { "c1": "Lost", "c2": "Verloren", "c3": "Fair-lo-ren" },
+        { "c1": "Witness", "c2": "Der Zeuge", "c3": "Dair Tsoy-geh" },
+        { "c1": "Signature", "c2": "Die Unterschrift", "c3": "Dee Oon-ter-shrift" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Survival Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I need a bank account.", "c2": "Ich brauche ein Bankkonto.", "c3": "Ish brow-khe ine Bank-kon-toh" },
+        { "c1": "I want to withdraw money.", "c2": "Ich möchte Geld abheben.", "c3": "Ish mukh-teh Gelt ab-hay-ben" },
+        { "c1": "Where is my SIM card?", "c2": "Wo ist meine SIM-Karte?", "c3": "Voh ist my-neh Sim-kar-teh" },
+        { "c1": "My passport is lost.", "c2": "Mein Reisepass ist verloren.", "c3": "Mine Ry-ze-pass ist fair-lo-ren" },
+        { "c1": "It was stolen.", "c2": "Es wurde gestohlen.", "c3": "Es voor-deh ge-shtoh-len" }
+      ]
+    }
+  ]
+}

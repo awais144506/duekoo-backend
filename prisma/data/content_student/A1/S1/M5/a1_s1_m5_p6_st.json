@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Meeting a Fellow Student",
+  "deTitle": "Dialog 2: Kommilitonen treffen",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sarah is sitting in the university area when another student, Lukas, approaches her. They talk about their studies and schedules.",
+      "characters": [
+        { "id": "lukas", "name": "Lukas", "icon": "👦" },
+        { "id": "sarah", "name": "Sarah", "icon": "👩" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "lukas", "de": "Hallo! Ist dieser Platz noch frei?", "ph": "Hal-lo! Ist dee-zer plats nokh fry?", "en": "Hello! Is this seat still free?" },
+        { "speaker": "sarah", "de": "Ja, klar. Ich bin Sarah. Ich studiere Informatik.", "ph": "Yah, klahr. Ish bin Sarah. Ish stoo-dee-re In-for-mah-tik.", "en": "Yes, sure. I am Sarah. I study Computer Science." },
+        { "speaker": "lukas", "de": "Freut mich! Ich bin Lukas. Hast du heute viele Vorlesungen?", "ph": "Froyt mikh! Ish bin Lukas. Hast doo hoy-te fee-le For-lay-zoon-gen?", "en": "Pleased to meet you! I'm Lukas. Do you have many lectures today?" },
+        { "speaker": "sarah", "de": "Nein, heute ist es ruhig. Aber am Mittwoch habe ich viel Stress.", "ph": "Nine, hoy-te ist es roo-ig. Ah-ber am Mit-vokh ha-be ish feel shtress.", "en": "No, today is quiet. But on Wednesday I have a lot of stress." },
+        { "speaker": "lukas", "de": "Ich auch. Mein Mathe-Kurs ist immer am Vormittag.", "ph": "Ish owkh. Mine Ma-te-koors ist im-mer am For-mit-tahk.", "en": "Me too. My Math course is always in the morning." },
+        { "speaker": "sarah", "de": "Wann haben wir eigentlich Ferien?", "ph": "Vann ha-ben veer eye-gen-tlikh Fay-ree-en?", "en": "When do we actually have holidays?" },
+        { "speaker": "lukas", "de": "Die Semesterferien beginnen im März und im August.", "ph": "Dee Ze-mes-ter-fay-ree-en be-gin-nen im Mehrts oond im Ow-goost.", "en": "The semester breaks begin in March and in August." },
+        { "speaker": "sarah", "de": "Super! Dann können wir am Wochenende lernen?", "ph": "Zoo-per! Dann kew-nen veer am Vokh-en-en-deh lair-nen?", "en": "Super! Then can we study on the weekend?" },
+        { "speaker": "lukas", "de": "Genau, das ist eine gute Idee. Vielen Dank für die Hilfe!", "ph": "Geh-now, dass ist eye-ne goo-te ee-day. Fee-len dank feer dee hil-feh!", "en": "Exactly, that is a good idea. Thank you for the help!" }
+      ]
+    }
+  ]
+}

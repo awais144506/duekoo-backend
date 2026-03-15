@@ -1,0 +1,94 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m1-q1",
+          "question": "Which letter is phonetically pronounced as 'Yott'?",
+          "options": ["Y", "J", "G"],
+          "correct": "J",
+          "explanation": "In the German alphabet, 'J' is pronounced as 'Yott' (Example: Jacke / Jacket)."
+        },
+        {
+          "id": "m1-q2",
+          "question": "How do you politely (formally) say 'You' to a stranger or a professor?",
+          "options": ["Du", "Ihr", "Sie"],
+          "correct": "Sie",
+          "explanation": "'Sie' (always capitalized) is the formal 'You'. 'Du' is only for friends and family."
+        },
+        {
+          "id": "m1-q3",
+          "question": "What is the German number for '12'?",
+          "options": ["Zwei", "Zwanzig", "Zwölf"],
+          "correct": "Zwölf",
+          "explanation": "12 is 'Zwölf'. 2 is 'Zwei' and 20 is 'Zwanzig'."
+        },
+        {
+          "id": "m1-q4",
+          "question": "Which interrogative word translates to 'Where'?",
+          "options": ["Wer", "Wo", "Wann"],
+          "correct": "Wo",
+          "explanation": "'Wo' means 'Where'. 'Wer' means 'Who' and 'Wann' means 'When'."
+        },
+        {
+          "id": "m1-q5",
+          "question": "In a standard German statement, what position must the conjugated verb occupy?",
+          "options": ["Position 1", "Position 2", "The end of the sentence"],
+          "correct": "Position 2",
+          "explanation": "The V2 Rule (Verb Second) states the verb must always be the second element."
+        },
+        {
+          "id": "m1-q6",
+          "question": "What is the correct plural form of 'Apfel' (Apple)?",
+          "options": ["Apfeln", "Äpfel", "Apfel"],
+          "correct": "Äpfel",
+          "explanation": "Many German nouns change their base vowel to an umlaut (A → Ä) in plural form."
+        },
+        {
+          "id": "m1-q7",
+          "question": "Complete the sentence: 'Wir ____ im Taxi.' (We are in the taxi.)",
+          "options": ["bin", "seid", "sind"],
+          "correct": "sind",
+          "explanation": "The conjugation of 'sein' for 'Wir' (We) is 'sind'."
+        },
+        {
+          "id": "m1-q8",
+          "question": "Which of these is a formal way to say 'Goodbye'?",
+          "options": ["Tschüss", "Bis später", "Auf Wiedersehen"],
+          "correct": "Auf Wiedersehen",
+          "explanation": "'Auf Wiedersehen' is the formal goodbye. 'Tschüss' is informal."
+        },
+        {
+          "id": "m1-q9",
+          "question": "Translate: 'Where is the train station?'",
+          "options": [
+            "Wo ist der Bahnhof?",
+            "Wer ist der Bahnhof?",
+            "Wo bist der Bahnhof?"
+          ],
+          "correct": "Wo ist der Bahnhof?",
+          "explanation": "'Wo' (Where) + 'ist' (is) + 'der Bahnhof' (the station). 'ist' is used for singular objects."
+        },
+        {
+          "id": "m1-q10",
+          "question": "Which is the correct word order for the sentence: 'Today I am here'?",
+          "options": [
+            "Heute ich bin hier.",
+            "Heute bin ich hier.",
+            "Ich heute bin hier."
+          ],
+          "correct": "Heute bin ich hier.",
+          "explanation": "Even if 'Heute' starts the sentence, the verb 'bin' must stay in Position 2."
+        }
+      ]
+    }
+  ]
+}

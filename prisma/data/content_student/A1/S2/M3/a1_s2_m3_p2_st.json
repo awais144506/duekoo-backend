@@ -1,0 +1,27 @@
+{
+  "type": "COMPOSITE",
+  "title": "Colors",
+  "deTitle": "Farben",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Basic Colors",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Blue", "c2": "Blau", "c3": "Blow" },
+        { "c1": "Red", "c2": "Rot", "c3": "Roht" },
+        { "c1": "Green", "c2": "Grün", "c3": "Groon" },
+        { "c1": "Yellow", "c2": "Gelb", "c3": "Gelp" },
+        { "c1": "Black", "c2": "Schwarz", "c3": "Shvarts" },
+        { "c1": "White", "c2": "Weiß", "c3": "Vice" },
+        { "c1": "Grey", "c2": "Grau", "c3": "Grow" },
+        { "c1": "Brown", "c2": "Braun", "c3": "Brown" },
+        { "c1": "Orange", "c2": "Orange", "c3": "O-rahn-zhe" },
+        { "c1": "Pink", "c2": "Rosa", "c3": "Ro-zah" }
+      ]
+    }
+  ]
+}

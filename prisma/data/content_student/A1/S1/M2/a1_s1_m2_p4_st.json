@@ -1,0 +1,62 @@
+{
+  "type": "COMPOSITE",
+  "title": "Counting 21 to 50",
+  "deTitle": "Zählen 21 bis 50",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Numbers 21 - 50",
+      "intro": "To build any number between 21 and 99, use this formula: [Small Number] + und + [Big Number]",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "21", "c2": "Einundzwanzig", "c3": "Ine-oond-tsvan-tsig" },
+        { "c1": "22", "c2": "Zweiundzwanzig", "c3": "Tsvy-oond-tsvan-tsig" },
+        { "c1": "23", "c2": "Dreiundzwanzig", "c3": "Dry-oond-tsvan-tsig" },
+        { "c1": "24", "c2": "Vierundzwanzig", "c3": "Fear-oond-tsvan-tsig" },
+        { "c1": "25", "c2": "Fünfundzwanzig", "c3": "Fewnf-oond-tsvan-tsig" },
+        { "c1": "26", "c2": "Sechsundzwanzig", "c3": "Zex-oond-tsvan-tsig" },
+        { "c1": "27", "c2": "Siebenundzwanzig", "c3": "Zee-ben-oond-tsvan-tsig" },
+        { "c1": "28", "c2": "Achtundzwanzig", "c3": "Akht-oond-tsvan-tsig" },
+        { "c1": "29", "c2": "Neunundzwanzig", "c3": "Noyn-oond-tsvan-tsig" },
+        { "c1": "30", "c2": "Dreißig", "c3": "Dry-sig" },
+        { "c1": "31", "c2": "Einunddreißig", "c3": "Ine-oond-dry-sig" },
+        { "c1": "32", "c2": "Zweiunddreißig", "c3": "Tsvy-oond-dry-sig" },
+        { "c1": "33", "c2": "Dreiunddreißig", "c3": "Dry-oond-dry-sig" },
+        { "c1": "34", "c2": "Vierunddreißig", "c3": "Fear-oond-dry-sig" },
+        { "c1": "35", "c2": "Fünfunddreißig", "c3": "Fewnf-oond-dry-sig" },
+        { "c1": "36", "c2": "Sechsunddreißig", "c3": "Zex-oond-dry-sig" },
+        { "c1": "37", "c2": "Siebenunddreißig", "c3": "Zee-ben-oond-dry-sig" },
+        { "c1": "38", "c2": "Achtunddreißig", "c3": "Akht-oond-dry-sig" },
+        { "c1": "39", "c2": "Neununddreißig", "c3": "Noyn-oond-dry-sig" },
+        { "c1": "40", "c2": "Vierzig", "c3": "Fear-tsig" },
+        { "c1": "41", "c2": "Einundvierzig", "c3": "Ine-oond-fear-tsig" },
+        { "c1": "42", "c2": "Zweiundvierzig", "c3": "Tsvy-oond-fear-tsig" },
+        { "c1": "43", "c2": "Dreiundvierzig", "c3": "Dry-oond-fear-tsig" },
+        { "c1": "44", "c2": "Vierundvierzig", "c3": "Fear-oond-fear-tsig" },
+        { "c1": "45", "c2": "Fünfundvierzig", "c3": "Fewnf-oond-fear-tsig" },
+        { "c1": "46", "c2": "Sechsundvierzig", "c3": "Zex-oond-fear-tsig" },
+        { "c1": "47", "c2": "Siebenundvierzig", "c3": "Zee-ben-oond-fear-tsig" },
+        { "c1": "48", "c2": "Achtundvierzig", "c3": "Akht-oond-fear-tsig" },
+        { "c1": "49", "c2": "Neunundvierzig", "c3": "Noyn-oond-fear-tsig" },
+        { "c1": "50", "c2": "Fünfzig", "c3": "Fewnf-tsig" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I am 21.", "c2": "Ich bin einundzwanzig.", "c3": "Ish bin ine-oond-tsvan-tsig" },
+        { "c1": "He is 34.", "c2": "Er ist vierunddreißig.", "c3": "Air ist fear-oond-dry-sig" },
+        { "c1": "Number 45.", "c2": "Nummer fünfundvierzig.", "c3": "Noom-mer fewnf-oond-fear-tsig" },
+        { "c1": "I am 50 years old.", "c2": "Ich bin fünfzig Jahre alt.", "c3": "Ish bin fewnf-tsig ya-reh alt" }
+      ]
+    }
+  ]
+}

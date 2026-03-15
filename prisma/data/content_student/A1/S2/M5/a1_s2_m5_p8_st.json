@@ -1,0 +1,51 @@
+{
+  "type": "COMPOSITE",
+  "title": "Cultural Tips: Living in Germany",
+  "deTitle": "Kulturtipps",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Household Rules & Liability",
+      "blocks": [
+        {
+          "heading": "The Importance of Your Keys",
+          "text": "In Germany, losing an apartment key is a serious and expensive mistake. If you lose a key to a large apartment building, the landlord often has to change every single lock in the building for security reasons. This process can cost you anywhere between €500 and €2,000. It is highly recommended to keep your keys safe and consider 'Private Liability Insurance' (Haftpflichtversicherung) to cover such accidents."
+        },
+        {
+          "heading": "Quiet Hours and Sunday Rest",
+          "text": "Sunday is legally considered a rest day (Ruhezeit) in Germany. During this time, you must avoid making loud noises that could disturb your neighbors. This means you should not use a vacuum cleaner, drill holes in the walls, or play loud music. If you ignore these rules, your neighbors will likely complain, and in some cases, the police may even be called to enforce the quiet."
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Mail and Legal Compliance",
+      "blocks": [
+        {
+          "heading": "Your Name on the Mailbox",
+          "text": "The German postal system does not rely on apartment numbers; it relies on names. You must put your last name on your mailbox (Briefkasten) immediately after moving in. If your name is not clearly displayed, the postman will not deliver your mail, and important documents like your bank card, internet contract, or official government letters will be returned to the sender."
+        },
+        {
+          "heading": "Strict Anti-Piracy Laws",
+          "text": "Germany has some of the strictest laws in the world regarding digital copyright. You should never use Torrents to download movies or music. Law firms actively monitor these networks and will send a formal letter with a fine ranging from €800 to €1,500 for a single violation. To stay safe, always use legal streaming services like Netflix, Spotify, or YouTube."
+        }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "The Art of Waste Management",
+      "blocks": [
+        {
+          "heading": "The German Trash Bin System",
+          "text": "Trash sorting (Mülltrennung) is a point of national pride and a legal requirement in Germany. You must separate your waste into the correct bins or your trash may not be collected:",
+          "bullets": [
+            "Blue Bin: Paper and cardboard only.",
+            "Yellow Bin/Bag: Plastic packaging, metal, and juice cartons.",
+            "Brown Bin: Food scraps, fruit peels, and organic waste.",
+            "Black/Grey Bin: General waste (diapers, cigarettes, and items that don't fit the others)."
+          ]
+        }
+      ]
+    }
+  ]
+}

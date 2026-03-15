@@ -1,0 +1,86 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m5-q1",
+          "question": "Which German word refers to the 'Student ID Card'?",
+          "options": ["Der Lageplan", "Der Studierendenausweis", "Der Semesterbeitrag", "Das Dokument"],
+          "correct": "Der Studierendenausweis",
+          "explanation": "A 'Studierendenausweis' is your official identity card as a student, used for exams, library access, and student discounts."
+        },
+        {
+          "id": "m5-q2",
+          "question": "How do you correctly say 'I am registering' in a German sentence?",
+          "options": ["Ich anmelde mich.", "Ich melde mich an.", "Ich anmelden mich.", "Ich mich melde an."],
+          "correct": "Ich melde mich an.",
+          "explanation": "'Sich anmelden' is a separable verb. In a standard sentence, the prefix 'an' is separated and moved to the very end."
+        },
+        {
+          "id": "m5-q3",
+          "question": "If you are practicing German phrases on an app, which verb is the correct one to describe what you are doing?",
+          "options": ["Studieren", "Lernen", "Schreiben", "Verstehen"],
+          "correct": "Lernen",
+          "explanation": "Use 'lernen' for the act of studying/practicing a specific task or skill. 'Studieren' is reserved specifically for your university major or degree program."
+        },
+        {
+          "id": "m5-q4",
+          "question": "Which of these is the correct German word for 'March'?",
+          "options": ["Mai", "Monat", "März", "Morgen"],
+          "correct": "März",
+          "explanation": "'März' is March. 'Mai' is May, 'Monat' means month, and 'Morgen' means tomorrow."
+        },
+        {
+          "id": "m5-q5",
+          "question": "How would you say 'Next week' to a university official?",
+          "options": ["Diese Woche", "Nächster Monat", "Nächste Woche", "Jeden Tag"],
+          "correct": "Nächste Woche",
+          "explanation": "'Nächste Woche' is the correct translation for next week."
+        },
+        {
+          "id": "m5-q6",
+          "question": "Where would a professor typically give a 'Vorlesung' (Lecture)?",
+          "options": ["Die Mensa", "Der Hörsaal", "Das Zertifikat", "Das Wochenende"],
+          "correct": "Der Hörsaal",
+          "explanation": "A 'Hörsaal' is a lecture hall. 'Mensa' is the cafeteria, and 'Zertifikat' is a certificate."
+        },
+        {
+          "id": "m5-q7",
+          "question": "What is the correct way to say 'I fill out the form' in German?",
+          "options": ["Ich ausfülle das Formular.", "Ich fülle aus das Formular.", "Ich fülle das Formular aus.", "Ich fülle das Formular."],
+          "correct": "Ich fülle das Formular aus.",
+          "explanation": "'Ausfüllen' (to fill out) is a separable verb; the prefix 'aus' must be moved to the end of the sentence."
+        },
+        {
+          "id": "m5-q8",
+          "question": "In Dialogue 1, when does the official say Sarah will get her ID card?",
+          "options": ["Heute", "Morgen", "Nächste Woche am Montag", "Gestern"],
+          "correct": "Nächste Woche am Montag",
+          "explanation": "The official states: 'Den Ausweis bekommen Sie nächste Woche am Montag'."
+        },
+        {
+          "id": "m5-q9",
+          "question": "Which day of the week is 'Mittwoch'?",
+          "options": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "correct": "Wednesday",
+          "explanation": "'Mittwoch' is Wednesday. It literally translates to 'mid-week' (Mitte + Woche)."
+        },
+        {
+          "id": "m5-q10",
+          "question": "According to Dialogue 2, in which two months do the 'Semesterferien' (semester breaks) begin?",
+          "options": ["Januar und Juni", "März und August", "Juli und Dezember", "April und September"],
+          "correct": "März und August",
+          "explanation": "Lukas mentions that the semester breaks begin in 'März' (March) and 'August' (August)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "COMPOSITE",
+  "title": "Eating Out & Dressing Up Vocabulary",
+  "deTitle": "Vokabeln: Restaurant & Kleidung",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Essential Vocabulary",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The Menu", "c2": "Die Speisekarte", "c3": "Dee Shpy-ze-kar-te" },
+        { "c1": "The Bill/Receipt", "c2": "Die Rechnung", "c3": "Dee Rekh-noong" },
+        { "c1": "The Glass", "c2": "Das Glas", "c3": "Dass Glahs" },
+        { "c1": "The Cup", "c2": "Die Tasse", "c3": "Dee Tas-se" },
+        { "c1": "The Main Course", "c2": "Das Hauptgericht", "c3": "Dass Howpt-ge-rikht" },
+        { "c1": "Vegetarian", "c2": "Vegetarisch", "c3": "Ve-ge-tah-rish" },
+        { "c1": "Spicy", "c2": "Scharf", "c3": "Sharf" },
+        { "c1": "Delicious", "c2": "Lecker", "c3": "Lek-ker" },
+        { "c1": "The Jacket", "c2": "Die Jacke", "c3": "Dee Yak-ke" },
+        { "c1": "The T-Shirt", "c2": "Das T-Shirt", "c3": "Dass Tee-Shairt" },
+        { "c1": "The Pants/Trousers", "c2": "Die Hose", "c3": "Dee Ho-ze" },
+        { "c1": "The Shoes", "c2": "Die Schuhe (Pl.)", "c3": "Dee Shoo-e" },
+        { "c1": "The Shirt", "c2": "Das Hemd", "c3": "Dass Hemt" },
+        { "c1": "The Dress", "c2": "Das Kleid", "c3": "Dass Klyt" },
+        { "c1": "The Sweater", "c2": "Der Pullover", "c3": "Dair Pool-lo-ver" },
+        { "c1": "The Size", "c2": "Die Größe", "c3": "Dee Grer-se" },
+        { "c1": "The Color", "c2": "Die Farbe", "c3": "Dee Far-be" },
+        { "c1": "To Order", "c2": "Bestellen", "c3": "Be-shtel-len" },
+        { "c1": "To Pay", "c2": "Bezahlen", "c3": "Be-tsah-len" },
+        { "c1": "To Wear / Carry", "c2": "Tragen", "c3": "Trah-gen" },
+        { "c1": "To Try on", "c2": "Anprobieren", "c3": "An-pro-bee-ren" },
+        { "c1": "Cheap / Budget", "c2": "Billig", "c3": "Bi-lish" },
+        { "c1": "Expensive", "c2": "Teuer", "c3": "Toy-er" },
+        { "c1": "The Fitting Room", "c2": "Die Umkleidekabine", "c3": "Dee Oom-kly-de-ka-bee-ne" },
+        { "c1": "Separately", "c2": "Getrennt", "c3": "Ge-trent" }
+      ]
+    }
+  ]
+}

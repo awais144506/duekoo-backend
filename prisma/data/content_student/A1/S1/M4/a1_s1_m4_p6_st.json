@@ -1,0 +1,28 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Finding the University",
+  "deTitle": "Dialog 2: Weg zur Uni",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Rahul is at the platform. He needs to make sure he’s getting to the University correctly.",
+      "characters": [
+        { "id": "rahul", "name": "Rahul", "icon": "🧓" },
+        { "id": "local", "name": "Local", "icon": "👤" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "rahul", "de": "Entschuldigung, fährt dieser Zug zur Universität?", "ph": "Ent-shool-dee-goong, fairt dee-zer tsoog tsoor Oo-nee-ver-zee-tait?", "en": "Excuse me, does this train go to the university?" },
+        { "speaker": "local", "de": "Nein, dieser Zug fährt zum Flughafen zurück.", "ph": "Nine, dee-zer tsoog fairt tsoom Floog-hah-fen tsoo-ruek.", "en": "No, this train goes back to the airport." },
+        { "speaker": "rahul", "de": "Oh! Wo ist der Zug in Richtung Stadtmitte?", "ph": "Oh! Voh ist dair tsoog in Rikh-toong Shtaht-mit-teh?", "en": "Oh! Where is the train in direction of city center?" },
+        { "speaker": "local", "de": "Gehen Sie zum Gleis zwei. Nehmen Sie die S-Bahn S1.", "ph": "Gay-en zee tsoom glyce tsvy. Nay-men zee dee Ess-Bahn S-Eins.", "en": "Go to platform two. Take the S-Bahn S1." },
+        { "speaker": "rahul", "de": "Muss ich mein Ticket hier entwerten?", "ph": "Mooss ish mine tik-et heer ent-vair-ten?", "en": "Do I have to validate my ticket here?" },
+        { "speaker": "local", "de": "Ja, genau dort an dem kleinen Automaten.", "ph": "Yah, geh-now dort an daim kly-nen ow-to-mah-ten.", "en": "Yes, exactly there at the small machine." },
+        { "speaker": "rahul", "de": "Vielen Dank für die Hilfe!", "ph": "Fee-len dank feer dee hil-feh!", "en": "Thank you for the help!" },
+        { "speaker": "local", "de": "Gerne! Gute Reise.", "ph": "Gair-neh! Goo-teh Ry-zeh.", "en": "You're welcome! Have a good trip." }
+      ]
+    }
+  ]
+}

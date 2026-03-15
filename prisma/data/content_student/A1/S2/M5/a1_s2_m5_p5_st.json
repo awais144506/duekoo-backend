@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: Finding the Way",
+  "deTitle": "Dialog: Wegbeschreibung",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ishan is exploring his new neighborhood and asks a passerby for directions to the mosque and the train station.",
+      "characters": [
+        { "id": "ishan", "name": "Ishan", "icon": "🧔" },
+        { "id": "passant", "name": "Passerby", "icon": "🚶‍♂️" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "ishan", "de": "Entschuldigung, wo ist die Moschee?", "ph": "Ent-shool-dee-goong, voh ist dee Mo-shay?", "en": "Excuse me, where is the mosque?" },
+        { "speaker": "passant", "de": "Die Moschee ist in der Schillerstraße.", "ph": "Dee Mo-shay ist in dair Shil-ler-shtrah-seh.", "en": "The mosque is on Schiller Street." },
+        { "speaker": "ishan", "de": "Ist der Supermarkt auch in der Nähe?", "ph": "Ist dair Zoo-per-markt owkh in dair nay-eh?", "en": "Is the supermarket also nearby?" },
+        { "speaker": "passant", "de": "Ja, er ist direkt um die Ecke.", "ph": "Yah, air ist dee-rekt oom dee Ek-keh.", "en": "Yes, it is directly around the corner." },
+        { "speaker": "ishan", "de": "Und wie komme ich zum Bahnhof?", "ph": "Oond vee kom-me ish tsoom Bahn-hohf?", "en": "And how do I get to the train station?" },
+        { "speaker": "passant", "de": "Geh geradeaus und dann links.", "ph": "Gay ge-rah-de-ows oond dann links.", "en": "Go straight ahead and then left." },
+        { "speaker": "ishan", "de": "Ist es weit?", "ph": "Ist es vite?", "en": "Is it far?" },
+        { "speaker": "passant", "de": "Nein, nur fünf Minuten zu Fuß.", "ph": "Nine, noor fuenf Mee-noo-ten tsoo fooss.", "en": "No, only five minutes by foot." },
+        { "speaker": "ishan", "de": "Vielen Dank!", "ph": "Fee-len dank!", "en": "Many thanks!" }
+      ]
+    }
+  ]
+}

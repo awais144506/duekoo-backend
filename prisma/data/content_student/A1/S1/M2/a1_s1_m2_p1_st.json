@@ -1,0 +1,49 @@
+{
+  "type": "COMPOSITE",
+  "title": "Airport Vocabulary",
+  "deTitle": "Vokabeln: Am Flughafen",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "At the Airport",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The Visa", "c2": "Das Visum", "c3": "Dass Vee-zoom" },
+        { "c1": "The ID Card", "c2": "Der Ausweis", "c3": "Dair Ows-vice" },
+        { "c1": "The Passport", "c2": "Der Reisepass", "c3": "Dair Ry-ze-pass" },
+        { "c1": "The Boarding Pass", "c2": "Die Bordkarte", "c3": "Dee Bord-kar-teh" },
+        { "c1": "The Flight", "c2": "Der Flug", "c3": "Dair Floog" },
+        { "c1": "The Weight", "c2": "Das Gewicht", "c3": "Dass Geh-vikht" },
+        { "c1": "The Suitcase", "c2": "Der Koffer", "c3": "Dair Koff-er" },
+        { "c1": "The Luggage", "c2": "Das Gepäck", "c3": "Dass Geh-peck" },
+        { "c1": "The Exit", "c2": "Der Ausgang", "c3": "Dair Ows-gang" },
+        { "c1": "The Entrance", "c2": "Der Eingang", "c3": "Dair Ine-gang" },
+        { "c1": "The Customs", "c2": "Der Zoll", "c3": "Dair Tsoll" },
+        { "c1": "The Information", "c2": "Die Information", "c3": "Dee In-for-ma-tsyon" },
+        { "c1": "The Ticket", "c2": "Das Ticket", "c3": "Dass Tik-et" },
+        { "c1": "The Trolley", "c2": "Der Gepäckwagen", "c3": "Dair Geh-peck-vah-gen" },
+        { "c1": "The Duty-Free", "c2": "Der Zollfrei-Shop", "c3": "Dair Tsoll-fry-shop" },
+        { "c1": "The Gate", "c2": "Das Gate", "c3": "Dass Gate" },
+        { "c1": "The Terminal", "c2": "Das Terminal", "c3": "Dass Ter-mee-nal" },
+        { "c1": "The Security", "c2": "Die Sicherheit", "c3": "Dee Zikh-er-hite" },
+        { "c1": "The Delay", "c2": "Die Verspätung", "c3": "Dee Fer-shpay-toong" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Where is the baggage claim?", "c2": "Wo ist die Gepäckausgabe?", "c3": "Voh ist dee Geh-peck-ows-gah-beh?" },
+        { "c1": "I have a delay", "c2": "Ich habe eine Verspätung.", "c3": "Ish ha-beh eye-neh fer-shpay-toong." },
+        { "c1": "Here is my ID.", "c2": "Hier ist mein Ausweis.", "c3": "Heer ist mine Ows-vice." }
+      ]
+    }
+  ]
+}

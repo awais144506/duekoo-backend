@@ -1,0 +1,96 @@
+{
+  "type": "COMPOSITE",
+  "title": "Quiz",
+  "deTitle": "Quiz",
+  "sections": [
+    {
+      "type": "QUIZ",
+      "config": {
+        "totalQuestions": 10,
+        "passScore": 6
+      },
+      "questions": [
+        {
+          "id": "m3-q1",
+          "question": "You have a 'Backache.' Which German term would you use to describe the location of the pain?",
+          "options": ["Der Kopf", "Der Bauch", "Der Rücken", "Das Bein"],
+          "correct": "Der Rücken",
+          "explanation": "Der Rücken means back. If you have back pain, you say 'Ich habe Rückenschmerzen' or 'Mein Rücken tut weh.'"
+        },
+        {
+          "id": "m3-q2",
+          "question": "The doctor asks if you have a high temperature. What is the German word for 'Fever'?",
+          "options": ["Der Husten", "Das Fieber", "Die Erkältung", "Krank"],
+          "correct": "Das Fieber",
+          "explanation": "Das Fieber means fever. It is a common symptom of die Erkältung (a cold)."
+        },
+        {
+          "id": "m3-q3",
+          "question": "The assistant at the clinic gives you a document. Which verb describes 'Filling out' the form?",
+          "options": ["Anrufen", "Aufmachen", "Mitbringen", "Ausfüllen"],
+          "correct": "Ausfüllen",
+          "explanation": "The verb is ausfüllen. In a sentence, it splits: 'Ich fülle das Formular aus.'"
+        },
+        {
+          "id": "m3-q4",
+          "question": "You are describing a red rash to the doctor. What is the German word for 'Red'?",
+          "options": ["Blau", "Rot", "Grün", "Gelb"],
+          "correct": "Rot",
+          "explanation": "Rot is red. (Blau = Blue, Grün = Green, Gelb = Yellow)."
+        },
+        {
+          "id": "m3-q5",
+          "question": "You want to say it is 'Cloudy' today. Which word do you use?",
+          "options": ["Die Sonne", "Der Regen", "Bewölkt", "Der Wind"],
+          "correct": "Bewölkt",
+          "explanation": "Bewölkt means cloudy. It comes from the word 'Wolke' (cloud)."
+        },
+        {
+          "id": "m3-q6",
+          "question": "The doctor wants to check your throat. How does he say 'Open your mouth'?",
+          "options": [
+            "Machen Sie den Mund auf.",
+            "Aufmachen Sie den Mund.",
+            "Machen Sie den Mund.",
+            "Sie machen auf den Mund."
+          ],
+          "correct": "Machen Sie den Mund auf.",
+          "explanation": "For the verb aufmachen, the prefix 'auf' must go to the very end of the command."
+        },
+        {
+          "id": "m3-q7",
+          "question": "You have a piece of paper from the doctor for medicine. What is this 'Prescription' called in German?",
+          "options": ["Die Medizin", "Das Dokument", "Das Rezept", "Die Rechnung"],
+          "correct": "Das Rezept",
+          "explanation": "Das Rezept is a prescription. Note that in other contexts, it can also mean a cooking recipe."
+        },
+        {
+          "id": "m3-q8",
+          "question": "What is the correct way to say 'I take the medicine' using the separable verb einnehmen?",
+          "options": [
+            "Ich einnehme die Medizin.",
+            "Ich nehme die Medizin ein.",
+            "Ich nehme ein die Medizin.",
+            "Ich einnehmen die Medizin."
+          ],
+          "correct": "Ich nehme die Medizin ein.",
+          "explanation": "Einnehmen splits, putting 'ein' at the absolute end of the sentence."
+        },
+        {
+          "id": "m3-q9",
+          "question": "You need to schedule a specific time to see the doctor. What is an 'Appointment' called?",
+          "options": ["Die Apotheke", "Der Arzt", "Der Termin", "Die Schmerzen"],
+          "correct": "Der Termin",
+          "explanation": "Der Termin means appointment. You 'make an appointment' (einen Termin machen)."
+        },
+        {
+          "id": "m3-q10",
+          "question": "You need something for a persistent cough. What do you ask for at the pharmacy?",
+          "options": ["Die Tabletten", "Das Fieber", "Der Hustensaft", "Die Versicherungskarte"],
+          "correct": "Der Hustensaft",
+          "explanation": "Der Hustensaft is cough syrup (Husten = cough, Saft = juice/syrup)."
+        }
+      ]
+    }
+  ]
+}

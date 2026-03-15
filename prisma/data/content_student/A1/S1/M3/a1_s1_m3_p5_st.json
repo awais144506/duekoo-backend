@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 1: Rahul At Booth",
+  "deTitle": "Dialog 1: Am Schalter",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Rahul is at the booth. The officer is strict but professional. Rahul must use Formal German (Sie).",
+      "characters": [
+        { "id": "officer", "name": "Officer", "icon": "👮" },
+        { "id": "rahul", "name": "Rahul", "icon": "🧓" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "officer", "de": "Guten Tag. Ihren Reisepass und Ihr Visum, bitte.", "ph": "Goo-ten Tahk. Eer-en Ry-ze-pass oond eer Vee-zoom, bit-teh.", "en": "Good day. Your passport and your visa, please." },
+        { "speaker": "rahul", "de": "Guten Tag. Hier sind meine Dokumente.", "ph": "Goo-ten Tahk. Heer zind mine-eh Dok-oo-men-teh.", "en": "Good day. Here are my documents." },
+        { "speaker": "officer", "de": "Danke, Rahul. Warum kommen Sie nach Deutschland?", "ph": "Dan-keh, Rahul. Var-oom kom-men zee nahkh Doytch-land?", "en": "Thank you, Rahul. Why are you coming to Germany?" },
+        { "speaker": "rahul", "de": "Ich möchte Informatik in Berlin studieren.", "ph": "Ish mukh-teh In-for-mah-tik in Ber-leen shtoo-dee-ren.", "en": "I would like to study Computer Science in Berlin." },
+        { "speaker": "officer", "de": "Haben Sie eine Adresse in Berlin?", "ph": "Ha-ben zee eye-neh Ah-dress-eh in Ber-leen?", "en": "Do you have an address in Berlin?" },
+        { "speaker": "rahul", "de": "Ja, ich wohne in der Schillerstraße neunundachtzig.", "ph": "Yah, ish voh-neh in dair Shil-ler-shtrah-seh noyn-oond-akht-tsig.", "en": "Yes, I live at Schiller Street 89." },
+        { "speaker": "officer", "de": "Wie lange ist Ihr Aufenthalt?", "ph": "Vee lang-eh ist eer Owf-ent-halt?", "en": "How long is your stay?" },
+        { "speaker": "rahul", "de": "Ich muss für zwei Jahre hier bleiben.", "ph": "Ish mooss feer tsvy yah-re heer bly-ben.", "en": "I must stay here for two years." },
+        { "speaker": "officer", "de": "Alles klar. Willkommen in Deutschland!", "ph": "Al-les klahr. Vil-kom-men in Doytch-land!", "en": "All right. Welcome to Germany!" },
+        { "speaker": "rahul", "de": "Vielen Dank! Auf Wiedersehen.", "ph": "Fee-len dank! Owf Vee-der-zay-en.", "en": "Thank you very much! Goodbye." }
+      ]
+    }
+  ]
+}

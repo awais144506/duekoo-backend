@@ -1,0 +1,60 @@
+{
+  "type": "COMPOSITE",
+  "title": "Using the Ticket Machine",
+  "deTitle": "Fahrkartenautomat benutzen",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Step-by-Step Guide",
+      "images": ["1", "2"],
+      "blocks": [
+        {
+          "heading": "Step 1: Choose your Language",
+          "text": "Look for the **Flag Icons** at the bottom of the screen. Look for the phrase **'Sprache wählen'** (Select language).",
+          "examples": [
+            { "exp1": "Instruction: Pick the English flag if you are stuck, but try to find 'Start/Ziel' in German!" }
+          ]
+        },
+        {
+          "heading": "Step 2: Enter your Destination",
+          "text": "Type in **'Hauptbahnhof'** or use the 'Quick Selection' buttons for city centers.",
+          "examples": [
+            { "exp1": "Instruction: Ensure the 'Start' is the airport (e.g., Flughafen Terminal)." }
+          ]
+        },
+        {
+          "heading": "Step 3: Select Ticket Type",
+          "text": "For a one-time trip, select **Einzelfahrschein**. If you plan to travel more today, the **Tageskarte** is often better value.",
+          "examples": [
+            { "exp1": "Einzelfahrschein: Single Trip Ticket" },
+            { "exp2": "Tageskarte: Day Ticket" }
+          ]
+        },
+        {
+          "heading": "Step 4: Payment (Bezahlen)",
+          "text": "The machine shows the price. You can pay with **Bargeld** (Cash) or **Karte** (Card). Look for the glowing slot.",
+          "examples": [
+            { "exp1": "Bargeld: Cash" },
+            { "exp2": "Karte: Card" }
+          ]
+        },
+        {
+          "heading": "Step 5: Validation (Entwerten)",
+          "text": "Crucial: In many cities (like Berlin/Munich), you must validate your ticket. Look for a small yellow or red box on the platform.",
+          "examples": [
+            { "exp1": "Action: Entwerten (To stamp/validate)." },
+            { "exp2": "Warning: No stamp means a €60 fine (Schwarzfahren)!" }
+          ]
+        },
+        {
+          "heading": "Expert Tip: ABC Zones",
+          "text": "Most airports are in **Zone C**. You usually need an **ABC Ticket** to get to the city center, not just an AB one.",
+          "examples": [
+            { "exp1": "Zone AB: Inner City" },
+            { "exp2": "Zone ABC: City + Airport/Suburbs" }
+          ]
+        }
+      ]
+    }
+  ]
+}

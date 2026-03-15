@@ -1,0 +1,29 @@
+{
+  "type": "COMPOSITE",
+  "title": "Adjectives",
+  "deTitle": "Adjektive",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Describing Objects & Experiences",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetic", "Example", "SentencePhonetic", "Translation"],
+      "rows": [
+        { "c1": "Delicious", "c2": "Lecker", "c3": "Lek-ker", "c4": "Das Brot ist lecker.", "c5": "Dass Broht ist lek-ker", "c6": "The bread is delicious." },
+        { "c1": "Spicy", "c2": "Scharf", "c3": "Sharf", "c4": "Die Suppe ist scharf.", "c5": "Dee Zoop-peh ist sharf", "c6": "The soup is spicy." },
+        { "c1": "Healthy", "c2": "Gesund", "c3": "Ge-zoont", "c4": "Äpfel sind gesund.", "c5": "Ep-fel zind ge-zoont", "c6": "Apples are healthy." },
+        { "c1": "Sweet", "c2": "Süß", "c3": "Zues", "c4": "Der Tee ist süß.", "c5": "Dair Tay ist zues", "c6": "The tea is sweet." },
+        { "c1": "Comfortable", "c2": "Bequem", "c3": "Be-kwaym", "c4": "Die Jeans ist bequem.", "c5": "Dee Jeans ist be-kwaym", "c6": "The jeans are comfortable." },
+        { "c1": "Tight", "c2": "Eng", "c3": "Eng", "c4": "Das Hemd ist eng.", "c5": "Dass Hemt ist eng", "c6": "The shirt is tight." },
+        { "c1": "Cheap", "c2": "Billig", "c3": "Bil-likh", "c4": "Die Milch ist billig.", "c5": "Dee Milkh ist bil-likh", "c6": "The milk is cheap." },
+        { "c1": "Expensive", "c2": "Teuer", "c3": "Toy-er", "c4": "Das Auto ist teuer.", "c5": "Dass Ow-toh ist toy-er", "c6": "The car is expensive." },
+        { "c1": "Fast", "c2": "Schnell", "c3": "Shnel", "c4": "Der Zug fährt schnell.", "c5": "Dair Tsoog fairt shnel", "c6": "The train drives fast." },
+        { "c1": "Slow", "c2": "Langsam", "c3": "Lang-zahm", "c4": "Gehen Sie langsam.", "c5": "Gay-en zee lang-zahm", "c6": "Walk slowly." },
+        { "c1": "Bright", "c2": "Hell", "c3": "Hel", "c4": "Das Zimmer ist hell.", "c5": "Dass Tsim-mer ist hel", "c6": "The room is bright." },
+        { "c1": "Dark", "c2": "Dunkel", "c3": "Doon-kel", "c4": "Die Nacht ist dunkel.", "c5": "Dee Nakht ist doon-kel", "c6": "The night is dark." }
+      ]
+    }
+  ]
+}

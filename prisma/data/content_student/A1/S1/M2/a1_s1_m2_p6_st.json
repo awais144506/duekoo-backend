@@ -1,0 +1,31 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: International Office",
+  "deTitle": "Dialog 2: Internationales Büro",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "International Office: Ali introduces himself to an Official. They use formal German (Sie).",
+      "characters": [
+        { "id": "official", "name": "Official", "icon": "🤵" },
+        { "id": "ali", "name": "Ali", "icon": "👨" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "official", "de": "Guten Tag. Wie ist Ihr Name, bitte?", "ph": "Goo-ten Tahk. Vee ist eer Nah-muh, bit-tuh?", "en": "Good day. What is your name, please?" },
+        { "speaker": "ali", "de": "Guten Tag. Mein Name ist Ali Khan.", "ph": "Goo-ten Tahk. Mine Nah-muh ist Ah-lee Kahn.", "en": "Good day. My name is Ali Khan." },
+        { "speaker": "official", "de": "Herr Khan, sind Sie der neue Ingenieur?", "ph": "Hair Kahn, zind zee dair noy-uh In-zhen-yeur?", "en": "Mr. Khan, are you the new engineer?" },
+        { "speaker": "ali", "de": "Nein, ich bin kein Ingenieur. Ich bin Student.", "ph": "Nine, ish bin kine In-zhen-yeur. Ish bin Shtoo-dent.", "en": "No, I am not an engineer. I am a student." },
+        { "speaker": "official", "de": "Verstehe. Wie alt sind Sie?", "ph": "Fair-shtay-uh. Vee alt zind zee?", "en": "I see. How old are you?" },
+        { "speaker": "ali", "de": "Ich bin vierundzwanzig Jahre alt.", "ph": "Ish bin feer-oont-tsvan-tsish Yah-ruh alt.", "en": "I am 24 years old." },
+        { "speaker": "official", "de": "Welche Sprachen sprechen Sie?", "ph": "Vel-shuh Shprah-khen shpreh-khen zee?", "en": "Which languages do you speak?" },
+        { "speaker": "ali", "de": "Ich spreche Englisch und ein bisschen Deutsch.", "ph": "Ish shpreh-khuh Eng-lish oont ine bis-shen Doytsh.", "en": "I speak English and a little German." },
+        { "speaker": "official", "de": "Gut. Ihre Adresse ist die Hauptstraße 36?", "ph": "Goot. Ee-ruh Ah-dres-uh ist dee Howpt-shtrah-suh zex-oont-dry-sish?", "en": "Good. Your address is Main Street 36?" },
+        { "speaker": "ali", "de": "Ja, das ist richtig. Vielen Dank!", "ph": "Yah, das ist rish-tish. Fee-len Dank!", "en": "Yes, that is correct. Thank you very much!" },
+        { "speaker": "official", "de": "Bitte sehr. Auf Wiedersehen.", "ph": "Bit-tuh zair. Owf Vee-der-zay-en.", "en": "You are welcome. Goodbye." }
+      ]
+    }
+  ]
+}

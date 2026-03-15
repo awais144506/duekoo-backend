@@ -1,0 +1,46 @@
+{
+  "type": "COMPOSITE",
+  "title": "Vocabulary",
+  "deTitle": "Vokabular",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Vocabulary: Introduce Yourself",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "The name", "c2": "Der Name", "c3": "Dair Nah-meh" },
+        { "c1": "The age", "c2": "Das Alter", "c3": "Dass Al-ter" },
+        { "c1": "The country", "c2": "Das Land", "c3": "Dass Land" },
+        { "c1": "The city", "c2": "Die Stadt", "c3": "Dee Shtaht" },
+        { "c1": "The address", "c2": "Die Adresse", "c3": "Dee Ah-dress-eh" },
+        { "c1": "The job / profession", "c2": "Der Beruf", "c3": "Dair Beh-roof" },
+        { "c1": "Student (Male)", "c2": "Der Student", "c3": "Dair Shtoo-dent" },
+        { "c1": "Student (Female)", "c2": "Die Studentin", "c3": "Dee Shtoo-den-tin" },
+        { "c1": "Developer / Programmer", "c2": "Der Entwickler", "c3": "Dair Ent-vick-ler" },
+        { "c1": "Years old", "c2": "Jahre alt", "c3": "Yah-reh alt" },
+        { "c1": "To come from", "c2": "Kommen aus", "c3": "Kom-men ows" },
+        { "c1": "To live in", "c2": "Wohnen in", "c3": "Voh-nen in" },
+        { "c1": "To speak", "c2": "Sprechen", "c3": "Shpreh-khen" },
+        { "c1": "German", "c2": "Deutsch", "c3": "Doy-tch" },
+        { "c1": "English", "c2": "Englisch", "c3": "Eng-lish" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I come from Pakistan.", "c2": "Ich komme aus Pakistan", "c3": "Ish kom-meh ows Pah-kee-stahn" },
+        { "c1": "I live in Berlin.", "c2": "Ich wohne in Berlin", "c3": "Ish voh-neh in Ber-leen" },
+        { "c1": "I am a developer.", "c2": "Ich bin Entwickler", "c3": "Ish bin ent-vick-ler" },
+        { "c1": "I speak English.", "c2": "Ich spreche Englisch", "c3": "Ish shpreh-kheh eng-lish" }
+      ]
+    }
+  ]
+}

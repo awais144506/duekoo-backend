@@ -1,0 +1,51 @@
+{
+  "type": "COMPOSITE",
+  "title": "Counting 0 to 20",
+  "deTitle": "Zählen 0 bis 20",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Numbers 0 - 20",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["Digit", "German", "Phonetic"],
+      "rows": [
+        { "c1": "0", "c2": "Null", "c3": "Nool" },
+        { "c1": "1", "c2": "Eins", "c3": "Ines" },
+        { "c1": "2", "c2": "Zwei", "c3": "Tsvai" },
+        { "c1": "3", "c2": "Drei", "c3": "Dry" },
+        { "c1": "4", "c2": "Vier", "c3": "Fear" },
+        { "c1": "5", "c2": "Fünf", "c3": "Fewnf" },
+        { "c1": "6", "c2": "Sechs", "c3": "Zex" },
+        { "c1": "7", "c2": "Sieben", "c3": "Zee-ben" },
+        { "c1": "8", "c2": "Acht", "c3": "Akht" },
+        { "c1": "9", "c2": "Neun", "c3": "Noo-in" },
+        { "c1": "10", "c2": "Zehn", "c3": "Tsane" },
+        { "c1": "11", "c2": "Elf", "c3": "Elf" },
+        { "c1": "12", "c2": "Zwölf", "c3": "Tsvoolf" },
+        { "c1": "13", "c2": "Dreizehn", "c3": "Dry-Tsane" },
+        { "c1": "14", "c2": "Vierzehn", "c3": "Fear-Tsane" },
+        { "c1": "15", "c2": "Fünfzehn", "c3": "Fewnf-Tsane" },
+        { "c1": "16", "c2": "Sechzehn", "c3": "Zesht-Tsane" },
+        { "c1": "17", "c2": "Siebzehn", "c3": "Zeeb-Tsane" },
+        { "c1": "18", "c2": "Achtzehn", "c3": "Acht-Zehn" },
+        { "c1": "19", "c2": "Neunzehn", "c3": "Noo-in-Zehn" },
+        { "c1": "20", "c2": "Zwanzig", "c3": "Tsvan-zish" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Platform Four", "c2": "Gleis Vier", "c3": "Glaize Fear" },
+        { "c1": "Ten Euros", "c2": "Zehn Euro", "c3": "Tsane Oy-Ro" },
+        { "c1": "Number One", "c2": "Nummer Eins", "c3": "Nummer Ines" }
+      ]
+    }
+  ]
+}

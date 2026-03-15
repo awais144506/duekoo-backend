@@ -1,0 +1,48 @@
+{
+  "type": "COMPOSITE",
+  "title": "Possession",
+  "deTitle": "Besitz",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Possessive Pronouns",
+      "intro": "German possessive pronouns change their ending based on the gender of the noun that follows. Feminine and Plural nouns add an '-e' (e.g., meine, deine).",
+      "config": {
+        "speechSequence": ["c2", "c3"]
+      },
+      "headers": ["English", "German (M/N)", "German (F/P)"],
+      "rows": [
+        { "c1": "My", "c2": "Mein", "c3": "Meine" },
+        { "c1": "Your (Informal)", "c2": "Dein", "c3": "Deine" },
+        { "c1": "His / Its", "c2": "Sein", "c3": "Seine" },
+        { "c1": "Her", "c2": "Ihr", "c3": "Ihre" },
+        { "c1": "Our", "c2": "Unser", "c3": "Unsere" },
+        { "c1": "Your (Plural)", "c2": "Euer", "c3": "Eure" },
+        { "c1": "Your (Formal) / Their", "c2": "Ihr", "c3": "Ihre" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "The 'W' Trap",
+      "blocks": [
+        {
+          "heading": "Pronunciation Warning",
+          "text": "In Wollen, the W sounds like a V (Vollen), and the i in 'Ich will' sounds like 'Vill'. Do not confuse this with the English 'will' (future tense)."
+        }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I must show my passport.", "c2": "Ich muss meinen Pass zeigen.", "c3": "Ish mooss mine-en Pass tsy-gen" },
+        { "c1": "May I see her visa?", "c2": "Darf ich ihre Visum sehen?", "c3": "Darf ish eer Vee-zoom zay-en?" },
+        { "c1": "We want to get our luggage.", "c2": "Wir wollen unser Gepäck holen.", "c3": "Veer voll-en oon-zer Geh-peck hoh-len" }
+      ]
+    }
+  ]
+}

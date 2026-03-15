@@ -1,0 +1,199 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// --- Enums ---
+
+enum Intake {
+  SUMMER
+  WINTER
+}
+
+enum VisaType {
+  STUDENT
+  FAMILY
+  VISIT
+}
+
+enum ProgressStatus {
+  LOCKED
+  UNLOCKED
+  COMPLETED
+}
+
+// --- 1. Identity & Profile ---
+
+model User {
+  id            String               @id @default(cuid())
+  email         String               @unique
+  name          String?
+  imageUrl      String?
+  profile       UserProfile?
+  currentPos    UserCurrentPosition?
+  levelProgress LevelProgress[]
+  sectionStatus SectionStatus[]
+  moduleStatus  ModuleStatus[]
+  partStatus    PartStatus[]
+  certificates  Certificate[]
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+}
+
+model UserProfile {
+  id             String    @id @default(cuid())
+  userId         String    @unique
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  dob            DateTime?
+  passportNum    String?   @unique
+  visaType       VisaType  @default(STUDENT)
+  program        String?
+  universityName String?
+  country        String?
+  phoneNo        String?   @unique
+  intake         Intake?
+  hasSeenWelcome Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+// --- 2. Course Structure (The Skeleton) ---
+
+model Level {
+  id           String                @id @default(cuid())
+  slug         String                @unique
+  title        String
+  deTitle      String?
+  order        Int
+  sections     Section[]
+  progress     LevelProgress[]
+  certificates Certificate[]
+  currentPos   UserCurrentPosition[]
+}
+
+model Section {
+  id             String                @id @default(cuid())
+  levelId        String
+  level          Level                 @relation(fields: [levelId], references: [id])
+  title          String
+  deTitle        String?
+  visaType       String? // Filter: "STUDENT", "WORK", etc.
+  specialization String? // Filter: "CS", "BUSINESS" (for Students)
+  order          Int
+  modules        Module[]
+  status         SectionStatus[]
+  currentPos     UserCurrentPosition[]
+}
+
+model Module {
+  id             String                @id @default(cuid())
+  sectionId      String
+  section        Section               @relation(fields: [sectionId], references: [id])
+  title          String
+  deTitle        String?
+  visaType       String?
+  specialization String?
+  order          Int
+  parts          Part[]
+  statuses       ModuleStatus[]
+  currentPos     UserCurrentPosition[]
+}
+
+model Part {
+  id         String                @id @default(cuid())
+  moduleId   String
+  module     Module                @relation(fields: [moduleId], references: [id])
+  title      String
+  deTitle    String?
+  content    Json? // <--- Stores vocabulary, grammar, and quiz data
+  contentId  String // A unique slug (e.g., "a2-cs-cv-vocab")
+  order      Int
+  status     PartStatus[]
+  currentPos UserCurrentPosition[]
+}
+
+// --- 3. User Progress & State Tracking ---
+
+model UserCurrentPosition {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  levelId   String
+  level     Level    @relation(fields: [levelId], references: [id])
+  sectionId String
+  section   Section  @relation(fields: [sectionId], references: [id])
+  moduleId  String
+  module    Module   @relation(fields: [moduleId], references: [id])
+  partId    String
+  part      Part     @relation(fields: [partId], references: [id])
+  updatedAt DateTime @updatedAt
+}
+
+model LevelProgress {
+  id                 String         @id @default(cuid())
+  userId             String
+  user               User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  levelId            String
+  level              Level          @relation(fields: [levelId], references: [id])
+  progressPercentage Int            @default(0)
+  status             ProgressStatus @default(LOCKED)
+  updatedAt          DateTime       @updatedAt
+
+  @@unique([userId, levelId])
+}
+
+model SectionStatus {
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sectionId String
+  section   Section        @relation(fields: [sectionId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
+
+  @@unique([userId, sectionId])
+}
+
+model ModuleStatus {
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  moduleId  String
+  module    Module         @relation(fields: [moduleId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
+
+  @@unique([userId, moduleId])
+}
+
+model PartStatus {
+  id        String         @id @default(cuid())
+  userId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  partId    String
+  part      Part           @relation(fields: [partId], references: [id])
+  status    ProgressStatus @default(LOCKED)
+  updatedAt DateTime       @updatedAt
+
+  @@unique([userId, partId])
+}
+
+// --- 4. The Certificate & Verification System ---
+
+model Certificate {
+  id                String   @id @default(cuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  levelId           String
+  level             Level    @relation(fields: [levelId], references: [id])
+  certificateNo     String   @unique
+  issueDate         DateTime @default(now())
+  fileUrl           String
+  verificationToken String   @unique @default(uuid())
+  isRevoked         Boolean  @default(false)
+  createdAt         DateTime @default(now())
+}

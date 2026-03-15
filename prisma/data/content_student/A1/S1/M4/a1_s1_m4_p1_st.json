@@ -1,0 +1,51 @@
+{
+  "type": "COMPOSITE",
+  "title": "Transportation Vocabulary",
+  "deTitle": "Vokabeln: Transport",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Getting Around",
+      "intro": "In Germany, public transport is king. Knowing the difference between the U-Bahn (Subway) and S-Bahn (Suburban) is essential for navigating cities like Berlin.",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Main Train Station", "c2": "Der Hauptbahnhof", "c3": "Dair Howpt-bahn-hohf" },
+        { "c1": "The Taxi", "c2": "Das Taxi", "c3": "Dass Tah-ksee" },
+        { "c1": "The Bus", "c2": "Der Bus", "c3": "Dair Booss" },
+        { "c1": "The Train", "c2": "Der Zug", "c3": "Dair Tsoog" },
+        { "c1": "Subway / U-Bahn", "c2": "Die U-Bahn", "c3": "Dee Oo-bahn" },
+        { "c1": "Suburban Train", "c2": "Die S-Bahn", "c3": "Dee Ess-bahn" },
+        { "c1": "The Platform", "c2": "Das Gleis", "c3": "Dass Glyce" },
+        { "c1": "The Ticket", "c2": "Die Fahrkarte", "c3": "Dee Fahr-kar-teh" },
+        { "c1": "Ticket Machine", "c2": "Der Fahrkartenautomat", "c3": "Dair Fahr-kar-ten-ow-to-maht" },
+        { "c1": "The Schedule", "c2": "Der Fahrplan", "c3": "Dair Fahr-plahn" },
+        { "c1": "The Direction", "c2": "Die Richtung", "c3": "Dee Rikh-toong" },
+        { "c1": "To Change (Trains)", "c2": "Umsteigen", "c3": "Oom-shty-gen" },
+        { "c1": "To Depart", "c2": "Abfahren", "c3": "Ab-fah-ren" },
+        { "c1": "To Arrive", "c2": "Ankommen", "c3": "An-kom-men" },
+        { "c1": "Straight ahead", "c2": "Geradeaus", "c3": "Geh-rah-deh-ows" },
+        { "c1": "To the left", "c2": "Nach links", "c3": "Nahkh links" },
+        { "c1": "To the right", "c2": "Nach rechts", "c3": "Nahkh rekhts" },
+        { "c1": "Near / Close", "c2": "Nah", "c3": "Nah" },
+        { "c1": "Far", "c2": "Weit", "c3": "Vite" },
+        { "c1": "The Map", "c2": "Der Stadtplan", "c3": "Dair Shtaht-plahn" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Where is the baggage claim?", "c2": "Wo ist die Gepäckausgabe?", "c3": "Voh ist dee Geh-peck-ows-gah-beh?" },
+        { "c1": "I have a delay", "c2": "Ich habe eine Verspätung.", "c3": "Ish ha-beh eye-neh fer-shpay-toong." },
+        { "c1": "Here is my ID.", "c2": "Hier ist mein Ausweis.", "c3": "Heer ist mine Ows-vice." }
+      ]
+    }
+  ]
+}

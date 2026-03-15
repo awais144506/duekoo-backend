@@ -1,0 +1,42 @@
+{
+  "type": "COMPOSITE",
+  "title": "Grocery Vocabulary",
+  "deTitle": "Vokabeln: Lebensmittel",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Essential Groceries",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Bread", "c2": "Das Brot", "c3": "Dass Broht" },
+        { "c1": "Bread Rolls", "c2": "Die Brötchen", "c3": "Dee Brert-khen" },
+        { "c1": "Milk", "c2": "Die Milch", "c3": "Dee Milkh" },
+        { "c1": "Eggs", "c2": "Die Eier", "c3": "Dee Eye-er" },
+        { "c1": "Cheese", "c2": "Der Käse", "c3": "Dair Kay-zeh" },
+        { "c1": "Butter", "c2": "Die Butter", "c3": "Dee Boot-ter" },
+        { "c1": "Rice", "c2": "Der Reis", "c3": "Dair Rice" },
+        { "c1": "Chicken", "c2": "Das Hähnchen", "c3": "Dass Hayn-khen" },
+        { "c1": "Meat (Beef)", "c2": "Das Rindfleisch", "c3": "Dass Rint-fly-sh" },
+        { "c1": "Water", "c2": "Das Wasser", "c3": "Dass Vas-ser" },
+        { "c1": "Flour", "c2": "Das Mehl", "c3": "Dass Mayl" },
+        { "c1": "Sugar", "c2": "Der Zucker", "c3": "Dair Tsook-er" },
+        { "c1": "Salt", "c2": "Das Salz", "c3": "Dass Zalts" },
+        { "c1": "Oil", "c2": "Das Öl", "c3": "Dass Ehl" },
+        { "c1": "Onion", "c2": "Die Zwiebel", "c3": "Dee Tsvy-bel" },
+        { "c1": "Garlic", "c2": "Der Knoblauch", "c3": "Dair Knoh-blowkh" },
+        { "c1": "Potato", "c2": "Die Kartoffel", "c3": "Dee Kar-tof-fel" },
+        { "c1": "Tomato", "c2": "Die Tomate", "c3": "Dee To-mah-te" },
+        { "c1": "Apple", "c2": "Der Apfel", "c3": "Dair Ap-fel" },
+        { "c1": "Banana", "c2": "Die Banane", "c3": "Dee Bah-nah-ne" },
+        { "c1": "Tea", "c2": "Der Tee", "c3": "Dair Tay" },
+        { "c1": "Coffee", "c2": "Der Kaffee", "c3": "Dair Kaf-fay" },
+        { "c1": "Yogurt", "c2": "Der Joghurt", "c3": "Dair Yo-goort" },
+        { "c1": "Pasta / Noodles", "c2": "Die Nudeln", "c3": "Dee Noo-deln" },
+        { "c1": "Juice", "c2": "Der Saft", "c3": "Dair Zaft" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "COMPOSITE",
+  "title": "Places & Sightseeing",
+  "deTitle": "Orte & Sehenswürdigkeiten",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Common Locations",
+      "config": {
+        "speechSequence": ["c1"]
+      },
+      "headers": ["German", "English", "Phonetic"],
+      "rows": [
+        { "c1": "Der Strand", "c2": "The Beach", "c3": "Dair Shtrant" },
+        { "c1": "Der See", "c2": "The Lake", "c3": "Dair Zay" },
+        { "c1": "Der Wald", "c2": "The Forest", "c3": "Dair Valt" },
+        { "c1": "Die Berge", "c2": "The Mountains", "c3": "Dee Bair-ge" },
+        { "c1": "Das Meer", "c2": "The Sea/Ocean", "c3": "Dass Mair" },
+        { "c1": "Die Moschee", "c2": "The Mosque", "c3": "Dee Mo-shay" },
+        { "c1": "Die Kirche", "c2": "The Church", "c3": "Dee Keer-khe" },
+        { "c1": "Der Tempel", "c2": "The Temple", "c3": "Dair Tem-pel" },
+        { "c1": "Das Museum", "c2": "The Museum", "c3": "Dass Moo-zay-oom" },
+        { "c1": "Das Schloss", "c2": "The Castle", "c3": "Dass Shloss" },
+        { "c1": "Der Turm", "c2": "The Tower", "c3": "Dair Toorm" },
+        { "c1": "Das Ticket", "c2": "The Ticket", "c3": "Dass Tee-ket" },
+        { "c1": "Das Krankenhaus", "c2": "The Hospital", "c3": "Dass Kran-ken-hows" },
+        { "c1": "Stadtzentrum", "c2": "City Center", "c3": "Shtat-tsen-troom" }
+      ]
+    }
+  ]
+}

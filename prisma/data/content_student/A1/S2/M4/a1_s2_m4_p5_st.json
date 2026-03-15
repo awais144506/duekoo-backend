@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 3: Reporting a Theft",
+  "deTitle": "Dialog 3: Diebstahl melden",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Sunita's bag was stolen on a train. She visit the police station to file a formal report to help with her insurance and passport replacement.",
+      "characters": [
+        { "id": "sunita", "name": "Sunita", "icon": "👩" },
+        { "id": "polizist", "name": "Polizist", "icon": "👮" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "sunita", "de": "Guten Tag. Ich möchte eine Anzeige machen.", "ph": "Goo-ten Tahk. Ish mukh-teh eye-neh An-tsy-geh ma-khen.", "en": "Good day. I would like to file a report." },
+        { "speaker": "polizist", "de": "Guten Tag. Was ist passiert?", "ph": "Goo-ten Tahk. Vas ist pas-seert?", "en": "Good day. What happened?" },
+        { "speaker": "sunita", "de": "Meine Tasche wurde gestohlen.", "ph": "My-neh Tash-she voor-deh ge-shtoh-len.", "en": "My bag was stolen." },
+        { "speaker": "polizist", "de": "Wo und wann ist das passiert?", "ph": "Voh oond vann ist dass pas-seert?", "en": "Where and when did that happen?" },
+        { "speaker": "sunita", "de": "Im Zug, vor einer Stunde.", "ph": "Im Tsoog, for eye-ner Shtoon-deh.", "en": "On the train, one hour ago." },
+        { "speaker": "polizist", "de": "Was war in der Tasche?", "ph": "Vas vahr in dair Tash-she?", "en": "What was in the bag?" },
+        { "speaker": "sunita", "de": "Mein Reisepass und mein Geldbeutel.", "ph": "Mine Ry-ze-pass oond mine Gelt-boy-tel.", "en": "My passport and my wallet." },
+        { "speaker": "polizist", "de": "Ich brauche Ihren Namen und Ihre Adresse.", "ph": "Ish brow-khe eer-en Nah-men oond eer-eh Ah-dres-seh.", "en": "I need your name and your address." },
+        { "speaker": "sunita", "de": "Hier sind meine Daten. Bekomme ich eine Kopie?", "ph": "Heer zind my-neh Dah-ten. Be-kom-me ish eye-ne Ko-pee?", "en": "Here is my data. Do I get a copy?" },
+        { "speaker": "polizist", "de": "Ja, hier ist die Bestätigung für die Versicherung.", "ph": "Yah, heer ist dee Be-shtay-tee-goong feer dee Fair-zikh-er-oongs.", "en": "Yes, here is the confirmation for the insurance." }
+      ]
+    }
+  ]
+}

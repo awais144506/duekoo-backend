@@ -1,0 +1,49 @@
+{
+  "type": "COMPOSITE",
+  "title": "Alphabets",
+  "deTitle": "Das Alphabet",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Letters and Pronunciation",
+      "intro": "In German, letters often sound different than in English. Learn the letter name and an example word.",
+      "config": {
+        "speechSequence": ["c1", "c3"],
+        "speechDelay": 500
+      },
+      "headers": ["Letter", "Phonetic", "Example", "Phonetic 2", "English", "Icon"],
+      "rows": [
+        { "c1": "A", "c2": "Ah", "c3": "Apfel", "c4": "Ap-fel", "c5": "Apple", "c6": "🍏" },
+        { "c1": "B", "c2": "Be", "c3": "Brot", "c4": "Broht", "c5": "Bread", "c6": "🥪" },
+        { "c1": "C", "c2": "Tse", "c3": "Café", "c4": "Ka-fay", "c5": "Coffee Shop", "c6": "🏪" },
+        { "c1": "D", "c2": "De", "c3": "Drucker", "c4": "Drook-er", "c5": "Printer", "c6": "🖨️" },
+        { "c1": "E", "c2": "Ay", "c3": "Essen", "c4": "Ess-en", "c5": "Food", "c6": "🍲" },
+        { "c1": "F", "c2": "Eff", "c3": "Flughafen", "c4": "Floog-hah-fen", "c5": "Airport", "c6": "🛬" },
+        { "c1": "G", "c2": "Gii", "c3": "Geld", "c4": "Gelt", "c5": "Money", "c6": "💵" },
+        { "c1": "H", "c2": "Ha", "c3": "Haus", "c4": "Hous", "c5": "House", "c6": "🏡" },
+        { "c1": "I", "c2": "Ee", "c3": "Insel", "c4": "In-zel", "c5": "Island", "c6": "🏝️" },
+        { "c1": "J", "c2": "Yott", "c3": "Jacke", "c4": "Yah-keh", "c5": "Jacket", "c6": "🧥" },
+        { "c1": "K", "c2": "Kah", "c3": "Käse", "c4": "Kay-zeh", "c5": "Cheese", "c6": "🧀" },
+        { "c1": "L", "c2": "Ell", "c3": "Lehrer", "c4": "Lay-rer", "c5": "Teacher", "c6": "👨‍🏫" },
+        { "c1": "M", "c2": "Emm", "c3": "Messer", "c4": "Mess-er", "c5": "Knife", "c6": "🗡️" },
+        { "c1": "N", "c2": "Enn", "c3": "Nachricht", "c4": "Nahk-risht", "c5": "Message", "c6": "📩" },
+        { "c1": "O", "c2": "Oh", "c3": "Obst", "c4": "Opst", "c5": "Fruit", "c6": "🍏" },
+        { "c1": "P", "c2": "Pe", "c3": "Paket", "c4": "Pa-kayt", "c5": "Parcel", "c6": "📦" },
+        { "c1": "Q", "c2": "Koo", "c3": "Quittung", "c4": "Kvit-toong", "c5": "Receipt", "c6": "🧾" },
+        { "c1": "R", "c2": "Err", "c3": "Rechnung", "c4": "Resh-noong", "c5": "Bill/Invoice", "c6": "🧾" },
+        { "c1": "S", "c2": "Ess", "c3": "Schuh", "c4": "Shoo", "c5": "Shoe", "c6": "👟" },
+        { "c1": "T", "c2": "Te", "c3": "Taxifahrer", "c4": "Tak-see-fah-rer", "c5": "Taxi Driver", "c6": "🚖" },
+        { "c1": "U", "c2": "Oo", "c3": "Uhr", "c4": "Oor", "c5": "Watch", "c6": "⌚" },
+        { "c1": "V", "c2": "Fow", "c3": "Veranstaltung", "c4": "Fair-an-shtal-toong", "c5": "Event", "c6": "📅" },
+        { "c1": "W", "c2": "Vee", "c3": "Wohnung", "c4": "Voh-noong", "c5": "Apartment", "c6": "🛋️" },
+        { "c1": "X", "c2": "Iks", "c3": "Xylophon", "c4": "Ksu-lo-fohn", "c5": "Xylophone", "c6": "🎹" },
+        { "c1": "Y", "c2": "Upsilon", "c3": "Yacht", "c4": "Yaht", "c5": "Yacht", "c6": "⛵" },
+        { "c1": "Z", "c2": "Tsett", "c3": "Zug", "c4": "Tsoog", "c5": "Train", "c6": "🚉" },
+        { "c1": "Ä", "c2": "Ae", "c3": "Mädchen", "c4": "Maid-shen", "c5": "Girl", "c6": "👧" },
+        { "c1": "Ö", "c2": "Oe", "c3": "Schön", "c4": "Shoen", "c5": "Beautiful", "c6": "💖" },
+        { "c1": "Ü", "c2": "Ue", "c3": "Tür", "c4": "Tuer", "c5": "Door", "c6": "🚪" },
+        { "c1": "ß", "c2": "ss", "c3": "Straße", "c4": "Shtrah-suh", "c5": "Street", "c6": "🛣️" }
+      ]
+    }
+  ]
+}

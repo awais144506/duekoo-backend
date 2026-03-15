@@ -1,0 +1,65 @@
+{
+  "type": "COMPOSITE",
+  "title": "Basic Grammar",
+  "deTitle": "Grundlegende Grammatik",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Essential Verbs (Sein)",
+      "config": {
+        "speechSequence": ["c1", "c2"]
+      },
+      "headers": ["Conjugation", "Example", "Phonetic", "English"],
+      "rows": [
+        { "c1": "Ich bin", "c2": "Ich bin Student", "c3": "Ish bin Shtoo-dent", "c4": "I am a student" },
+        { "c1": "Du bist", "c2": "Du bist hier", "c3": "Doo bist hear", "c4": "You are here" },
+        { "c1": "Er/Sie/Es ist", "c2": "Er ist der Fahrer", "c3": "Air ist dair Fah-rer", "c4": "He is the driver" },
+        { "c1": "Wir sind", "c2": "Wir sind im Taxi", "c3": "Veer zind im Tak-see", "c4": "We are in the taxi" },
+        { "c1": "Ihr seid", "c2": "Ihr seid spät", "c3": "Eer zide shpait", "c4": "You (plural) are late" },
+        { "c1": "Sie sind", "c2": "Sie sind Herr Müller", "c3": "Zee zind Hair Muel-ler", "c4": "You are Mr. Müller" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Sentence Structure Rules",
+      "blocks": [
+        {
+          "heading": "Verb Position (V2)",
+          "text": "The verb must always be the second element in the sentence. Even if you add more information at the start, the verb stays in spot #2.",
+          "examples": [
+            { "exp1": "I am here. → Ich bin hier." },
+            { "exp2": "Today I am here. → Heute bin ich hier." }
+          ]
+        },
+        {
+          "heading": "Asking Questions",
+          "text": "The question word (W-word) stays first while the verb stays in the second position.",
+          "examples": [
+            { "exp1": "Who are you? → Wer bist du?" },
+            { "exp2": "Where is the taxi? → Wo ist das Taxi?" }
+          ]
+        },
+        {
+          "heading": "Yes/No Questions",
+          "text": "To ask a question that can be answered with 'Yes' or 'No', simply swap the subject and the verb.",
+          "examples": [
+            { "exp1": "Du bist hier. (You are here.) → Bist du hier? (Are you here?)" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I am at the airport", "c2": "Ich bin am Flughafen", "c3": "Ish bin am Floog-hah-fen" },
+        { "c1": "Where is the train station?", "c2": "Wo ist der Bahnhof", "c3": "Voh ist dair Bahn-hohf" },
+        { "c1": "That is my suitcase", "c2": "Das ist mein Koffer", "c3": "Dass ist mine Koff-er" }
+      ]
+    }
+  ]
+}

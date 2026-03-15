@@ -1,0 +1,53 @@
+{
+  "type": "COMPOSITE",
+  "title": "Grammar: Negation",
+  "deTitle": "Grammatik: Negation",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "How to say 'No'",
+      "blocks": [
+        {
+          "heading": "Nein",
+          "text": "Used only as a direct response to a question. It is a standalone word meaning 'No'.",
+          "examples": [
+            { "exp1": "Question: Bist du Student? → Answer: Nein, ich bin Entwickler." }
+          ]
+        },
+        {
+          "heading": "Nicht",
+          "text": "Use this to negate a verb or an adjective (to say you are 'not' doing something).",
+          "examples": [
+            { "exp1": "Ich wohne nicht in Berlin. (I do not live in Berlin.)" },
+            { "exp2": "Das Taxi ist nicht hier. (The taxi is not here.)" }
+          ]
+        },
+        {
+          "heading": "Kein",
+          "text": "The 'Negative Article'. Use it to negate nouns that usually have 'ein' or 'eine'.",
+          "examples": [
+            { "exp1": "Ich spreche keine Sprache. (I speak no language.)" },
+            { "exp2": "Ich habe kein Geld. (I have no money.)" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "No, I am a developer.", "c2": "Nein, ich bin Entwickler", "c3": "Nine, ish bin ent-vick-ler" },
+        { "c1": "I do not live in Berlin.", "c2": "Ich wohne nicht in Berlin", "c3": "Ish voh-neh nisht Ber-leen" },
+        { "c1": "The taxi is not here.", "c2": "Das Taxi ist nicht hier", "c3": "Dass Tak-see ist nisht hear" },
+        { "c1": "I speak no language.", "c2": "Ich spreche keine Sprache", "c3": "Ish shpreh-kheh ky-neh Shprah-kheh" },
+        { "c1": "I have no money.", "c2": "Ich habe kein Geld", "c3": "Ish ha-beh kyne Gelt" },
+        { "c1": "I am not Daniel.", "c2": "Ich bin nicht Daniel", "c3": "Ish bin nisht Daniel" },
+        { "c1": "That is no taxi.", "c2": "Das ist kein Taxi", "c3": "Dass ist kyne Tak-see" }
+      ]
+    }
+  ]
+}

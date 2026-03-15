@@ -1,0 +1,37 @@
+{
+  "type": "COMPOSITE",
+  "title": "Prepositions",
+  "deTitle": "Präpositionen",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Common Prepositions",
+      "config": {
+        "speechSequence": ["c3"]
+      },
+      "headers": ["German", "English", "German Sentence", "Phonetic", "English Sentence"],
+      "rows": [
+        { "c1": "Zu", "c2": "To / Towards", "c3": "Ich gehe zu dem Gate.", "c4": "Ikh gay-uh tsoo deym Gate", "c5": "I am going to the gate." },
+        { "c1": "In", "c2": "In / Into", "c3": "Ich bin in dem Terminal.", "c4": "Ikh bin in deym Ter-mi-nal", "c5": "I am in the terminal." },
+        { "c1": "An", "c2": "At / On", "c3": "Ich stehe an dem Schalter.", "c4": "Ikh shtay-uh an deym Shal-ter", "c5": "I am standing at the counter." },
+        { "c1": "Nach", "c2": "To (Destinations)", "c3": "Ich fliege nach Deutschland.", "c4": "Ikh flee-guh nakh Doytch-land", "c5": "I am flying to Germany." },
+        { "c1": "Mit", "c2": "With", "c3": "Ich reise mit meiner Familie.", "c4": "Ikh rye-zuh mit mine-er Fa-mee-lee-uh", "c5": "I am traveling with my family." }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "The 'Contraction' Rule",
+      "blocks": [
+        {
+          "heading": "Native Sound",
+          "text": "In natural German, prepositions often merge with the article 'dem'. Using these contractions will make you sound much more like a native speaker.",
+          "examples": [
+            { "exp1": "Zum (Zu + dem): Ich gehe zum Ausgang. (I am going to the exit.)" },
+            { "exp2": "Im (In + dem): Ich bin im Taxi. (I am in the taxi.)" },
+            { "exp3": "Am (An + dem): Ich bin am Schalter. (I am at the counter.)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

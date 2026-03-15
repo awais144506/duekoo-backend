@@ -1,0 +1,41 @@
+{
+  "type": "COMPOSITE",
+  "title": "Action Verbs",
+  "deTitle": "Aktionsverben",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "University Actions",
+      "config": {
+        "speechSequence": ["c2", "c4"]
+      },
+      "headers": ["English", "German", "Phonetic", "Example", "Phonetic", "Translation"],
+      "rows": [
+        { "c1": "To Study (Major)", "c2": "Studieren", "c3": "Stoo-dee-ren", "c4": "Ich studiere Informatik.", "c5": "Ish stoo-dee-reh In-for-mah-tik", "c6": "I study Computer Science." },
+        { "c1": "To Learn (Task)", "c2": "Lernen", "c3": "Lair-nen", "c4": "Ich lerne Deutsch.", "c5": "Ish lair-neh Doytch", "c6": "I am learning German." },
+        { "c1": "To Write", "c2": "Schreiben", "c3": "Shry-ben", "c4": "Ich schreibe einen Test.", "c5": "Ish shry-beh eye-nen Test", "c6": "I am writing a test." },
+        { "c1": "To Read", "c2": "Lesen", "c3": "Lay-zen", "c4": "Ich lese ein Buch.", "c5": "Ish lay-zeh eye-n Bookh", "c6": "I am reading a book." },
+        { "c1": "To Register", "c2": "Sich anmelden", "c3": "Zikh an-mel-den", "c4": "Ich melde mich an.", "c5": "Ish mel-deh mikh an", "c6": "I am registering." },
+        { "c1": "To Fill out", "c2": "Ausfüllen", "c3": "Ows-fue-len", "c4": "Ich fülle das Formular aus.", "c5": "Ish fuel-leh dass For-moo-lahr ows", "c6": "I fill out the form." },
+        { "c1": "To Pay", "c2": "Bezahlen", "c3": "Beh-tsah-len", "c4": "Ich bezahle die Gebühr.", "c5": "Ish beh-tsah-leh dee Geh-buer", "c6": "I pay the fee." },
+        { "c1": "To Sign", "c2": "Unterschreiben", "c3": "Oon-ter-shry-ben", "c4": "Bitte unterschreiben Sie hier.", "c5": "Bit-teh oon-ter-shry-ben zee heer", "c6": "Please sign here." },
+        { "c1": "To Understand", "c2": "Verstehen", "c3": "Fair-shtay-en", "c4": "Ich verstehe das nicht.", "c5": "Ish fair-shtay-eh dass nisht", "c6": "I don't understand that." },
+        { "c1": "To Ask", "c2": "Fragen", "c3": "Frah-gen", "c4": "Darf ich etwas fragen?", "c5": "Darf ish et-vass frah-gen", "c6": "May I ask something?" }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Separable Verbs",
+      "blocks": [
+        {
+          "heading": "The Split Rule",
+          "text": "Watch out for **Sich anmelden** and **Ausfüllen**. Just like 'Abbiegen', these verbs split when conjugated. The prefix moves to the very end of the sentence.",
+          "examples": [
+            { "exp1": "Anmelden: Ich melde mich an. (The 'an' goes to the end)." },
+            { "exp2": "Ausfüllen: Ich fülle das Formular aus. (The 'aus' goes to the end)." }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "type": "COMPOSITE",
+  "title": "Visit Doctor",
+  "deTitle": "Beim Arzt",
+  "sections": [
+    {
+      "type": "TABLE",
+      "title": "Medical Vocabulary",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "Head", "c2": "Der Kopf", "c3": "Dair Kofp" },
+        { "c1": "Stomach / Belly", "c2": "Der Bauch", "c3": "Dair Bowkh" },
+        { "c1": "Back", "c2": "Der Rücken", "c3": "Dair Rueck-ken" },
+        { "c1": "Throat / Neck", "c2": "Der Hals", "c3": "Dair Halss" },
+        { "c1": "Hand", "c2": "Die Hand", "c3": "Dee Hant" },
+        { "c1": "Leg", "c2": "Das Bein", "c3": "Dass Bine" },
+        { "c1": "Fever", "c2": "Das Fieber", "c3": "Dass Fee-ber" },
+        { "c1": "Cough", "c2": "Der Husten", "c3": "Dair Hoos-ten" },
+        { "c1": "Cold (Illness)", "c2": "Die Erkältung", "c3": "Dee Air-kel-toong" },
+        { "c1": "Pain", "c2": "Die Schmerzen", "c3": "Dee Shmairts-en" },
+        { "c1": "Sick", "c2": "Krank", "c3": "Krank" },
+        { "c1": "The Appointment", "c2": "Der Termin", "c3": "Dair Tair-meen" },
+        { "c1": "The Doctor", "c2": "Der Arzt", "c3": "Dair Artst" },
+        { "c1": "The Pharmacy", "c2": "Die Apotheke", "c3": "Dee Ah-po-tay-ke" },
+        { "c1": "The Medicine", "c2": "Die Medizin", "c3": "Dee Me-dee-tseen" }
+      ]
+    },
+    {
+      "type": "DRILL",
+      "title": "Drill",
+      "config": {
+        "speechSequence": ["c2"]
+      },
+      "headers": ["English", "German", "Phonetic"],
+      "rows": [
+        { "c1": "I have a headache.", "c2": "Ich habe Kopfschmerzen.", "c3": "Ish ha-beh Kofp-shmairts-en" },
+        { "c1": "I have a fever.", "c2": "Ich habe Fieber.", "c3": "Ish ha-beh Fee-ber" },
+        { "c1": "I have a cold.", "c2": "Ich habe eine Erkältung.", "c3": "Ish ha-beh eye-neh Air-kel-toong" },
+        { "c1": "My back hurts.", "c2": "Mein Rücken tut weh.", "c3": "Mine Rueck-ken toot vay" },
+        { "c1": "My leg hurts.", "c2": "Mein Bein tut weh.", "c3": "Mine Bine toot vay" },
+        { "c1": "My hand hurts.", "c2": "Meine Hand tut weh.", "c3": "My-neh Hant toot vay" }
+      ]
+    }
+  ]
+}

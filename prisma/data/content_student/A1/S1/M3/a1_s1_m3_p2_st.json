@@ -1,0 +1,67 @@
+{
+  "type": "COMPOSITE",
+  "title": "Modal Verbs",
+  "deTitle": "Modalverben",
+  "sections": [
+    {
+      "type": "EXPLAINER",
+      "title": "Understanding Modal Verbs",
+      "blocks": [
+        {
+          "heading": "The V2 + End Rule",
+          "text": "Modal verbs are 'helpers' that change the mood of the sentence. In German, the modal verb takes the 2nd position, and the main action verb moves to the very end of the sentence.",
+          "bullets": [
+            "Example: Ich **kann** mein Ticket nicht **finden**. (The action 'find' moves to the end)."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Modal Verbs List",
+      "config": {
+        "speechSequence": ["c3"]
+      },
+      "headers": ["Verb", "Meaning", "Example (DE)", "Phonetic", "English"],
+      "rows": [
+        { "c1": "Können", "c2": "Can / Able to", "c3": "Ich kann mein Ticket nicht finden.", "c4": "Ish kan mine Tik-et nisht fin-den", "c5": "I can't find my ticket." },
+        { "c1": "Müssen", "c2": "Must / Have to", "c3": "Ich muss zum Zoll gehen.", "c4": "Ish mooss tsoom Tsol gay-hen", "c5": "I must go to customs." },
+        { "c1": "Dürfen", "c2": "May / Allowed", "c3": "Darf ich hier parken?", "c4": "Darf ish hear par-ken?", "c5": "Am I allowed to park here?" },
+        { "c1": "Wollen", "c2": "Want to", "c3": "Ich will ein Taxi nehmen.", "c4": "Ish vil ine Tak-see nay-men", "c5": "I want to take a taxi." },
+        { "c1": "Sollen", "c2": "Should / Shall", "c3": "Wo soll ich warten?", "c4": "Voh zol ish var-ten?", "c5": "Where should I wait?" },
+        { "c1": "Mögen", "c2": "To like", "c3": "Ich mag Deutschland.", "c4": "Ish mahk Doytch-land", "c5": "I like Germany." },
+        { "c1": "Möchten*", "c2": "Would like", "c3": "Ich möchte Wasser kaufen.", "c4": "Ish moesh-teh Vas-ser kou-fen", "c5": "I would like to buy water." }
+      ]
+    },
+    {
+      "type": "EXPLAINER",
+      "title": "Conjugation Rules",
+      "blocks": [
+        {
+          "heading": "Vowel Changes",
+          "text": "Modal verbs are tricky because the vowel often changes for singular forms (Ich, Du, Er/Sie/Es).",
+          "bullets": [
+            "The **Golden Rule**: The 'Ich' and 'Er/Sie/Es' forms are always identical.",
+            "Example: Ich **kann** / Er **kann**."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TABLE",
+      "title": "Verb Conjugation Grid",
+      "config": {
+        "speechSequence": ["c1", "c2", "c3", "c4", "c5", "c6"]
+      },
+      "headers": ["Pronoun", "Können", "Müssen", "Dürfen", "Wollen", "Sollen", "Möchten"],
+      "rows": [
+        { "c1": "Ich", "c2": "kann", "c3": "muss", "c4": "darf", "c5": "will", "c6": "soll", "c7": "möchte" },
+        { "c1": "Du", "c2": "kannst", "c3": "musst", "c4": "darfst", "c5": "willst", "c6": "sollst", "c7": "möchtest" },
+        { "c1": "Er/Sie/Es", "c2": "kann", "c3": "muss", "c4": "darf", "c5": "will", "c6": "soll", "c7": "möchte" },
+        { "c1": "Wir", "c2": "können", "c3": "müssen", "c4": "dürfen", "c5": "wollen", "c6": "sollen", "c7": "möchten" },
+        { "c1": "Ihr", "c2": "könnt", "c3": "müsst", "c4": "dürft", "c5": "wollt", "c6": "sollt", "c7": "möchtet" },
+        { "c1": "Sie/sie", "c2": "können", "c3": "müssen", "c4": "dürfen", "c5": "wollen", "c6": "sollen", "c7": "möchten" }
+      ]
+    }
+  ]
+}

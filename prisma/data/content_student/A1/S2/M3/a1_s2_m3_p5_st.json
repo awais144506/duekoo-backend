@@ -1,0 +1,30 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue: At the Doctor",
+  "deTitle": "Dialog: Beim Arzt",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Ali is feeling unwell and visits the doctor's office. He speaks with the assistant at the front desk and then with the doctor for a check-up.",
+      "characters": [
+        { "id": "ali", "name": "Ali", "icon": "👨" },
+        { "id": "assistant", "name": "Assistant", "icon": "🏥" },
+        { "id": "doctor", "name": "Doctor", "icon": "🩺" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "assistant", "de": "Guten Tag. Füllen Sie bitte dieses Formular aus.", "ph": "Goo-ten Tahk. Fuel-len zee bit-teh dee-zes For-moo-lar owss.", "en": "Good day. Please fill out this form." },
+        { "speaker": "ali", "de": "Gerne. Hier ist meine Versicherungskarte.", "ph": "Gair-neh. Heer ist my-neh Fair-zikh-er-oongs-kar-teh.", "en": "Of course. Here is my insurance card." },
+        { "speaker": "doctor", "de": "Guten Tag, Herr Ali. Sie sehen blass aus.", "ph": "Goo-ten Tahk, Hair Ali. Zee zay-en blass owss.", "en": "Good day, Mr. Ali. You look (appear) pale." },
+        { "speaker": "ali", "de": "Ja, ich habe Kopfschmerzen und mein Hals tut weh.", "ph": "Yah, ish ha-beh Kofp-shmairts-en oond mine Halss toot vay.", "en": "Yes, I have a headache and my throat hurts." },
+        { "speaker": "doctor", "de": "Machen Sie bitte den Mund auf.", "ph": "Ma-khen zee bit-teh dain Moont owf.", "en": "Please open your mouth." },
+        { "speaker": "ali", "de": "Aaaaah...", "ph": "Aaaaah...", "en": "Aaaaah..." },
+        { "speaker": "doctor", "de": "Sie haben eine Erkältung. Nehmen Sie diese Tabletten ein.", "ph": "Zee ha-ben eye-neh Air-kel-toong. Nay-men zee dee Tab-let-ten ine.", "en": "You have a cold. Take these tablets." },
+        { "speaker": "ali", "de": "Wie oft muss ich sie einnehmen?", "ph": "Vee oft mooss ish zee ine-nay-men?", "en": "How often must I take them?" },
+        { "speaker": "doctor", "de": "Dreimal täglich. Rufen Sie mich morgen wieder an.", "ph": "Dry-mahl tay-glikh. Roo-fen zee mikh mor-gen vee-der an.", "en": "Three times daily. Call me again tomorrow." }
+      ]
+    }
+  ]
+}

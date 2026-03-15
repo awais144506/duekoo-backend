@@ -1,0 +1,28 @@
+{
+  "type": "COMPOSITE",
+  "title": "Dialogue 2: Winter Shopping",
+  "deTitle": "Dialog 2: Wintereinkauf",
+  "sections": [
+    {
+      "type": "DIALOGUE",
+      "context": "Arjun is at a clothing store. He needs warm gear because his apartment is very cold during the winter.",
+      "characters": [
+        { "id": "arjun", "name": "Arjun", "icon": "🧔" },
+        { "id": "staff", "name": "Staff", "icon": "🛒" }
+      ],
+      "config": {
+        "speechSequence": ["de"]
+      },
+      "lines": [
+        { "speaker": "arjun", "de": "Entschuldigung, ich brauche einen warmen Mantel.", "ph": "Ent-shool-dee-goong, ish brow-khe eye-nen var-men Man-tel.", "en": "Excuse me, I need a warm coat." },
+        { "speaker": "staff", "de": "Wir haben hier Mäntel. Welche Größe haben Sie?", "ph": "Veer ha-ben heer Men-tel. Vel-khe grer-se ha-ben zee?", "en": "We have coats here. What size do you have?" },
+        { "speaker": "arjun", "de": "Ich habe Größe M. Ich nehme den schwarzen Mantel.", "ph": "Ish ha-be grer-se Em. Ish nay-me dain shvar-tsen Man-tel.", "en": "I have size M. I'll take the black coat." },
+        { "speaker": "staff", "de": "Gute Wahl. Brauchen Sie auch einen Schal?", "ph": "Goo-te vahl. Brow-khen zee owkh eye-nen Shahl?", "en": "Good choice. Do you also need a scarf?" },
+        { "speaker": "arjun", "de": "Ja, ich nehme einen Schal und eine warme Decke.", "ph": "Yah, ish nay-me eye-nen Shahl oond eye-ne var-me Dek-ke.", "en": "Yes, I'll take a scarf and a warm blanket." },
+        { "speaker": "staff", "de": "Ist Ihre Wohnung kalt?", "ph": "Ist ee-re voh-noong kalt?", "en": "Is your apartment cold?" },
+        { "speaker": "arjun", "de": "Ja, sehr kalt! Ich werde auch eine Heizung kaufen.", "ph": "Yah, zair kalt! Ish vair-de owkh eye-ne Hy-tsoong kow-fen.", "en": "Yes, very cold! I will also buy a heater." },
+        { "speaker": "staff", "de": "Das ist wichtig für den Winter. Die Kasse ist dort.", "ph": "Dass ist vikh-tikh fuer dain Vin-ter. Dee kas-se ist dort.", "en": "That is important for the winter. The checkout is there." }
+      ]
+    }
+  ]
+}
