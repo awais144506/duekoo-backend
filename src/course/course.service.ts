@@ -1,26 +1,26 @@
 import { Injectable } from '@nestjs/common';
-import { CreateCourseDto } from './dto/create-course.dto';
-import { UpdateCourseDto } from './dto/update-course.dto';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 @Injectable()
 export class CourseService {
-  create(createCourseDto: CreateCourseDto) {
-    return 'This action adds a new course';
+  constructor(private prisma: PrismaService) {}
+  async getSectionsByLevel(levelId: string) {
+    return this.prisma.section.findMany({
+      where: {
+        levelId: levelId,
+        visaType: 'STUDENT',
+      },
+    });
   }
-
-  findAll() {
-    return `This action returns all course`;
+  async getModulesBySections(sectionId: string) {
+    return this.prisma.module.findMany({
+      where: { sectionId: sectionId },
+    });
   }
-
-  findOne(id: number) {
-    return `This action returns a #${id} course`;
-  }
-
-  update(id: number, updateCourseDto: UpdateCourseDto) {
-    return `This action updates a #${id} course`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} course`;
+  async getPartsByModule(moduleId: string) {
+    return this.prisma.part.findMany({
+      where: { moduleId: moduleId },
+      orderBy: { order: 'asc' },
+    });
   }
 }

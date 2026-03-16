@@ -1,6 +1,7 @@
 generator client {
-  provider = "prisma-client-js"
-  output   = "../generated"
+  provider     = "prisma-client-js"
+  output       = "../generated"
+  moduleFormat = "cjs"
 }
 
 datasource db {
@@ -20,6 +21,11 @@ enum VisaType {
   VISIT
 }
 
+enum Gender {
+  F
+  M
+}
+
 enum ProgressStatus {
   LOCKED
   UNLOCKED
@@ -29,19 +35,20 @@ enum ProgressStatus {
 // --- 1. Identity & Profile ---
 
 model User {
-  id            String               @id @default(cuid())
-  email         String               @unique
-  name          String?
-  imageUrl      String?
-  profile       UserProfile?
-  currentPos    UserCurrentPosition?
-  levelProgress LevelProgress[]
-  sectionStatus SectionStatus[]
-  moduleStatus  ModuleStatus[]
-  partStatus    PartStatus[]
-  certificates  Certificate[]
-  createdAt     DateTime             @default(now())
-  updatedAt     DateTime             @updatedAt
+  id             String               @id @default(cuid())
+  email          String               @unique
+  name           String?
+  imageUrl       String?
+  hasSeenWelcome Boolean              @default(false)
+  profile        UserProfile?
+  currentPos     UserCurrentPosition?
+  levelProgress  LevelProgress[]
+  sectionStatus  SectionStatus[]
+  moduleStatus   ModuleStatus[]
+  partStatus     PartStatus[]
+  certificates   Certificate[]
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
 }
 
 model UserProfile {
@@ -52,11 +59,11 @@ model UserProfile {
   passportNum    String?   @unique
   visaType       VisaType  @default(STUDENT)
   program        String?
+  gender         Gender    @default(M)
   universityName String?
   country        String?
   phoneNo        String?   @unique
   intake         Intake?
-  hasSeenWelcome Boolean   @default(false)
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
 }
@@ -109,8 +116,8 @@ model Part {
   module     Module                @relation(fields: [moduleId], references: [id])
   title      String
   deTitle    String?
-  content    Json? // <--- Stores vocabulary, grammar, and quiz data
-  contentId  String // A unique slug (e.g., "a2-cs-cv-vocab")
+  content    Json?
+  contentId  String
   order      Int
   status     PartStatus[]
   currentPos UserCurrentPosition[]

@@ -95,6 +95,14 @@ export const VisaType: {
 export type VisaType = (typeof VisaType)[keyof typeof VisaType]
 
 
+export const Gender: {
+  F: 'F',
+  M: 'M'
+};
+
+export type Gender = (typeof Gender)[keyof typeof Gender]
+
+
 export const ProgressStatus: {
   LOCKED: 'LOCKED',
   UNLOCKED: 'UNLOCKED',
@@ -112,6 +120,10 @@ export const Intake: typeof $Enums.Intake
 export type VisaType = $Enums.VisaType
 
 export const VisaType: typeof $Enums.VisaType
+
+export type Gender = $Enums.Gender
+
+export const Gender: typeof $Enums.Gender
 
 export type ProgressStatus = $Enums.ProgressStatus
 
@@ -407,8 +419,8 @@ export namespace Prisma {
   export import Exact = $Public.Exact
 
   /**
-   * Prisma Client JS version: 7.4.2
-   * Query Engine version: 94a226be1cf2967af2541cca5529f0f7ba866919
+   * Prisma Client JS version: 7.5.0
+   * Query Engine version: 280c870be64f457428992c43c1f6d557fab6e29e
    */
   export type PrismaVersion = {
     client: string
@@ -2187,6 +2199,7 @@ export namespace Prisma {
     email: string | null
     name: string | null
     imageUrl: string | null
+    hasSeenWelcome: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2196,6 +2209,7 @@ export namespace Prisma {
     email: string | null
     name: string | null
     imageUrl: string | null
+    hasSeenWelcome: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2205,6 +2219,7 @@ export namespace Prisma {
     email: number
     name: number
     imageUrl: number
+    hasSeenWelcome: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -2216,6 +2231,7 @@ export namespace Prisma {
     email?: true
     name?: true
     imageUrl?: true
+    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2225,6 +2241,7 @@ export namespace Prisma {
     email?: true
     name?: true
     imageUrl?: true
+    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2234,6 +2251,7 @@ export namespace Prisma {
     email?: true
     name?: true
     imageUrl?: true
+    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -2316,6 +2334,7 @@ export namespace Prisma {
     email: string
     name: string | null
     imageUrl: string | null
+    hasSeenWelcome: boolean
     createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
@@ -2342,6 +2361,7 @@ export namespace Prisma {
     email?: boolean
     name?: boolean
     imageUrl?: boolean
+    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     profile?: boolean | User$profileArgs<ExtArgs>
@@ -2359,6 +2379,7 @@ export namespace Prisma {
     email?: boolean
     name?: boolean
     imageUrl?: boolean
+    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2368,6 +2389,7 @@ export namespace Prisma {
     email?: boolean
     name?: boolean
     imageUrl?: boolean
+    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2377,11 +2399,12 @@ export namespace Prisma {
     email?: boolean
     name?: boolean
     imageUrl?: boolean
+    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "email" | "name" | "imageUrl" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "email" | "name" | "imageUrl" | "hasSeenWelcome" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     profile?: boolean | User$profileArgs<ExtArgs>
     currentPos?: boolean | User$currentPosArgs<ExtArgs>
@@ -2411,6 +2434,7 @@ export namespace Prisma {
       email: string
       name: string | null
       imageUrl: string | null
+      hasSeenWelcome: boolean
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
@@ -2847,6 +2871,7 @@ export namespace Prisma {
     readonly email: FieldRef<"User", 'String'>
     readonly name: FieldRef<"User", 'String'>
     readonly imageUrl: FieldRef<"User", 'String'>
+    readonly hasSeenWelcome: FieldRef<"User", 'Boolean'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
@@ -3045,6 +3070,11 @@ export namespace Prisma {
      * Skip the first `n` Users.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Users.
+     */
     distinct?: UserScalarFieldEnum | UserScalarFieldEnum[]
   }
 
@@ -3430,11 +3460,11 @@ export namespace Prisma {
     passportNum: string | null
     visaType: $Enums.VisaType | null
     program: string | null
+    gender: $Enums.Gender | null
     universityName: string | null
     country: string | null
     phoneNo: string | null
     intake: $Enums.Intake | null
-    hasSeenWelcome: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -3446,11 +3476,11 @@ export namespace Prisma {
     passportNum: string | null
     visaType: $Enums.VisaType | null
     program: string | null
+    gender: $Enums.Gender | null
     universityName: string | null
     country: string | null
     phoneNo: string | null
     intake: $Enums.Intake | null
-    hasSeenWelcome: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -3462,11 +3492,11 @@ export namespace Prisma {
     passportNum: number
     visaType: number
     program: number
+    gender: number
     universityName: number
     country: number
     phoneNo: number
     intake: number
-    hasSeenWelcome: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -3480,11 +3510,11 @@ export namespace Prisma {
     passportNum?: true
     visaType?: true
     program?: true
+    gender?: true
     universityName?: true
     country?: true
     phoneNo?: true
     intake?: true
-    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -3496,11 +3526,11 @@ export namespace Prisma {
     passportNum?: true
     visaType?: true
     program?: true
+    gender?: true
     universityName?: true
     country?: true
     phoneNo?: true
     intake?: true
-    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -3512,11 +3542,11 @@ export namespace Prisma {
     passportNum?: true
     visaType?: true
     program?: true
+    gender?: true
     universityName?: true
     country?: true
     phoneNo?: true
     intake?: true
-    hasSeenWelcome?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -3601,11 +3631,11 @@ export namespace Prisma {
     passportNum: string | null
     visaType: $Enums.VisaType
     program: string | null
+    gender: $Enums.Gender
     universityName: string | null
     country: string | null
     phoneNo: string | null
     intake: $Enums.Intake | null
-    hasSeenWelcome: boolean
     createdAt: Date
     updatedAt: Date
     _count: UserProfileCountAggregateOutputType | null
@@ -3634,11 +3664,11 @@ export namespace Prisma {
     passportNum?: boolean
     visaType?: boolean
     program?: boolean
+    gender?: boolean
     universityName?: boolean
     country?: boolean
     phoneNo?: boolean
     intake?: boolean
-    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     user?: boolean | UserDefaultArgs<ExtArgs>
@@ -3651,11 +3681,11 @@ export namespace Prisma {
     passportNum?: boolean
     visaType?: boolean
     program?: boolean
+    gender?: boolean
     universityName?: boolean
     country?: boolean
     phoneNo?: boolean
     intake?: boolean
-    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     user?: boolean | UserDefaultArgs<ExtArgs>
@@ -3668,11 +3698,11 @@ export namespace Prisma {
     passportNum?: boolean
     visaType?: boolean
     program?: boolean
+    gender?: boolean
     universityName?: boolean
     country?: boolean
     phoneNo?: boolean
     intake?: boolean
-    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     user?: boolean | UserDefaultArgs<ExtArgs>
@@ -3685,16 +3715,16 @@ export namespace Prisma {
     passportNum?: boolean
     visaType?: boolean
     program?: boolean
+    gender?: boolean
     universityName?: boolean
     country?: boolean
     phoneNo?: boolean
     intake?: boolean
-    hasSeenWelcome?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserProfileOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "dob" | "passportNum" | "visaType" | "program" | "universityName" | "country" | "phoneNo" | "intake" | "hasSeenWelcome" | "createdAt" | "updatedAt", ExtArgs["result"]["userProfile"]>
+  export type UserProfileOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "dob" | "passportNum" | "visaType" | "program" | "gender" | "universityName" | "country" | "phoneNo" | "intake" | "createdAt" | "updatedAt", ExtArgs["result"]["userProfile"]>
   export type UserProfileInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     user?: boolean | UserDefaultArgs<ExtArgs>
   }
@@ -3717,11 +3747,11 @@ export namespace Prisma {
       passportNum: string | null
       visaType: $Enums.VisaType
       program: string | null
+      gender: $Enums.Gender
       universityName: string | null
       country: string | null
       phoneNo: string | null
       intake: $Enums.Intake | null
-      hasSeenWelcome: boolean
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["userProfile"]>
@@ -4154,11 +4184,11 @@ export namespace Prisma {
     readonly passportNum: FieldRef<"UserProfile", 'String'>
     readonly visaType: FieldRef<"UserProfile", 'VisaType'>
     readonly program: FieldRef<"UserProfile", 'String'>
+    readonly gender: FieldRef<"UserProfile", 'Gender'>
     readonly universityName: FieldRef<"UserProfile", 'String'>
     readonly country: FieldRef<"UserProfile", 'String'>
     readonly phoneNo: FieldRef<"UserProfile", 'String'>
     readonly intake: FieldRef<"UserProfile", 'Intake'>
-    readonly hasSeenWelcome: FieldRef<"UserProfile", 'Boolean'>
     readonly createdAt: FieldRef<"UserProfile", 'DateTime'>
     readonly updatedAt: FieldRef<"UserProfile", 'DateTime'>
   }
@@ -4357,6 +4387,11 @@ export namespace Prisma {
      * Skip the first `n` UserProfiles.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of UserProfiles.
+     */
     distinct?: UserProfileScalarFieldEnum | UserProfileScalarFieldEnum[]
   }
 
@@ -5457,6 +5492,11 @@ export namespace Prisma {
      * Skip the first `n` Levels.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Levels.
+     */
     distinct?: LevelScalarFieldEnum | LevelScalarFieldEnum[]
   }
 
@@ -6677,6 +6717,11 @@ export namespace Prisma {
      * Skip the first `n` Sections.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Sections.
+     */
     distinct?: SectionScalarFieldEnum | SectionScalarFieldEnum[]
   }
 
@@ -7881,6 +7926,11 @@ export namespace Prisma {
      * Skip the first `n` Modules.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Modules.
+     */
     distinct?: ModuleScalarFieldEnum | ModuleScalarFieldEnum[]
   }
 
@@ -9077,6 +9127,11 @@ export namespace Prisma {
      * Skip the first `n` Parts.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Parts.
+     */
     distinct?: PartScalarFieldEnum | PartScalarFieldEnum[]
   }
 
@@ -10241,6 +10296,11 @@ export namespace Prisma {
      * Skip the first `n` UserCurrentPositions.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of UserCurrentPositions.
+     */
     distinct?: UserCurrentPositionScalarFieldEnum | UserCurrentPositionScalarFieldEnum[]
   }
 
@@ -11354,6 +11414,11 @@ export namespace Prisma {
      * Skip the first `n` LevelProgresses.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of LevelProgresses.
+     */
     distinct?: LevelProgressScalarFieldEnum | LevelProgressScalarFieldEnum[]
   }
 
@@ -12420,6 +12485,11 @@ export namespace Prisma {
      * Skip the first `n` SectionStatuses.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of SectionStatuses.
+     */
     distinct?: SectionStatusScalarFieldEnum | SectionStatusScalarFieldEnum[]
   }
 
@@ -13486,6 +13556,11 @@ export namespace Prisma {
      * Skip the first `n` ModuleStatuses.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of ModuleStatuses.
+     */
     distinct?: ModuleStatusScalarFieldEnum | ModuleStatusScalarFieldEnum[]
   }
 
@@ -14552,6 +14627,11 @@ export namespace Prisma {
      * Skip the first `n` PartStatuses.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of PartStatuses.
+     */
     distinct?: PartStatusScalarFieldEnum | PartStatusScalarFieldEnum[]
   }
 
@@ -15670,6 +15750,11 @@ export namespace Prisma {
      * Skip the first `n` Certificates.
      */
     skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Certificates.
+     */
     distinct?: CertificateScalarFieldEnum | CertificateScalarFieldEnum[]
   }
 
@@ -15907,6 +15992,7 @@ export namespace Prisma {
     email: 'email',
     name: 'name',
     imageUrl: 'imageUrl',
+    hasSeenWelcome: 'hasSeenWelcome',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -15921,11 +16007,11 @@ export namespace Prisma {
     passportNum: 'passportNum',
     visaType: 'visaType',
     program: 'program',
+    gender: 'gender',
     universityName: 'universityName',
     country: 'country',
     phoneNo: 'phoneNo',
     intake: 'intake',
-    hasSeenWelcome: 'hasSeenWelcome',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -16117,6 +16203,13 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Boolean'
+   */
+  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
+    
+
+
+  /**
    * Reference to a field of type 'DateTime'
    */
   export type DateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime'>
@@ -16145,6 +16238,20 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Gender'
+   */
+  export type EnumGenderFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Gender'>
+    
+
+
+  /**
+   * Reference to a field of type 'Gender[]'
+   */
+  export type ListEnumGenderFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Gender[]'>
+    
+
+
+  /**
    * Reference to a field of type 'Intake'
    */
   export type EnumIntakeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Intake'>
@@ -16155,13 +16262,6 @@ export namespace Prisma {
    * Reference to a field of type 'Intake[]'
    */
   export type ListEnumIntakeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Intake[]'>
-    
-
-
-  /**
-   * Reference to a field of type 'Boolean'
-   */
-  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
     
 
 
@@ -16232,6 +16332,7 @@ export namespace Prisma {
     email?: StringFilter<"User"> | string
     name?: StringNullableFilter<"User"> | string | null
     imageUrl?: StringNullableFilter<"User"> | string | null
+    hasSeenWelcome?: BoolFilter<"User"> | boolean
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     profile?: XOR<UserProfileNullableScalarRelationFilter, UserProfileWhereInput> | null
@@ -16248,6 +16349,7 @@ export namespace Prisma {
     email?: SortOrder
     name?: SortOrderInput | SortOrder
     imageUrl?: SortOrderInput | SortOrder
+    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     profile?: UserProfileOrderByWithRelationInput
@@ -16267,6 +16369,7 @@ export namespace Prisma {
     NOT?: UserWhereInput | UserWhereInput[]
     name?: StringNullableFilter<"User"> | string | null
     imageUrl?: StringNullableFilter<"User"> | string | null
+    hasSeenWelcome?: BoolFilter<"User"> | boolean
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     profile?: XOR<UserProfileNullableScalarRelationFilter, UserProfileWhereInput> | null
@@ -16283,6 +16386,7 @@ export namespace Prisma {
     email?: SortOrder
     name?: SortOrderInput | SortOrder
     imageUrl?: SortOrderInput | SortOrder
+    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
@@ -16298,6 +16402,7 @@ export namespace Prisma {
     email?: StringWithAggregatesFilter<"User"> | string
     name?: StringNullableWithAggregatesFilter<"User"> | string | null
     imageUrl?: StringNullableWithAggregatesFilter<"User"> | string | null
+    hasSeenWelcome?: BoolWithAggregatesFilter<"User"> | boolean
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
@@ -16312,11 +16417,11 @@ export namespace Prisma {
     passportNum?: StringNullableFilter<"UserProfile"> | string | null
     visaType?: EnumVisaTypeFilter<"UserProfile"> | $Enums.VisaType
     program?: StringNullableFilter<"UserProfile"> | string | null
+    gender?: EnumGenderFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableFilter<"UserProfile"> | string | null
     country?: StringNullableFilter<"UserProfile"> | string | null
     phoneNo?: StringNullableFilter<"UserProfile"> | string | null
     intake?: EnumIntakeNullableFilter<"UserProfile"> | $Enums.Intake | null
-    hasSeenWelcome?: BoolFilter<"UserProfile"> | boolean
     createdAt?: DateTimeFilter<"UserProfile"> | Date | string
     updatedAt?: DateTimeFilter<"UserProfile"> | Date | string
     user?: XOR<UserScalarRelationFilter, UserWhereInput>
@@ -16329,11 +16434,11 @@ export namespace Prisma {
     passportNum?: SortOrderInput | SortOrder
     visaType?: SortOrder
     program?: SortOrderInput | SortOrder
+    gender?: SortOrder
     universityName?: SortOrderInput | SortOrder
     country?: SortOrderInput | SortOrder
     phoneNo?: SortOrderInput | SortOrder
     intake?: SortOrderInput | SortOrder
-    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     user?: UserOrderByWithRelationInput
@@ -16350,10 +16455,10 @@ export namespace Prisma {
     dob?: DateTimeNullableFilter<"UserProfile"> | Date | string | null
     visaType?: EnumVisaTypeFilter<"UserProfile"> | $Enums.VisaType
     program?: StringNullableFilter<"UserProfile"> | string | null
+    gender?: EnumGenderFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableFilter<"UserProfile"> | string | null
     country?: StringNullableFilter<"UserProfile"> | string | null
     intake?: EnumIntakeNullableFilter<"UserProfile"> | $Enums.Intake | null
-    hasSeenWelcome?: BoolFilter<"UserProfile"> | boolean
     createdAt?: DateTimeFilter<"UserProfile"> | Date | string
     updatedAt?: DateTimeFilter<"UserProfile"> | Date | string
     user?: XOR<UserScalarRelationFilter, UserWhereInput>
@@ -16366,11 +16471,11 @@ export namespace Prisma {
     passportNum?: SortOrderInput | SortOrder
     visaType?: SortOrder
     program?: SortOrderInput | SortOrder
+    gender?: SortOrder
     universityName?: SortOrderInput | SortOrder
     country?: SortOrderInput | SortOrder
     phoneNo?: SortOrderInput | SortOrder
     intake?: SortOrderInput | SortOrder
-    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserProfileCountOrderByAggregateInput
@@ -16388,11 +16493,11 @@ export namespace Prisma {
     passportNum?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     visaType?: EnumVisaTypeWithAggregatesFilter<"UserProfile"> | $Enums.VisaType
     program?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
+    gender?: EnumGenderWithAggregatesFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     country?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     phoneNo?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     intake?: EnumIntakeNullableWithAggregatesFilter<"UserProfile"> | $Enums.Intake | null
-    hasSeenWelcome?: BoolWithAggregatesFilter<"UserProfile"> | boolean
     createdAt?: DateTimeWithAggregatesFilter<"UserProfile"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"UserProfile"> | Date | string
   }
@@ -17091,6 +17196,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -17107,6 +17213,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -17123,6 +17230,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -17139,6 +17247,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -17155,6 +17264,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -17164,6 +17274,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17173,6 +17284,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17183,11 +17295,11 @@ export namespace Prisma {
     passportNum?: string | null
     visaType?: $Enums.VisaType
     program?: string | null
+    gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
     phoneNo?: string | null
     intake?: $Enums.Intake | null
-    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     user: UserCreateNestedOneWithoutProfileInput
@@ -17200,11 +17312,11 @@ export namespace Prisma {
     passportNum?: string | null
     visaType?: $Enums.VisaType
     program?: string | null
+    gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
     phoneNo?: string | null
     intake?: $Enums.Intake | null
-    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -17215,11 +17327,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     user?: UserUpdateOneRequiredWithoutProfileNestedInput
@@ -17232,11 +17344,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17248,11 +17360,11 @@ export namespace Prisma {
     passportNum?: string | null
     visaType?: $Enums.VisaType
     program?: string | null
+    gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
     phoneNo?: string | null
     intake?: $Enums.Intake | null
-    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -17263,11 +17375,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17279,11 +17391,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17999,6 +18111,11 @@ export namespace Prisma {
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
+  export type BoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -18080,6 +18197,7 @@ export namespace Prisma {
     email?: SortOrder
     name?: SortOrder
     imageUrl?: SortOrder
+    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18089,6 +18207,7 @@ export namespace Prisma {
     email?: SortOrder
     name?: SortOrder
     imageUrl?: SortOrder
+    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18098,6 +18217,7 @@ export namespace Prisma {
     email?: SortOrder
     name?: SortOrder
     imageUrl?: SortOrder
+    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18138,6 +18258,14 @@ export namespace Prisma {
     _max?: NestedStringNullableFilter<$PrismaModel>
   }
 
+  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -18170,16 +18298,18 @@ export namespace Prisma {
     not?: NestedEnumVisaTypeFilter<$PrismaModel> | $Enums.VisaType
   }
 
+  export type EnumGenderFilter<$PrismaModel = never> = {
+    equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
+    in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    not?: NestedEnumGenderFilter<$PrismaModel> | $Enums.Gender
+  }
+
   export type EnumIntakeNullableFilter<$PrismaModel = never> = {
     equals?: $Enums.Intake | EnumIntakeFieldRefInput<$PrismaModel> | null
     in?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
     notIn?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
     not?: NestedEnumIntakeNullableFilter<$PrismaModel> | $Enums.Intake | null
-  }
-
-  export type BoolFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolFilter<$PrismaModel> | boolean
   }
 
   export type UserScalarRelationFilter = {
@@ -18194,11 +18324,11 @@ export namespace Prisma {
     passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
+    gender?: SortOrder
     universityName?: SortOrder
     country?: SortOrder
     phoneNo?: SortOrder
     intake?: SortOrder
-    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18210,11 +18340,11 @@ export namespace Prisma {
     passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
+    gender?: SortOrder
     universityName?: SortOrder
     country?: SortOrder
     phoneNo?: SortOrder
     intake?: SortOrder
-    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18226,11 +18356,11 @@ export namespace Prisma {
     passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
+    gender?: SortOrder
     universityName?: SortOrder
     country?: SortOrder
     phoneNo?: SortOrder
     intake?: SortOrder
-    hasSeenWelcome?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18259,6 +18389,16 @@ export namespace Prisma {
     _max?: NestedEnumVisaTypeFilter<$PrismaModel>
   }
 
+  export type EnumGenderWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
+    in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    not?: NestedEnumGenderWithAggregatesFilter<$PrismaModel> | $Enums.Gender
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumGenderFilter<$PrismaModel>
+    _max?: NestedEnumGenderFilter<$PrismaModel>
+  }
+
   export type EnumIntakeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: $Enums.Intake | EnumIntakeFieldRefInput<$PrismaModel> | null
     in?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
@@ -18267,14 +18407,6 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedEnumIntakeNullableFilter<$PrismaModel>
     _max?: NestedEnumIntakeNullableFilter<$PrismaModel>
-  }
-
-  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedBoolFilter<$PrismaModel>
-    _max?: NestedBoolFilter<$PrismaModel>
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -18869,6 +19001,10 @@ export namespace Prisma {
     set?: string | null
   }
 
+  export type BoolFieldUpdateOperationsInput = {
+    set?: boolean
+  }
+
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
   }
@@ -19067,12 +19203,12 @@ export namespace Prisma {
     set?: $Enums.VisaType
   }
 
-  export type NullableEnumIntakeFieldUpdateOperationsInput = {
-    set?: $Enums.Intake | null
+  export type EnumGenderFieldUpdateOperationsInput = {
+    set?: $Enums.Gender
   }
 
-  export type BoolFieldUpdateOperationsInput = {
-    set?: boolean
+  export type NullableEnumIntakeFieldUpdateOperationsInput = {
+    set?: $Enums.Intake | null
   }
 
   export type UserUpdateOneRequiredWithoutProfileNestedInput = {
@@ -19879,6 +20015,11 @@ export namespace Prisma {
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
+  export type NestedBoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -19946,6 +20087,14 @@ export namespace Prisma {
     not?: NestedIntNullableFilter<$PrismaModel> | number | null
   }
 
+  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -19978,16 +20127,18 @@ export namespace Prisma {
     not?: NestedEnumVisaTypeFilter<$PrismaModel> | $Enums.VisaType
   }
 
+  export type NestedEnumGenderFilter<$PrismaModel = never> = {
+    equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
+    in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    not?: NestedEnumGenderFilter<$PrismaModel> | $Enums.Gender
+  }
+
   export type NestedEnumIntakeNullableFilter<$PrismaModel = never> = {
     equals?: $Enums.Intake | EnumIntakeFieldRefInput<$PrismaModel> | null
     in?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
     notIn?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
     not?: NestedEnumIntakeNullableFilter<$PrismaModel> | $Enums.Intake | null
-  }
-
-  export type NestedBoolFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolFilter<$PrismaModel> | boolean
   }
 
   export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
@@ -20014,6 +20165,16 @@ export namespace Prisma {
     _max?: NestedEnumVisaTypeFilter<$PrismaModel>
   }
 
+  export type NestedEnumGenderWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
+    in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
+    not?: NestedEnumGenderWithAggregatesFilter<$PrismaModel> | $Enums.Gender
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumGenderFilter<$PrismaModel>
+    _max?: NestedEnumGenderFilter<$PrismaModel>
+  }
+
   export type NestedEnumIntakeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: $Enums.Intake | EnumIntakeFieldRefInput<$PrismaModel> | null
     in?: $Enums.Intake[] | ListEnumIntakeFieldRefInput<$PrismaModel> | null
@@ -20022,14 +20183,6 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedEnumIntakeNullableFilter<$PrismaModel>
     _max?: NestedEnumIntakeNullableFilter<$PrismaModel>
-  }
-
-  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedBoolFilter<$PrismaModel>
-    _max?: NestedBoolFilter<$PrismaModel>
   }
 
   export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
@@ -20105,11 +20258,11 @@ export namespace Prisma {
     passportNum?: string | null
     visaType?: $Enums.VisaType
     program?: string | null
+    gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
     phoneNo?: string | null
     intake?: $Enums.Intake | null
-    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -20120,11 +20273,11 @@ export namespace Prisma {
     passportNum?: string | null
     visaType?: $Enums.VisaType
     program?: string | null
+    gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
     phoneNo?: string | null
     intake?: $Enums.Intake | null
-    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -20304,11 +20457,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -20319,11 +20472,11 @@ export namespace Prisma {
     passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
     program?: NullableStringFieldUpdateOperationsInput | string | null
+    gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
     phoneNo?: NullableStringFieldUpdateOperationsInput | string | null
     intake?: NullableEnumIntakeFieldUpdateOperationsInput | $Enums.Intake | null
-    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -20502,6 +20655,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     currentPos?: UserCurrentPositionCreateNestedOneWithoutUserInput
@@ -20517,6 +20671,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     currentPos?: UserCurrentPositionUncheckedCreateNestedOneWithoutUserInput
@@ -20548,6 +20703,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     currentPos?: UserCurrentPositionUpdateOneWithoutUserNestedInput
@@ -20563,6 +20719,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     currentPos?: UserCurrentPositionUncheckedUpdateOneWithoutUserNestedInput
@@ -21352,6 +21509,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -21367,6 +21525,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -21510,6 +21669,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -21525,6 +21685,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -21676,6 +21837,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -21691,6 +21853,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -21749,6 +21912,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -21764,6 +21928,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -21812,6 +21977,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -21827,6 +21993,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -21887,6 +22054,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -21902,6 +22070,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -21952,6 +22121,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -21967,6 +22137,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -22027,6 +22198,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -22042,6 +22214,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -22092,6 +22265,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -22107,6 +22281,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -22165,6 +22340,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -22180,6 +22356,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput
@@ -22228,6 +22405,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileCreateNestedOneWithoutUserInput
@@ -22243,6 +22421,7 @@ export namespace Prisma {
     email: string
     name?: string | null
     imageUrl?: string | null
+    hasSeenWelcome?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     profile?: UserProfileUncheckedCreateNestedOneWithoutUserInput
@@ -22301,6 +22480,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUpdateOneWithoutUserNestedInput
@@ -22316,6 +22496,7 @@ export namespace Prisma {
     email?: StringFieldUpdateOperationsInput | string
     name?: NullableStringFieldUpdateOperationsInput | string | null
     imageUrl?: NullableStringFieldUpdateOperationsInput | string | null
+    hasSeenWelcome?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     profile?: UserProfileUncheckedUpdateOneWithoutUserNestedInput

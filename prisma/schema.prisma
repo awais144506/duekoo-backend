@@ -1,6 +1,7 @@
 generator client {
   provider = "prisma-client-js"
   output = "../generated"
+  moduleFormat = "cjs"
 }
 
 datasource db {
@@ -20,27 +21,34 @@ enum VisaType {
   VISIT
 }
 
+enum Gender {
+  F
+  M
+}
+
 enum ProgressStatus {
   LOCKED
   UNLOCKED
   COMPLETED
 }
+
 // --- 1. Identity & Profile ---
 
 model User {
-  id            String               @id @default(cuid())
-  email         String               @unique
-  name          String?
-  imageUrl      String?
-  profile       UserProfile?
-  currentPos    UserCurrentPosition?
-  levelProgress LevelProgress[]
-  sectionStatus SectionStatus[]
-  moduleStatus  ModuleStatus[]
-  partStatus    PartStatus[]
-  certificates  Certificate[]
-  createdAt     DateTime             @default(now())
-  updatedAt     DateTime             @updatedAt
+  id             String               @id @default(cuid())
+  email          String               @unique
+  name           String?
+  imageUrl       String?
+  hasSeenWelcome Boolean              @default(false)
+  profile        UserProfile?
+  currentPos     UserCurrentPosition?
+  levelProgress  LevelProgress[]
+  sectionStatus  SectionStatus[]
+  moduleStatus   ModuleStatus[]
+  partStatus     PartStatus[]
+  certificates   Certificate[]
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
 }
 
 model UserProfile {
@@ -50,12 +58,12 @@ model UserProfile {
   dob            DateTime?
   passportNum    String?   @unique
   visaType       VisaType  @default(STUDENT)
-  program        String?   
+  program        String?
+  gender         Gender    @default(M)
   universityName String?
   country        String?
   phoneNo        String?   @unique
   intake         Intake?
-  hasSeenWelcome Boolean   @default(false)
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
 }
@@ -64,9 +72,9 @@ model UserProfile {
 
 model Level {
   id           String                @id @default(cuid())
-  slug         String                @unique 
+  slug         String                @unique
   title        String
-  deTitle      String?              
+  deTitle      String?
   order        Int
   sections     Section[]
   progress     LevelProgress[]
@@ -80,8 +88,8 @@ model Section {
   level          Level                 @relation(fields: [levelId], references: [id])
   title          String
   deTitle        String?
-  visaType       String?               // Filter: "STUDENT", "WORK", etc.
-  specialization String?               // Filter: "CS", "BUSINESS" (for Students)
+  visaType       String? // Filter: "STUDENT", "WORK", etc.
+  specialization String? // Filter: "CS", "BUSINESS" (for Students)
   order          Int
   modules        Module[]
   status         SectionStatus[]
@@ -94,8 +102,8 @@ model Module {
   section        Section               @relation(fields: [sectionId], references: [id])
   title          String
   deTitle        String?
-  visaType       String?              
-  specialization String?              
+  visaType       String?
+  specialization String?
   order          Int
   parts          Part[]
   statuses       ModuleStatus[]
@@ -108,8 +116,8 @@ model Part {
   module     Module                @relation(fields: [moduleId], references: [id])
   title      String
   deTitle    String?
-  content    Json?               
-  contentId  String                
+  content    Json?
+  contentId  String
   order      Int
   status     PartStatus[]
   currentPos UserCurrentPosition[]

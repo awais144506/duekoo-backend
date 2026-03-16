@@ -30,7 +30,7 @@ export const sections: SectionData[] = [
     title: 'Shopping & Registration',
     deTitle: 'Einkaufen & Registrierung',
     order: 2,
-    visaType: null,
+    visaType: 'STUDENT',
     specialization: null,
   },
   // --- LEVEL A2: ELEMENTARY ---

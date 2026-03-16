@@ -1,34 +1,33 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Param, Inject, UseGuards } from '@nestjs/common';
+import { CACHE_MANAGER, Cache } from '@nestjs/cache-manager';
 import { CourseService } from './course.service';
-import { CreateCourseDto } from './dto/create-course.dto';
-import { UpdateCourseDto } from './dto/update-course.dto';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 
-@Controller('course')
+@UseGuards(JwtAuthGuard)
+@Controller(':levelId')
 export class CourseController {
-  constructor(private readonly courseService: CourseService) {}
+  // Combine both into ONE constructor
+  constructor(
+    @Inject(CACHE_MANAGER) private cacheManager: Cache,
+    private readonly courseService: CourseService,
+  ) {}
 
-  @Post()
-  create(@Body() createCourseDto: CreateCourseDto) {
-    return this.courseService.create(createCourseDto);
+  @Get('sections')
+  async getSections(@Param('levelId') levelId: string) {
+    return this.courseService.getSectionsByLevel(levelId);
   }
 
-  @Get()
-  findAll() {
-    return this.courseService.findAll();
+  @Get('sections/:sectionId/modules')
+  async getModules(@Param('sectionId') sectionId: string) {
+    return this.courseService.getModulesBySections(sectionId);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.courseService.findOne(+id);
-  }
-
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateCourseDto: UpdateCourseDto) {
-    return this.courseService.update(+id, updateCourseDto);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.courseService.remove(+id);
+  @Get('sections/:sectionId/modules/:moduleId/parts')
+  async getParts(
+    @Param('sectionId') sectionId: string,
+    @Param('moduleId') moduleId: string,
+  ) {
+    console.log('DB HIT');
+    return this.courseService.getPartsByModule(moduleId);
   }
 }

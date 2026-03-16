@@ -1,6 +1,17 @@
-import { Controller, Get, Post, Body, Param } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Param,
+  UseGuards,
+  Patch,
+} from '@nestjs/common';
 import { UserService } from './user.service';
-import { Prisma } from '@prisma/client';
+import { Prisma } from '@generated/client';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+
+@UseGuards(JwtAuthGuard)
 @Controller('user')
 export class UserController {
   constructor(private readonly userService: UserService) {}
@@ -15,6 +26,13 @@ export class UserController {
   @Post()
   async create(@Body() createUserDto: Prisma.UserCreateInput) {
     return this.userService.create(createUserDto);
+  }
+  @Patch(':id/welcome')
+  async updateWelcomeStatus(
+    @Param('id') id: string,
+    @Body('hasSeenWelcome') hasSeenWelcome: boolean,
+  ) {
+    return this.userService.updateWelcomeStatus(id, hasSeenWelcome);
   }
   @Post(':userId/profile')
   async createUserProfile(

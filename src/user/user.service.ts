@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Prisma } from '@prisma/client';
+import { Prisma } from '@generated/client';
 @Injectable()
 export class UserService {
   constructor(private prisma: PrismaService) {}
@@ -28,6 +28,13 @@ export class UserService {
           connect: { id: userId },
         },
       },
+    });
+  }
+
+  async updateWelcomeStatus(userId: string, status: boolean) {
+    return this.prisma.user.update({
+      where: { id: userId },
+      data: { hasSeenWelcome: status },
     });
   }
 }
