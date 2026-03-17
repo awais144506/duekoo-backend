@@ -134,7 +134,6 @@ exports.Prisma.UserProfileScalarFieldEnum = {
   id: 'id',
   userId: 'userId',
   dob: 'dob',
-  passportNum: 'passportNum',
   visaType: 'visaType',
   program: 'program',
   gender: 'gender',
@@ -268,6 +267,14 @@ exports.VisaType = exports.$Enums.VisaType = {
   STUDENT: 'STUDENT',
   FAMILY: 'FAMILY',
   VISIT: 'VISIT'
+};
+
+exports.Programs = exports.$Enums.Programs = {
+  CS: 'CS',
+  BUSINESS: 'BUSINESS',
+  ENGINEER: 'ENGINEER',
+  SOCIAL: 'SOCIAL',
+  NATURAL: 'NATURAL'
 };
 
 exports.Gender = exports.$Enums.Gender = {

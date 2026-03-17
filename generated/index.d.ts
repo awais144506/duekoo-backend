@@ -111,6 +111,17 @@ export const ProgressStatus: {
 
 export type ProgressStatus = (typeof ProgressStatus)[keyof typeof ProgressStatus]
 
+
+export const Programs: {
+  CS: 'CS',
+  BUSINESS: 'BUSINESS',
+  ENGINEER: 'ENGINEER',
+  SOCIAL: 'SOCIAL',
+  NATURAL: 'NATURAL'
+};
+
+export type Programs = (typeof Programs)[keyof typeof Programs]
+
 }
 
 export type Intake = $Enums.Intake
@@ -128,6 +139,10 @@ export const Gender: typeof $Enums.Gender
 export type ProgressStatus = $Enums.ProgressStatus
 
 export const ProgressStatus: typeof $Enums.ProgressStatus
+
+export type Programs = $Enums.Programs
+
+export const Programs: typeof $Enums.Programs
 
 /**
  * ##  Prisma Client ʲˢ
@@ -3457,9 +3472,8 @@ export namespace Prisma {
     id: string | null
     userId: string | null
     dob: Date | null
-    passportNum: string | null
     visaType: $Enums.VisaType | null
-    program: string | null
+    program: $Enums.Programs | null
     gender: $Enums.Gender | null
     universityName: string | null
     country: string | null
@@ -3473,9 +3487,8 @@ export namespace Prisma {
     id: string | null
     userId: string | null
     dob: Date | null
-    passportNum: string | null
     visaType: $Enums.VisaType | null
-    program: string | null
+    program: $Enums.Programs | null
     gender: $Enums.Gender | null
     universityName: string | null
     country: string | null
@@ -3489,7 +3502,6 @@ export namespace Prisma {
     id: number
     userId: number
     dob: number
-    passportNum: number
     visaType: number
     program: number
     gender: number
@@ -3507,7 +3519,6 @@ export namespace Prisma {
     id?: true
     userId?: true
     dob?: true
-    passportNum?: true
     visaType?: true
     program?: true
     gender?: true
@@ -3523,7 +3534,6 @@ export namespace Prisma {
     id?: true
     userId?: true
     dob?: true
-    passportNum?: true
     visaType?: true
     program?: true
     gender?: true
@@ -3539,7 +3549,6 @@ export namespace Prisma {
     id?: true
     userId?: true
     dob?: true
-    passportNum?: true
     visaType?: true
     program?: true
     gender?: true
@@ -3628,9 +3637,8 @@ export namespace Prisma {
     id: string
     userId: string
     dob: Date | null
-    passportNum: string | null
     visaType: $Enums.VisaType
-    program: string | null
+    program: $Enums.Programs
     gender: $Enums.Gender
     universityName: string | null
     country: string | null
@@ -3661,7 +3669,6 @@ export namespace Prisma {
     id?: boolean
     userId?: boolean
     dob?: boolean
-    passportNum?: boolean
     visaType?: boolean
     program?: boolean
     gender?: boolean
@@ -3678,7 +3685,6 @@ export namespace Prisma {
     id?: boolean
     userId?: boolean
     dob?: boolean
-    passportNum?: boolean
     visaType?: boolean
     program?: boolean
     gender?: boolean
@@ -3695,7 +3701,6 @@ export namespace Prisma {
     id?: boolean
     userId?: boolean
     dob?: boolean
-    passportNum?: boolean
     visaType?: boolean
     program?: boolean
     gender?: boolean
@@ -3712,7 +3717,6 @@ export namespace Prisma {
     id?: boolean
     userId?: boolean
     dob?: boolean
-    passportNum?: boolean
     visaType?: boolean
     program?: boolean
     gender?: boolean
@@ -3724,7 +3728,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-  export type UserProfileOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "dob" | "passportNum" | "visaType" | "program" | "gender" | "universityName" | "country" | "phoneNo" | "intake" | "createdAt" | "updatedAt", ExtArgs["result"]["userProfile"]>
+  export type UserProfileOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "dob" | "visaType" | "program" | "gender" | "universityName" | "country" | "phoneNo" | "intake" | "createdAt" | "updatedAt", ExtArgs["result"]["userProfile"]>
   export type UserProfileInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     user?: boolean | UserDefaultArgs<ExtArgs>
   }
@@ -3744,9 +3748,8 @@ export namespace Prisma {
       id: string
       userId: string
       dob: Date | null
-      passportNum: string | null
       visaType: $Enums.VisaType
-      program: string | null
+      program: $Enums.Programs
       gender: $Enums.Gender
       universityName: string | null
       country: string | null
@@ -4181,9 +4184,8 @@ export namespace Prisma {
     readonly id: FieldRef<"UserProfile", 'String'>
     readonly userId: FieldRef<"UserProfile", 'String'>
     readonly dob: FieldRef<"UserProfile", 'DateTime'>
-    readonly passportNum: FieldRef<"UserProfile", 'String'>
     readonly visaType: FieldRef<"UserProfile", 'VisaType'>
-    readonly program: FieldRef<"UserProfile", 'String'>
+    readonly program: FieldRef<"UserProfile", 'Programs'>
     readonly gender: FieldRef<"UserProfile", 'Gender'>
     readonly universityName: FieldRef<"UserProfile", 'String'>
     readonly country: FieldRef<"UserProfile", 'String'>
@@ -16004,7 +16006,6 @@ export namespace Prisma {
     id: 'id',
     userId: 'userId',
     dob: 'dob',
-    passportNum: 'passportNum',
     visaType: 'visaType',
     program: 'program',
     gender: 'gender',
@@ -16238,6 +16239,20 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Programs'
+   */
+  export type EnumProgramsFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Programs'>
+    
+
+
+  /**
+   * Reference to a field of type 'Programs[]'
+   */
+  export type ListEnumProgramsFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Programs[]'>
+    
+
+
+  /**
    * Reference to a field of type 'Gender'
    */
   export type EnumGenderFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Gender'>
@@ -16414,9 +16429,8 @@ export namespace Prisma {
     id?: StringFilter<"UserProfile"> | string
     userId?: StringFilter<"UserProfile"> | string
     dob?: DateTimeNullableFilter<"UserProfile"> | Date | string | null
-    passportNum?: StringNullableFilter<"UserProfile"> | string | null
     visaType?: EnumVisaTypeFilter<"UserProfile"> | $Enums.VisaType
-    program?: StringNullableFilter<"UserProfile"> | string | null
+    program?: EnumProgramsFilter<"UserProfile"> | $Enums.Programs
     gender?: EnumGenderFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableFilter<"UserProfile"> | string | null
     country?: StringNullableFilter<"UserProfile"> | string | null
@@ -16431,9 +16445,8 @@ export namespace Prisma {
     id?: SortOrder
     userId?: SortOrder
     dob?: SortOrderInput | SortOrder
-    passportNum?: SortOrderInput | SortOrder
     visaType?: SortOrder
-    program?: SortOrderInput | SortOrder
+    program?: SortOrder
     gender?: SortOrder
     universityName?: SortOrderInput | SortOrder
     country?: SortOrderInput | SortOrder
@@ -16447,14 +16460,13 @@ export namespace Prisma {
   export type UserProfileWhereUniqueInput = Prisma.AtLeast<{
     id?: string
     userId?: string
-    passportNum?: string
     phoneNo?: string
     AND?: UserProfileWhereInput | UserProfileWhereInput[]
     OR?: UserProfileWhereInput[]
     NOT?: UserProfileWhereInput | UserProfileWhereInput[]
     dob?: DateTimeNullableFilter<"UserProfile"> | Date | string | null
     visaType?: EnumVisaTypeFilter<"UserProfile"> | $Enums.VisaType
-    program?: StringNullableFilter<"UserProfile"> | string | null
+    program?: EnumProgramsFilter<"UserProfile"> | $Enums.Programs
     gender?: EnumGenderFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableFilter<"UserProfile"> | string | null
     country?: StringNullableFilter<"UserProfile"> | string | null
@@ -16462,15 +16474,14 @@ export namespace Prisma {
     createdAt?: DateTimeFilter<"UserProfile"> | Date | string
     updatedAt?: DateTimeFilter<"UserProfile"> | Date | string
     user?: XOR<UserScalarRelationFilter, UserWhereInput>
-  }, "id" | "userId" | "passportNum" | "phoneNo">
+  }, "id" | "userId" | "phoneNo">
 
   export type UserProfileOrderByWithAggregationInput = {
     id?: SortOrder
     userId?: SortOrder
     dob?: SortOrderInput | SortOrder
-    passportNum?: SortOrderInput | SortOrder
     visaType?: SortOrder
-    program?: SortOrderInput | SortOrder
+    program?: SortOrder
     gender?: SortOrder
     universityName?: SortOrderInput | SortOrder
     country?: SortOrderInput | SortOrder
@@ -16490,9 +16501,8 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"UserProfile"> | string
     userId?: StringWithAggregatesFilter<"UserProfile"> | string
     dob?: DateTimeNullableWithAggregatesFilter<"UserProfile"> | Date | string | null
-    passportNum?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     visaType?: EnumVisaTypeWithAggregatesFilter<"UserProfile"> | $Enums.VisaType
-    program?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
+    program?: EnumProgramsWithAggregatesFilter<"UserProfile"> | $Enums.Programs
     gender?: EnumGenderWithAggregatesFilter<"UserProfile"> | $Enums.Gender
     universityName?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
     country?: StringNullableWithAggregatesFilter<"UserProfile"> | string | null
@@ -17292,9 +17302,8 @@ export namespace Prisma {
   export type UserProfileCreateInput = {
     id?: string
     dob?: Date | string | null
-    passportNum?: string | null
     visaType?: $Enums.VisaType
-    program?: string | null
+    program?: $Enums.Programs
     gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
@@ -17309,9 +17318,8 @@ export namespace Prisma {
     id?: string
     userId: string
     dob?: Date | string | null
-    passportNum?: string | null
     visaType?: $Enums.VisaType
-    program?: string | null
+    program?: $Enums.Programs
     gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
@@ -17324,9 +17332,8 @@ export namespace Prisma {
   export type UserProfileUpdateInput = {
     id?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
@@ -17341,9 +17348,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     userId?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
@@ -17357,9 +17363,8 @@ export namespace Prisma {
     id?: string
     userId: string
     dob?: Date | string | null
-    passportNum?: string | null
     visaType?: $Enums.VisaType
-    program?: string | null
+    program?: $Enums.Programs
     gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
@@ -17372,9 +17377,8 @@ export namespace Prisma {
   export type UserProfileUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
@@ -17388,9 +17392,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     userId?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
@@ -18298,6 +18301,13 @@ export namespace Prisma {
     not?: NestedEnumVisaTypeFilter<$PrismaModel> | $Enums.VisaType
   }
 
+  export type EnumProgramsFilter<$PrismaModel = never> = {
+    equals?: $Enums.Programs | EnumProgramsFieldRefInput<$PrismaModel>
+    in?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    not?: NestedEnumProgramsFilter<$PrismaModel> | $Enums.Programs
+  }
+
   export type EnumGenderFilter<$PrismaModel = never> = {
     equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
     in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
@@ -18321,7 +18331,6 @@ export namespace Prisma {
     id?: SortOrder
     userId?: SortOrder
     dob?: SortOrder
-    passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
     gender?: SortOrder
@@ -18337,7 +18346,6 @@ export namespace Prisma {
     id?: SortOrder
     userId?: SortOrder
     dob?: SortOrder
-    passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
     gender?: SortOrder
@@ -18353,7 +18361,6 @@ export namespace Prisma {
     id?: SortOrder
     userId?: SortOrder
     dob?: SortOrder
-    passportNum?: SortOrder
     visaType?: SortOrder
     program?: SortOrder
     gender?: SortOrder
@@ -18387,6 +18394,16 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumVisaTypeFilter<$PrismaModel>
     _max?: NestedEnumVisaTypeFilter<$PrismaModel>
+  }
+
+  export type EnumProgramsWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.Programs | EnumProgramsFieldRefInput<$PrismaModel>
+    in?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    not?: NestedEnumProgramsWithAggregatesFilter<$PrismaModel> | $Enums.Programs
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumProgramsFilter<$PrismaModel>
+    _max?: NestedEnumProgramsFilter<$PrismaModel>
   }
 
   export type EnumGenderWithAggregatesFilter<$PrismaModel = never> = {
@@ -19201,6 +19218,10 @@ export namespace Prisma {
 
   export type EnumVisaTypeFieldUpdateOperationsInput = {
     set?: $Enums.VisaType
+  }
+
+  export type EnumProgramsFieldUpdateOperationsInput = {
+    set?: $Enums.Programs
   }
 
   export type EnumGenderFieldUpdateOperationsInput = {
@@ -20127,6 +20148,13 @@ export namespace Prisma {
     not?: NestedEnumVisaTypeFilter<$PrismaModel> | $Enums.VisaType
   }
 
+  export type NestedEnumProgramsFilter<$PrismaModel = never> = {
+    equals?: $Enums.Programs | EnumProgramsFieldRefInput<$PrismaModel>
+    in?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    not?: NestedEnumProgramsFilter<$PrismaModel> | $Enums.Programs
+  }
+
   export type NestedEnumGenderFilter<$PrismaModel = never> = {
     equals?: $Enums.Gender | EnumGenderFieldRefInput<$PrismaModel>
     in?: $Enums.Gender[] | ListEnumGenderFieldRefInput<$PrismaModel>
@@ -20163,6 +20191,16 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumVisaTypeFilter<$PrismaModel>
     _max?: NestedEnumVisaTypeFilter<$PrismaModel>
+  }
+
+  export type NestedEnumProgramsWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.Programs | EnumProgramsFieldRefInput<$PrismaModel>
+    in?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Programs[] | ListEnumProgramsFieldRefInput<$PrismaModel>
+    not?: NestedEnumProgramsWithAggregatesFilter<$PrismaModel> | $Enums.Programs
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumProgramsFilter<$PrismaModel>
+    _max?: NestedEnumProgramsFilter<$PrismaModel>
   }
 
   export type NestedEnumGenderWithAggregatesFilter<$PrismaModel = never> = {
@@ -20255,9 +20293,8 @@ export namespace Prisma {
   export type UserProfileCreateWithoutUserInput = {
     id?: string
     dob?: Date | string | null
-    passportNum?: string | null
     visaType?: $Enums.VisaType
-    program?: string | null
+    program?: $Enums.Programs
     gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
@@ -20270,9 +20307,8 @@ export namespace Prisma {
   export type UserProfileUncheckedCreateWithoutUserInput = {
     id?: string
     dob?: Date | string | null
-    passportNum?: string | null
     visaType?: $Enums.VisaType
-    program?: string | null
+    program?: $Enums.Programs
     gender?: $Enums.Gender
     universityName?: string | null
     country?: string | null
@@ -20454,9 +20490,8 @@ export namespace Prisma {
   export type UserProfileUpdateWithoutUserInput = {
     id?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null
@@ -20469,9 +20504,8 @@ export namespace Prisma {
   export type UserProfileUncheckedUpdateWithoutUserInput = {
     id?: StringFieldUpdateOperationsInput | string
     dob?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    passportNum?: NullableStringFieldUpdateOperationsInput | string | null
     visaType?: EnumVisaTypeFieldUpdateOperationsInput | $Enums.VisaType
-    program?: NullableStringFieldUpdateOperationsInput | string | null
+    program?: EnumProgramsFieldUpdateOperationsInput | $Enums.Programs
     gender?: EnumGenderFieldUpdateOperationsInput | $Enums.Gender
     universityName?: NullableStringFieldUpdateOperationsInput | string | null
     country?: NullableStringFieldUpdateOperationsInput | string | null

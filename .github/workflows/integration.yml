@@ -1,0 +1,17 @@
+name: Duekoo BACKEND CI
+
+on:
+  push:
+
+jobs:
+  check-frontend:
+    name: Validate Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Build Project assets
+        run: npm run build

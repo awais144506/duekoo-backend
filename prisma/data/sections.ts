@@ -5,7 +5,7 @@ export interface SectionData {
   deTitle: string;
   order: number;
   visaType?: 'STUDENT' | 'FAMILY' | 'VISIT' | null;
-  specialization?: 'CS' | 'BBA' | 'ENGINEER' | 'SOCIAL' | 'MPCB' | null;
+  specialization?: 'CS' | 'BBA' | 'ENGINEER' | 'SOCIAL' | 'NATURAL' | null;
 }
 
 export const sections: SectionData[] = [

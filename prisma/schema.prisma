@@ -1,6 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
-  output = "../generated"
+  provider     = "prisma-client-js"
+  output       = "../generated"
   moduleFormat = "cjs"
 }
 
@@ -32,6 +32,14 @@ enum ProgressStatus {
   COMPLETED
 }
 
+enum Programs {
+  CS
+  BUSINESS
+  ENGINEER
+  SOCIAL
+  NATURAL
+}
+
 // --- 1. Identity & Profile ---
 
 model User {
@@ -56,9 +64,8 @@ model UserProfile {
   userId         String    @unique
   user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   dob            DateTime?
-  passportNum    String?   @unique
   visaType       VisaType  @default(STUDENT)
-  program        String?
+  program        Programs  @default(CS)
   gender         Gender    @default(M)
   universityName String?
   country        String?
